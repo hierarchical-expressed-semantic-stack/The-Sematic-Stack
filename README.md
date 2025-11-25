@@ -1,150 +1,142 @@
-The Semantic Stack & DFH Layer
+# The Semantic Stack & DFH Layer
 
-A proposed external semantic layer and deterministic first-hop for AI and the Semantic Web.
+*A proposed external semantic layer and deterministic first-hop for AI and the Semantic Web.*
 
-Status: Open concept for public record
-Version: Draft 1.0
-Date: 2025-11-23
+**Status:** Open concept for public record  
+**Version:** Draft 1.0  
+**Date:** 2025-11-23  
 
-0. Abstract
+---
 
-Current AI systems hallucinate because the internet has no true semantic layer:
+## 0. Abstract
 
-No global topic dictionary
+Current AI systems hallucinate because the internet has **no true semantic layer**:
 
-No universal canonical home
-
-No public-facing index of meaning
+- No global topic dictionary  
+- No universal canonical home  
+- No public-facing index of meaning  
 
 Meaning is scattered across:
 
-Wikipedia, Wikidata, schema.org
+- Wikipedia, Wikidata, schema.org  
+- Ontologies and knowledge graphs  
+- Random blogs, corporate docs, and LLM embeddings  
 
-Ontologies and knowledge graphs
+There is **no universal place that says**:
 
-Random blogs, corporate docs, and LLM embeddings
+> “Here is where this concept starts.”
 
-There is no universal place that says:
+The **Semantic Stack** is a proposed **external semantic layer** where each topic has:
 
-“Here is where this concept starts.”
+- **One root**  
+- **One canonical semantic anchor**  
+- **Five public external domains that define the topic**  
+- **A mirror system for plural, category, and contextual expansions**  
 
-The Semantic Stack is a proposed external semantic layer where each topic has:
+On top of that, a tiny JSON-LD descriptor called **DFH (Deterministic First-Hop)** lives at:
 
-One root
+> `/.well-known/stack`
 
-One canonical semantic anchor
+This gives AI and semantic systems a **stable, external, deterministic “Start here”** before they touch any internal graph.
 
-Five public external domains that define the topic
+Long-term, the Semantic Stack pairs with a second layer, the **Verification Stack**, to form the **Universal Knowledge Stack™**:
 
-A mirror system for plural, category, and contextual expansions
-
-On top of that, a tiny JSON-LD descriptor called DFH (Deterministic First-Hop) lives at:
-
-/.well-known/stack
-
-This gives AI and semantic systems a stable, external, deterministic “Start here” before they touch any internal graph.
-
-Long-term, the Semantic Stack pairs with a second layer, the Verification Stack, to form the Universal Knowledge Stack™:
-
-Semantic Stack™ → meaning (what it is)
-
-Verification Stack™ → truth (why it’s real, where it came from, how it’s structured)
+- **Semantic Stack™ → meaning (what it is)**  
+- **Verification Stack™ → truth (why it’s real, where it came from, how it’s structured)**  
 
 This repository documents:
 
-The Semantic Stack (root + mirrors)
+- The **Semantic Stack** (root + mirrors)  
+- The **DFH descriptor**  
+- Interactions with RDF/OWL, LOD, GraphRAG, and existing standards  
 
-The DFH descriptor
+---
 
-Interactions with RDF/OWL, LOD, GraphRAG, and existing standards
-
-1. The Four Unsolved Problems
+## 1. The Four Unsolved Problems
 
 There are four “holy grail” problems in semantic web / AI:
 
-1) Semantic Grounding
+### 1.1 Semantic Grounding
 
-Where does a concept start?
-There is no universal external “first hop.”
+Where does a concept *start*?  
+There is no universal external **first hop**.
 
-2) Deterministic Disambiguation
+### 1.2 Deterministic Disambiguation
 
-Jaguar = animal
-Jaguar = car
-Jaguar = sports team
-Jaguar = OS
+“Jaguar” can mean:
 
-No universal rule or context layer exists.
+- animal  
+- car  
+- sports team  
+- operating system  
 
-3) External Canonicality
+The web has no universal rule or context layer to pick which one.
 
-Wikidata Q-IDs, schema.org types, RDF URIs are all internal identifiers, not public-facing topic homes.
+### 1.3 External Canonicality
 
-4) Stable AI Alignment
+Wikidata Q-IDs, schema.org types, and RDF URIs are all **internal identifiers**, not public-facing topic homes on the open web.
+
+### 1.4 Stable AI Alignment
 
 LLMs are “statistical fog machines” without:
 
-stable entry points
+- stable entry points  
+- predictable structure  
+- semantic boundaries  
+- contextual mirrors  
 
-predictable structure
+The **Semantic Stack + DFH** is designed to solve these.
 
-semantic boundaries
+---
 
-contextual mirrors
+## 2. Layered Architecture
 
-The Semantic Stack + DFH is designed to solve these.
+At a high level, the conceptual stack looks like this:
 
-2. Layered Architecture
-LOD / RDF / OWL → Meaning layer
+- **LOD / RDF / OWL → Meaning layer**  
+  Internal graphs representing the structure of knowledge.
 
-Internal graphs representing the structure of knowledge.
+- **GraphRAG / SPARQL / query engines → Reasoning layer**  
+  Federation, joins, ranking, inference.
 
-GraphRAG / SPARQL → Reasoning layer
+- **Semantic Stack → External grounding layer**  
+  One root + mirrors for each topic.
 
-Federation, inference, joins, ranking.
-
-Semantic Stack → External grounding layer
-
-One root + mirrors for each topic.
-
-DFH → Activation layer
-
-A deterministic JSON-LD descriptor exposed at /.well-known/stack.
+- **DFH → Activation layer**  
+  A deterministic JSON-LD descriptor exposed at `/.well-known/stack`.
 
 Think of it as:
 
-External Anchor → Internal Graph → Reasoning
+> **External Anchor → Internal Graph → Reasoning**
 
-The Stack doesn’t replace Semantic Web standards — it gives them an external entrance point.
+The Stack doesn’t replace Semantic Web standards — it gives them an **external entrance point**.
 
-3. The Semantic Stack — One Stack Per Topic
-3.1 Root Layer (One Topic = One Root)
+---
 
-Example for healthcare:
+## 3. The Semantic Stack — One Stack Per Topic
 
-healthcaretype.com
+### 3.1 Root Layer (One Topic = One Root)
 
-healthcareentity.com
+For any topic (e.g., *healthcare*, *transportation*, *medicine*), the root node is represented by **five external domains**, each defining part of the topic. Example for **healthcare**:
 
-healthcareurl.com
+- `healthcaretype.com`  
+- `healthcareentity.com`  
+- `healthcareurl.com`  
+- `healthcaresitemap.com`  
+- `healthcarecanonical.com`  
 
-healthcaresitemap.com
-
-healthcarecanonical.com
-
-These are actual external domains, not schemas.
+These are **actual external domains**, not internal schemas.
 
 They function as:
 
-a public semantic anchor
+- a public semantic anchor  
+- an open index  
+- a stable entry point  
+- a card-catalog surface  
 
-an open index
+#### Root Diagram
 
-a stable entry point
-
-a card-catalog surface
-
-Root Diagram
+```text
 +-----------------------------+
 |        THE SEMANTIC STACK   |
 |     External Semantic Anchor|
@@ -162,403 +154,35 @@ Root Diagram
                   ^
                   |
            healthcaretype.com
+Five external public domains =
+ONE canonical semantic anchor.
+
+Provides:
+
+Stable root
+
+Canonical definition
+
+Public entry point
+
+Decentralized underneath
 
 3.2 Mirror Layer (Plural / Category / Context)
-
 Mirrors are external domains that expand context but never redefine the root.
 
-Plural
-
-cars → car
-pharmaceuticals → pharmaceutical
-
-Category
-
-sportsmedicine → medicine
-electriccars → car
-
-Context
-
-healthcaredata → healthcare
-transportationreviews → transportation
-
-Flow Diagram
-[2] MIRROR LAYER
-
-cars.com            (plural)   --> car
-electriccars.com    (category) --> car
-healthcaredata.com  (context)  --> healthcare
-
-Mirrors expand context, never redefine the root.
-
-3.3 Semantic Flow
-Root (One) --> Mirrors (Many) --> Semantic Web (LOD/RDF/OWL)
-
-Stack = entrance point, not ontology.
-
-External Anchor --> Internal Graph
-
-4. Relationship to RDF/OWL/LOD/Wikidata
-Complement, not replacement
-
-RDF/OWL = internal meaning
-
-Stack = external anchor
-
-The Stack is the universal front door.
-RDF/OWL is the library.
-The Stack is the card catalog.
-
-LOD Cloud vs Stack Topics
-
-LOD Cloud organizes datasets.
-Stack organizes topic entry points.
-
-Why existing systems don’t solve this
-
-Q-IDs are internal
-
-schema.org is embedded, not external
-
-JSON-LD lives inside pages
-
-Wikidata is a hosted graph, not a universal root
-
-What’s missing:
-
-one external canonical root
-
-predictable 5-domain structure
-
-external mirrors
-
-DFH as the deterministic first hop
-
-5. DFH: Deterministic First-Hop (JSON-LD)
-
-DFH lives at:
-
-/.well-known/stack
-
-Purpose
-
-DFH defines:
-
-“Where the canonical entry point for this topic lives.”
-Not what is true — just where to begin.
-
-5.1 DFH JSON-LD Example
-{
-  "@context": {
-    "dfh": "https://example.org/ns/dfh#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "owl": "http://www.w3.org/2002/07/owl#"
-  },
-
-  "@id": "https://healthcaretype.com/.well-known/stack",
-
-  "skos:prefLabel": { "@value": "Healthcare", "@language": "en" },
-  "skos:altLabel": [{ "@value": "Health care", "@language": "en" }],
-
-  "dfh:rootTopic": "healthcare",
-
-  "dfh:anchors": {
-    "dfh:type": "https://healthcaretype.com/",
-    "dfh:entity": "https://healthcareentity.com/",
-    "dfh:url": "https://healthcareurl.com/",
-    "dfh:sitemap": "https://healthcaresitemap.com/",
-    "dfh:canonical": "https://healthcarecanonical.com/"
-  },
-
-  "dfh:mirrors": [
-    {
-      "@id": "https://healthcaredata.com/",
-      "dfh:mirrorType": "context",
-      "dfh:mirrorsTopic": "healthcare"
-    }
-  ],
-
-  "owl:sameAs": [
-    "https://www.wikidata.org/entity/Q192107",
-    "http://dbpedia.org/resource/Health_care"
-  ],
-
-  "dcat:distribution": [
-    {
-      "@id": "https://example.org/healthcare/sparql",
-      "@type": "dcat:Distribution",
-      "dct:title": "Healthcare graph SPARQL endpoint",
-      "dcat:accessURL": "https://example.org/healthcare/sparql"
-    }
-  ],
-
-  "dct:issued": "2025-11-23",
-  "dct:modified": "2025-11-23",
-  "dct:creator": "Deterministic First-Hop (DFH) prototype",
-  "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
-}
-
-5.2 Type Hints
-{
-  "@context": {
-    "owl:sameAs": { "@type": "@id" },
-    "dcat:accessURL": { "@type": "@id" },
-    "dct:license": { "@type": "@id" },
-    "dfh:type": { "@type": "@id" },
-    "dfh:entity": { "@type": "@id" },
-    "dfh:url": { "@type": "@id" },
-    "dfh:sitemap": { "@type": "@id" },
-    "dfh:canonical": { "@type": "@id" },
-    "dfh:mirrorsTopic": { "@type": "@id" }
-  }
-}
-
-6. Discovery, Freshness, and Federation
-6.1 Discovery Workflow
-
-User/LLM says “healthcare.”
-
-System identifies root domain (healthcaretype.com).
-
-Fetches /.well-known/stack.
-
-DFH provides:
-
-anchors
-
-mirrors
-
-sameAs
-
-endpoints
-
-VoID/DCAT signals
-
-This becomes the first hop into the semantic ecosystem.
-
-6.2 Freshness (avoiding drift)
-
-Provide change feed (RSS/Atom or ActivityPub/LDN).
-
-Use ETag + Last-Modified for cheap sync.
-
-If no signals → periodic recrawl.
-
-Dataset signals from:
-
-DCAT
-
-VoID
-
-dcterms:modified
-
-Clients perform incremental sync, not full reindex.
-
-6.3 Deterministic Disambiguation
-
-Homonyms handled via SKOS concept scheme.
-
-DFH returns:
-
-a deterministic primary sense
-
-alternates with confidence
-
-multilingual labels
-
-examples and sameAs
-
-Examples:
-
-jaguaranimal.com
-
-jaguarcar.com
-
-jaguarsports.com
-
-Root does not choose sense.
-Context chooses mirror.
-
-6.4 Federation Layer
-
-Use existing tools:
-
-Comunica
-
-Stardog Virtual Graph
-
-Jena/Fuseki
-
-GraphQL / REST façade
-
-Stack anchors → DFH → federated reasoning.
-
-7. Topic Selection & Governance
-No central authority.
-
-A topic exists as soon as a root is published.
-This works like DNS, not Wikipedia.
-
-decentralized
-
-no gatekeeping
-
-competing roots may coexist
-
-consumers decide what to trust
-
-Topics can be derived from LOD
-
-Use:
-
-rdfs:Class
-
-owl:Class
-
-skos:Concept
-
-Index vocabulary, not trillions of triples.
-
-Correctness
-
-“Correct” ≠ philosophically true.
-
-It simply means:
-
-This is the stable first hop for this label.
-
-8. User Experience
-Non-technical users
-
-They get:
-
-Topic explorer
-
-Mirrors
-
-Simple “where this topic lives” view
-
-Chat grounded through DFH
-
-No RDF/SPARQL exposed
-
-Technical users
-
-They get:
-
-JSON-LD DFH descriptor
-
-SPARQL / JSON-LD / GraphQL endpoints
-
-VoID/DCAT metadata
-
-Federation hooks
-
-9. Verification Stack (Future Layer)
-
-Truth =
-
-chronology
-
-metadata
-
-taxonomy
-
-provenance
-
-ontology
-
-Semantic Stack = meaning
-Verification Stack = truth
-
-Together:
-
-meaning anchored to verifiable truth
-
-provenance becomes inspectable
-
-circular references eliminated
-
-This enables global truth infrastructure.
-
-10. Universal Knowledge Stack™
-
-Semantic Stack + Verification Stack = Universal Knowledge Stack™
-
-meaning + truth
-
-definition + verification
-
-external semantic & provenance layer
-
-This is the layer the web skipped in the 1990s.
-
-11. Problems Solved
-
-AI hallucinations
-
-misinformation
-
-semantic drift
-
-circular citations
-
-missing provenance
-
-topic identity instability
-
-lack of transparency
-
-lack of interoperable grounding
-
-12. Version Roadmap
-
-v1 → root + mirrors + DFH
-
-v2 → disambiguation + change-feed
-
-v3 → verification stack
-
-v4 → universal knowledge stack
-
-13. Path Forward
-
-Start extremely small:
-
-micro-group (4–6 people)
-
-minimal DFH spec
-
-one working topic
-
-then broaden out
-
-One-Sentence Summary
-
-The External Semantic Layer / Semantic Stack / DFH Layer:
-The missing grounding layer: the architecture, the JSON-LD, the discovery endpoint, the mirrors, the disambiguation mechanism, and the minimal DFH contract that finally gives AI a deterministic first hop into meaning.
-
-3.2 Mirror Layer (Plural / Category / Context)
-
-Mirrors are external domains that expand context but never redefine the root.
-
-Examples:
-
-Plural Mirrors
+Plural mirrors
 
 cars.com → mirrors → car
 
 pharmaceuticals.com → mirrors → pharmaceutical
 
-Category Mirrors
+Category mirrors
 
 electriccars.com → mirrors → car
 
 sportsmedicine.com → mirrors → medicine
 
-Context Mirrors
+Context mirrors
 
 healthcaredata.com → mirrors → healthcare
 
@@ -569,6 +193,8 @@ baseballstats.com → mirrors → baseball
 Mirrors = infinite context
 Root = one definition
 
+text
+Copy code
 [2] MIRROR LAYER
 
 cars.com            (plural)   --> car
@@ -576,15 +202,14 @@ electriccars.com    (category) --> car
 healthcaredata.com  (context)  --> healthcare
 
 Mirrors expand context, never redefine the root.
-
 3.3 Semantic Flow
+text
+Copy code
 Root (One) --> Mirrors (Many) --> Semantic Web (LOD / RDF / OWL)
 
-The Stack = entrance point (not ontology).
+Stack = entrance point, not ontology.
 
 External Anchor --> Internal Graph
-
-
 Analogy:
 
 RDF/OWL = the library’s internal logic
@@ -595,22 +220,25 @@ DFH = the label on the card telling AI where to start
 
 4. Relationship to RDF, OWL, LOD, Wikidata, schema.org
 4.1 Complement, not replacement
+RDF/OWL represent internal meaning.
 
-RDF/OWL represent internal meaning
+The Stack provides an external anchor.
 
-The Stack provides an external anchor
+You can think of it as:
 
 Stack = “Start here.”
+
 RDF/OWL = “Now reason about it.”
 
 4.2 LOD Cloud vs Stack Topics
+LOD Cloud organizes datasets and graphs.
 
-LOD Cloud = datasets and graphs
-Stack = human-labeled topic entry points
+Stack topics organize human-labeled topic entry points.
 
-Stack does NOT replace LOD — it gives every concept a stable external home before entering LOD.
+The Stack does NOT replace LOD — it gives every concept a stable external home before entering LOD.
 
 4.3 Why existing systems aren’t enough
+Today we have:
 
 Q-IDs = internal identifiers
 
@@ -628,19 +256,21 @@ predictable five-domain structure
 
 plural/category/context mirrors
 
-DFH deterministic first-hop
+DFH as the deterministic first hop
 
 5. DFH: Deterministic First-Hop (JSON-LD)
-
 DFH is the tiny contract exposed at:
 
 /.well-known/stack
 
-What DFH does define:
+5.1 Purpose
+DFH defines:
 
 “Where the canonical entry point for this topic lives.”
 
-What DFH does not define:
+Not what is true — just where to begin.
+
+It does not define:
 
 The truth
 
@@ -650,7 +280,9 @@ The ontology
 
 It only anchors the first hop.
 
-5.1 DFH JSON-LD Example
+5.2 DFH JSON-LD Example
+json
+Copy code
 {
   "@context": {
     "dfh": "https://example.org/ns/dfh#",
@@ -702,13 +334,15 @@ It only anchors the first hop.
   "dct:creator": "Deterministic First-Hop (DFH) prototype",
   "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
 }
-
-5.2 DFH @context Type Hints
+5.3 DFH @context Type Hints
+json
+Copy code
 {
   "@context": {
     "owl:sameAs": { "@type": "@id" },
     "dcat:accessURL": { "@type": "@id" },
     "dct:license": { "@type": "@id" },
+
     "dfh:type": { "@type": "@id" },
     "dfh:entity": { "@type": "@id" },
     "dfh:url": { "@type": "@id" },
@@ -717,15 +351,13 @@ It only anchors the first hop.
     "dfh:mirrorsTopic": { "@type": "@id" }
   }
 }
-
 6. Discovery, Freshness, Disambiguation, Federation
 6.1 Discovery Flow
+User/LLM says: “healthcare”.
 
-User/LLM says: “healthcare”
+System maps the label → root domain (e.g. healthcaretype.com).
 
-System maps the label → root domain
-
-Fetches /.well-known/stack
+Fetches /.well-known/stack.
 
 DFH returns:
 
@@ -733,31 +365,33 @@ anchors
 
 mirrors
 
-sameAs links
+owl:sameAs links
 
 VoID/DCAT signals
 
 endpoints
 
-This removes ambiguity for AI.
+This removes ambiguity for AI and gives a deterministic first hop.
 
 6.2 Freshness and Sync
+To prevent drift, DFH and associated datasets should support:
 
-To prevent drift:
+Change feed (RSS/Atom or ActivityPub/LDN)
 
-Provide change feed (RSS/Atom or ActivityPub/LDN)
+HTTP caching via ETag + Last-Modified
 
-Use ETag + Last-Modified
+Periodic recrawl as a fallback
 
-Allow periodic recrawl fallback
+Dataset-level metadata from DCAT/VoID (dcterms:modified, etc.)
 
-Use dataset metadata (VoID/DCAT)
-
-Clients update incrementally.
+Clients then perform incremental sync, not full reindexing.
 
 6.3 Deterministic Disambiguation
+Homonyms (Jaguar, Apple, Mercury, etc.) are handled via:
 
-Handled via SKOS concept scheme + mirrors.
+SKOS concept scheme
+
+Mirrors with explicit senses
 
 Examples:
 
@@ -767,12 +401,21 @@ jaguarcar.com
 
 jaguarsports.com
 
-Root doesn't choose sense.
+The root doesn’t choose the sense.
 Mirror selection = sense selection.
 
-6.4 Federation Layer
+DFH can return:
 
-Tools recommended:
+deterministic primary sense
+
+alternates with confidence
+
+multilingual labels
+
+examples & sameAs links
+
+6.4 Federation Layer
+The Stack and DFH don’t replace query engines. They plug into existing tooling:
 
 Comunica
 
@@ -780,13 +423,14 @@ Stardog Virtual Graph
 
 Jena/Fuseki
 
-GraphQL / REST façade
+GraphQL / REST façades
+
+Flow:
 
 DFH → anchors → federated queries → results.
 
 7. Topic Selection & Governance
-Decentralized Like DNS
-
+7.1 Decentralized Like DNS
 A topic exists once a root stack is published.
 
 No gatekeepers
@@ -795,10 +439,9 @@ Anyone can publish a root
 
 Competing roots can coexist
 
-Market/AI/community chooses what to trust
+Market/AI/community decides what to trust
 
-Deriving Topics from LOD
-
+7.2 Deriving Topics from LOD
 Index vocabulary, not trillions of triples.
 
 Use:
@@ -809,65 +452,73 @@ owl:Class
 
 skos:Concept
 
-Meaning vs Correctness
+These labels become candidate topic names.
+Datasets provide semantic signals, not single points of truth.
 
-“Correct” = stable first hop, not “true.”
+7.3 Meaning vs Correctness
+“Correct” in this model ≠ philosophically true.
+
+It simply means:
+
+This is the stable first hop for this label in this context.
 
 The Stack doesn’t define truth.
 It defines where to begin.
 
 8. User Experience
-Non-technical users
+8.1 Non-technical users
+They get:
 
 Topic explorer
 
-Mirrors
+Mirrors (plural, category, context)
 
-Simple explanation
+Simple “where this topic lives” view
 
-Chat grounded through DFH
+Chat/search grounded through DFH
 
 No RDF/SPARQL exposed
 
-Technical users
+8.2 Technical users
+They get:
 
-JSON-LD DFH
+JSON-LD DFH descriptor
 
-SPARQL / GraphQL / REST
+SPARQL / JSON-LD / GraphQL endpoints
 
 VoID/DCAT metadata
 
 Federation-ready endpoints
 
 9. Verification Stack (Future Layer)
+The Verification Stack is a future, complementary layer.
+Truth is decomposed into:
 
-Truth =
+chronology — when (timeline, sequence)
 
-chronology
+metadata — what (attributes, specs)
 
-metadata
+taxonomy — how (classification)
 
-taxonomy
+provenance — where from (origin, lineage)
 
-provenance
-
-ontology
+ontology — what it fundamentally is (deep identity)
 
 Semantic Stack = the meaning
+
 Verification Stack = the truth
 
-Together:
+Together they provide:
 
 Meaning anchored to verifiable truth
 
-Eliminates circular claims
+Transparent provenance
 
-Makes provenance public
+Reduced circular claims
 
-This creates a global verification schema.
+This aims at a global truth infrastructure.
 
 10. Universal Knowledge Stack™
-
 Semantic Stack + Verification Stack = Universal Knowledge Stack™
 
 meaning + truth
@@ -876,46 +527,46 @@ definition + verification
 
 external semantic layer + provenance layer
 
-This is the missing foundational layer the web skipped.
+This is the missing foundational layer the web skipped in the 1990s.
 
 11. Problems Solved (Summary)
+The model is aimed at:
 
 AI hallucinations
 
-misinformation
+Misinformation
 
-semantic drift
+Semantic drift
 
-lack of provenance
+Circular citations
 
-circular citations
+Missing provenance
 
-unstable topic identity
+Topic identity instability
 
-zero public transparency
+Lack of transparency
 
-lack of AI-aligned grounding
+Lack of interoperable grounding for AI
 
 12. Version Roadmap
-
 v1 → DFH + Root + Mirrors
 
-v2 → disambiguation + change-feed
+v2 → Disambiguation + signals + change-feed
 
-v3 → verification stack
+v3 → Verification Stack
 
-v4 → universal knowledge stack
+v4 → Universal Knowledge Stack
 
 13. Path Forward
+Start extremely small:
 
-Create a micro-group (4–6 people)
+Create a micro-group (4–6 people).
 
-Define tiny DFH contract
+Define a tiny DFH JSON-LD contract.
 
-Build one example topic
+Build one working topic (e.g. healthcare).
 
-Expand outward
+Iterate and broaden out to more topics and stakeholders.
 
 One-Sentence Summary
-
-The Semantic Stack / DFH Layer is the missing external semantic anchor — the deterministic first hop that finally gives AI a stable place to begin interpreting meaning.
+The External Semantic Layer / Semantic Stack / DFH Layer is the missing grounding layer: the architecture, the JSON-LD, the discovery endpoint, the mirrors, the disambiguation mechanism, and the minimal DFH contract that finally gives AI a deterministic first hop into meaning.
