@@ -221,7 +221,6 @@ DFH = the label on the card telling AI where to start
 4. Relationship to RDF, OWL, LOD, Wikidata, schema.org
 4.1 Complement, not replacement
 RDF/OWL represent internal meaning.
-
 The Stack provides an external anchor.
 
 You can think of it as:
