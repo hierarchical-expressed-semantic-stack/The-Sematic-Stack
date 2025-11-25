@@ -1,10 +1,3 @@
-# The-Sematic-Stack
-Is the internet missing a semantic layer? I mapped a ‘Semantic Stack’ 
-semantic-stack/
-  README.md
-  examples/
-    healthcare-stack.jsonld
-  LICENSE
 # The Semantic Stack & DFH Layer  
 *A proposed external semantic layer and deterministic first-hop for AI and the Semantic Web.*
 
@@ -149,100 +142,26 @@ Whoever owns the stack becomes the **public point of reference** for that topic�
 +-----------------------------+
 |        THE SEMANTIC STACK   |
 |     External Semantic Anchor |
-+-----------------
-[2] MIRROR LAYER (Plural / Category / Context)
++-----------------------------+
 
-cars.com           (plural mirror)   ---> car
-electriccars.com   (category mirror) ---> car
-healthcaredata.com (context mirror)  ---> healthcare
+[1] ROOT LAYER (One topic = one root)
 
-Mirrors expand context, never redefine the root.
-[2] MIRROR LAYER (Plural / Category / Context)
+        healthcaresitemap.com
+                  ^
+                  |
+  healthcareurl.com   healthcarecanonical.com
+          ^                   ^
+          |                   |
+     healthcareentity.com     (Type / Entity / URL / Sitemap / Canonical)
+                  ^
+                  |
+           healthcaretype.com
 
-Root (One) --> Mirrors (Many) --> Semantic Web (LOD / RDF / OWL)
+Five external public domains =
+ONE canonical semantic anchor.
 
-The Stack = entrance point (not ontology).
-
-Think:
-External Anchor  -->  Internal Graph
-{
-  "@context": {
-    "dfh": "https://example.org/ns/dfh#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "owl": "http://www.w3.org/2002/07/owl#"
-  },
-  "@id": "https://healthcaretype.com/.well-known/stack",
-
-  "skos:prefLabel": {
-    "@value": "Healthcare",
-    "@language": "en"
-  },
-  "skos:altLabel": [
-    { "@value": "Health care", "@language": "en" }
-  ],
-
-  "dfh:rootTopic": "healthcare",
-
-  "dfh:anchors": {
-    "dfh:type": "https://healthcaretype.com/",
-    "dfh:entity": "https://healthcareentity.com/",
-    "dfh:url": "https://healthcareurl.com/",
-    "dfh:sitemap": "https://healthcaresitemap.com/",
-    "dfh:canonical": "https://healthcarecanonical.com/"
-  },
-
-  "dfh:mirrors": [
-    {
-      "@id": "https://healthcaredata.com/",
-      "dfh:mirrorType": "context",
-      "dfh:mirrorsTopic": "healthcare"
-    }
-  ],
-
-  "owl:sameAs": [
-    "https://www.wikidata.org/entity/Q192107",
-    "http://dbpedia.org/resource/Health_care"
-  ],
-
-  "dcat:distribution": [
-    {
-      "@id": "https://example.org/healthcare/sparql",
-      "@type": "dcat:Distribution",
-      "dct:title": "Healthcare graph SPARQL endpoint",
-      "dcat:accessURL": "https://example.org/healthcare/sparql"
-    }
-  ],
-
-  "dct:issued": "2025-11-23",
-  "dct:modified": "2025-11-23",
-  "dct:creator": "Deterministic First-Hop (DFH) prototype",
-  "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
-}
-{
-  "@context": {
-    "dfh": "https://example.org/ns/dfh#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-
-    "owl:sameAs": { "@type": "@id" },
-    "dcat:accessURL": { "@type": "@id" },
-    "dct:license": { "@type": "@id" },
-
-    "dfh:type": { "@type": "@id" },
-    "dfh:entity": { "@type": "@id" },
-    "dfh:url": { "@type": "@id" },
-    "dfh:sitemap": { "@type": "@id" },
-    "dfh:canonical": { "@type": "@id" },
-    "dfh:mirrorsTopic": { "@type": "@id" }
-  }
-}
-
-If you want, next step I can also give you:
-
-- `examples/healthcare-stack.jsonld` as a standalone file (from the DFH example), and  
-- A minimal `LICENSE` + `.gitignore` so you can push this repo to GitHub in one shot.
-
+Provides:
+- Stable root
+- Canonical definition
+- Public entry point
+- Decentralized underneath
