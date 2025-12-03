@@ -528,4 +528,18 @@ Summary
 Installation = make a .well-known folder → add a stack file → upload to your domain → done.
 No website content is required. The only purpose of the site is to serve this DFH instruction file.
 
+host a domain
+
+create /.well-known/stack
+
+paste the JSON
+
+point the anchors at mirrors
+
+add it to sitemap
+
+DFH would be live instantly.
+
+Nothing else is required.
+
 You need a live website so AI crawlers can fetch the DFH instructions from the correct standardized location. The site itself stays empty—its only job is to serve the DFH file.
