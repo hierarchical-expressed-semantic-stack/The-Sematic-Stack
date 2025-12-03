@@ -405,4 +405,34 @@ Anchors (deterministic)
 AI / Agents / RAG Systems
 Anyone can implement DFH in 5 minutes.
 
+## If You Get Stuck, AI Can Help Instantly
+
+One of the design goals of the Semantic Stack and DFH is **self-guidance**.
+
+If you get confused, stuck, or completely mess something up, **any AI system can walk you through the entire setup**.
+
+Simply copy/paste your DFH file, or this README, into any LLM and ask:
+
+- “What do I do next?”
+- “Help me fix my DFH file.”
+- “Are my anchors valid?”
+- “Where should my mirrors point?”
+- “Is my stack file structured correctly?”
+
+Because the protocol is:
+
+- tiny  
+- deterministic  
+- plain JSON-LD  
+- universal across all domains  
+- hosted at a fixed path (`/.well-known/stack`)
+
+…AI models can **always** interpret it correctly and give you step-by-step instructions.
+
+Even if you break something or have no technical skill at all, you can always ask an AI:
+
+> **“Fix my DFH file.”**
+
+And it will.
+
 End of README
