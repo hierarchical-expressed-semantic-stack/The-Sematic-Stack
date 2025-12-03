@@ -559,3 +559,47 @@ publish anchors
 appear as the topic’s entry point
 
 Just like DNS, anybody can claim authority by publishing live, verifiable structure.
+Even If You Get Stuck, AI Can Guide You
+
+One of the design goals of the Semantic Stack and DFH was self-describing simplicity.
+
+Because everything is:
+
+written in plain JSON-LD
+
+deterministic
+
+standardized
+
+hosted at a fixed path (/.well-known/stack)
+
+…anyone can copy/paste this README, or their own DFH file, directly into any AI model and ask:
+
+“Tell me what to do next.”
+
+The AI will correctly answer because:
+
+The protocol is tiny and consistent
+
+All fields have clear meaning
+
+The file is complete enough for any LLM to interpret
+
+The rules are explicit and universal
+
+There is only one required action:
+
+Host /.well-known/stack at your root domain
+
+
+Even someone who has never used JSON-LD, DNS, hosting, semantic web, or SEO can install DFH in minutes by simply asking any AI:
+
+“Help me implement my DFH file.”
+
+“What do I need to host?”
+
+“Where do I put mirrors?”
+
+“Are my anchors valid?”
+
+The protocol is intentionally built so both machines and humans can onboard instantly.
