@@ -545,3 +545,17 @@ Nothing else is required.
 You need a live website so AI crawlers can fetch the DFH instructions from the correct standardized location. The site itself stays empty—its only job is to serve the DFH file.
 
 If you want the canonical entry point for a topic, go to /.well-known/stack on the root domain.
+
+Anyone who owns a domain can:
+
+implement DFH
+
+create their root
+
+make mirrors
+
+publish anchors
+
+appear as the topic’s entry point
+
+Just like DNS, anybody can claim authority by publishing live, verifiable structure.
