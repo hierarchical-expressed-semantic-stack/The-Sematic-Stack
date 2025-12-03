@@ -366,6 +366,14 @@ Give AI, search engines, and GraphRAG a deterministic first hop before touching 
 
 This diagram shows the **entire protocol** at a glance.
 
----
+---To implement DFH:
+
+1. Create /.well-known/stack
+2. Put your JSON-LD anchors inside
+3. Add that URL to your sitemap.xml
+4. Host it at your root domain
+
+Done. Your topic now has a deterministic first-hop.
+
 
 # End of README
