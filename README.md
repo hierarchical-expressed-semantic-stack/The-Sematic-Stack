@@ -1,4 +1,4 @@
-# The Semantic Stack & Deterministic First-Hop (DFH)
+# The Semantic Stack & Deterministic First-Hop & mirrors (DFH)
 _A proposed external semantic layer + the most powerful SEO primitive the web has ever had._
 
 Status: Public Concept  
