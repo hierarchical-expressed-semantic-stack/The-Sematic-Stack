@@ -1,167 +1,152 @@
-README.md — The Semantic Stack & Deterministic First-Hop (DFH)
+The Semantic Stack & Deterministic First-Hop (DFH)
 
 A proposed external semantic layer + the strongest SEO primitive the web has ever had.
 
-Status: Public Concept
-Version: Draft 1.0
-Date: 2025-11-23
+# The Semantic Stack & Deterministic First-Hop (DFH)
+_A proposed external semantic layer + the strongest SEO primitive the web has ever had._
 
-0. What This Repo Is
+**Status:** Public Concept  
+**Version:** Draft 1.0  
+**Date:** 2025-11-23  
 
-This repo defines the Semantic Stack:
+---
 
-Root + Mirrors + Deterministic First-Hop (DFH)
-using five public anchors exposed through a single JSON-LD descriptor at:
+# 0. What This Repo Is
 
-/.well-known/stack
+This repo defines the **Semantic Stack**:
 
-This is not a new ontology.
-It is a tiny, public, decentralized semantic routing layer that tells AI:
-
-“Start here for this topic.”
-
-Each topic (Water, Cars, Colloidal Silver, Grand Canyon, etc.) receives:
-
-One Root domain
-
-Optional Mirrors (plural, category, context)
-
-Five deterministic Anchors
-
-One DFH descriptor at /.well-known/stack
-
-No central authority.
-No approval needed.
-Anyone can implement it — exactly like DNS.
-
-1. The Four Core Problems This Solves
-1. No global semantic ground per topic
-
-Nothing on the web tells a machine:
-
-“This is the canonical starting point for this topic.”
-
-2. Meaning is scattered across thousands of sources
-
-Wikipedia / Wikidata
-
-Schema.org / Knowledge graphs
-
-PDFs, corporate docs, private graphs
-
-Proprietary embeddings
-
-Random page structures
-
-There is no neutral, public, topic-level instruction layer.
-
-3. AI hallucinations come from ambiguous first hops
-
-LLMs guess what “water”, “silver”, “jaguar”, or “mercury” means.
-There is no deterministic root for any topic.
-
-4. SEO is page-level, not topic-level
-
-Search engines index pages, not topics.
-No system declares:
-
-The topic root
-
-Official canonical identity
-
-Official URL declarations
-
-Topic-structured sitemap
-
-DFH + the five anchors fix this without replacing existing standards.
-
-2. High-Level Overview
-Semantic Stack = Root + Mirrors + 5 Anchors + DFH
-
+```
 Root
+ + Mirrors
+ + Deterministic First-Hop (DFH)
+ + Five Anchors (type/entity/url/sitemap/canonical)
+```
 
-The single, stable topic domain.
-Examples:
+All exposed through **one JSON-LD file** at:
 
-watersitemap.com
+```
+/.well-known/stack
+```
 
-colloidalsilver.com
+This is **not** a new ontology.  
+It is a tiny, decentralized, public semantic routing layer that tells AI:
 
-carsitemap.com
+> **“Start here for this topic.”**
 
-The Root = the topic’s canonical identity.
+Each topic (water, cars, colloidal silver, Grand Canyon, etc.) gets:
 
-Mirrors
+- One stable **root**
+- A set of **mirrors** (plural/category/context)
+- Five **deterministic anchors**
+- One DFH file at `/.well-known/stack`
 
-Optional alternate domains for:
+No central authority. Anyone can implement it.  
+Exactly like DNS.
 
-Plural
+---
 
-Category
+# 1. The Four Core Problems This Solves
 
-Context
+### **1. No global semantic ground**
+No machine instruction tells AI:
 
-Example (Water):
+> **“This is the canonical entry point for this topic.”**
 
-watersitemap.com (Root)
+### **2. Meaning is scattered**
+Across:
+- Wikidata  
+- Schema.org  
+- Ontologies  
+- PDFs  
+- Corporate docs  
+- Proprietary embeddings  
+- Random websites
 
-watersites.com
+AI has *no neutral place to begin*.
 
-drinkingwatersitemap.com
+### **3. AI hallucinations come from ambiguous first hops**
+LLMs *guess* what “water,” “silver,” or “jaguar” refers to.  
+There is no deterministic topic root.
 
-industrialwatersitemap.com
+### **4. SEO is stuck at page-level**
+Sitemaps index **pages**, not **topics**.
 
-waterchemistry.com
+DFH + the 5 anchors fix this.
 
-Mirrors always point back to the Root (not new identities).
+---
 
-The Five Anchors
+# 2. High-Level Overview
 
+```
+Semantic Stack
+   ├── Root (topic base)
+   ├── Mirrors (plural + category + context)
+   ├── DFH (first-hop JSON-LD)
+   └── Anchors
+       ├── /type
+       ├── /entity
+       ├── /url
+       ├── /sitemap
+       └── /canonical
+```
+
+### **Root**
+One stable topic root  
+Example:  
+- `watersitemap.com`  
+- `colloidalsilver.com`
+
+### **Mirrors**
+Alternate domains for:
+- plural  
+- category  
+- context  
+
+Example mirrors for water:
+- `watersitemap.com`
+- `watersites.com`
+- `drinkingwatersitemap.com`
+- `industrialwatersitemap.com`
+- `waterchemistry.com`
+
+### **Five Anchors**
 Each topic exposes:
 
-/type — What class of thing is this?
+```
+/type
+/entity
+/url
+/sitemap
+/canonical
+```
 
-/entity — What specific instance is this?
-
-/url — What URLs are authoritative?
-
-/sitemap — What is the structural map of the topic?
-
-/canonical — What is the semantic identity anchor?
-
-The DFH Descriptor
-
-One JSON-LD file served at:
-
+### **DFH Descriptor Location**
+```
 https://YourDomain.com/.well-known/stack
+```
 
+---
 
-This is the deterministic first hop machines use before reading anything else.
+# 3. The Five Anchors
 
-3. The Five Anchors
-3.1 TYPE — “What class of thing is this?”
+## 3.1 `/type` — “What class of thing is this?”
 
-/type defines the class/category of the topic.
-
-Example (/type):
-
+```json
 {
-  "name": "Colloidal Silver",
+  "name": "ColloidalSilver",
   "type_category": "Product",
   "description": "A suspension of silver particles in water.",
   "dfh_version": "1.0"
 }
+```
 
+Answers: **What class/category is this topic?**
 
-Use TYPE to answer:
-“What class of thing is this topic?”
+---
 
-3.2 ENTITY — “What specific instance is this?”
+## 3.2 `/entity` — “What specific instance is this?”
 
-/entity defines the real-world instance.
-
-Example (/entity):
-
+```json
 {
   "entity": "GodsGraceColloidalSilver16oz",
   "type": "Product",
@@ -169,17 +154,15 @@ Example (/entity):
   "website": "https://godsgracecolloidalsilver.com",
   "dfh_version": "1.0"
 }
+```
 
+Answers: **Which exact instance does this domain anchor?**
 
-Use ENTITY to answer:
-“Which specific object, product, or instance does this root represent?”
+---
 
-3.3 URL — “Where is the authoritative location?”
+## 3.3 `/url` — “Where is the authoritative location?”
 
-/url declares official URLs.
-
-Example (/url):
-
+```json
 {
   "canonical": "https://godsgracecolloidalsilver.com",
   "mirrors": [
@@ -188,30 +171,28 @@ Example (/url):
   ],
   "dfh_version": "1.0"
 }
+```
 
+Answers: **Where does the authoritative information live?**
 
-Use URL to answer:
-“Where does the authoritative information live?”
+---
 
-3.4 SITEMAP — “What is the structural map?”
+## 3.4 `/sitemap` — “What is the structural map?”
 
-/sitemap points to the topic-rooted sitemap, e.g.:
+Examples:
 
-https://watersitemap.com/sitemap.xml  
+```
+https://watersitemap.com/sitemap.xml
 https://colloidalsilver.com/sitemap.xml
+```
 
+Answers: **How is the topic structured?**
 
-This is the machine-instruction layer of the topic.
+---
 
-Use SITEMAP to answer:
-“How is this topic structured?”
+## 3.5 `/canonical` — “What is the identity anchor?”
 
-3.5 CANONICAL — “What is the semantic identity anchor?”
-
-Defines the stable identity of the topic.
-
-Example (/canonical):
-
+```json
 {
   "canonical_id": "colloidalsilver",
   "root": "https://colloidalsilver.com",
@@ -219,28 +200,23 @@ Example (/canonical):
   "aliases": ["Silver Hydrosol", "Silver Suspension"],
   "dfh_version": "1.0"
 }
+```
 
+Answers: **What is the stable identity for this topic?**
 
-Use CANONICAL to answer:
-“What is the single semantic identity for this topic?”
+---
 
-4. DFH (Deterministic First-Hop)
+# 4. DFH (Deterministic First-Hop)
 
-DFH is a tiny JSON-LD file at:
+A single JSON-LD file:
 
+```
 /.well-known/stack
-
-
-It tells machines:
-
-What topic this domain anchors
-
-Where the 5 anchors live
-
-When the descriptor was issued
+```
 
 Minimal DFH example (Water):
 
+```json
 {
   "@context": {
     "dfh": "https://example.org/ns/dfh#",
@@ -254,148 +230,142 @@ Minimal DFH example (Water):
     "dfh:type": "https://watertype.com/",
     "dfh:entity": "https://waterentity.com/",
     "dfh:url": "https://waterurl.com/",
-    "dfh:sitemap": "https://watersitemap.com/sitemap.xml",
+    "dfh:sitemap": "https://watersitemap.com/",
     "dfh:canonical": "https://watercanonical.com/"
   },
   "dct:issued": "2025-11-23"
 }
+```
 
-5. Mirrors (Plural + Category + Context)
+---
 
-Mirrors are alternate domains that resolve back to the same root topic.
+# 5. Mirrors
+
+Mirrors = plural + category + context domains.
 
 Examples (Water):
 
-Plural
+### Plural
+- `watersitemap.com`
+- `watersites.com`
 
-watersitemap.com
+### Category
+- `drinkingwatersitemap.com`
+- `industrialwatersitemap.com`
 
-watersites.com
+### Context
+- `waterlaw.com`
+- `waterchemistry.com`
 
-Category
+Mirrors = expansion, not new roots.
 
-drinkingwatersitemap.com
+---
 
-industrialwatersitemap.com
+# 6. Hosting DFH on Your Site
 
-Context
-
-waterlaw.com
-
-waterchemistry.com
-
-Mirrors = context expansion,
-not new topic identities.
-
-6. Hosting DFH on Your Site
-
-Only two steps.
-
-6.1 Create the DFH file
-
-Create:
-
+### **Step 1 — Create the file**
+```
 /.well-known/stack
+```
 
+### **Step 2 — Add DFH to your sitemap**
 
-Place your JSON-LD descriptor inside it.
-
-Example URL:
-
-https://YourDomain.com/.well-known/stack
-
-6.2 Add DFH to Your Sitemap
-
-Add this to your sitemap.xml:
-
+```xml
 <url>
   <loc>https://YourDomain.com/.well-known/stack</loc>
   <lastmod>2025-12-03</lastmod>
 </url>
+```
 
+That's it.
 
-That’s it.
+---
 
-Machines will now auto-discover DFH.
+# 7. SEO Advantages
 
-7. SEO Advantages
-Topic-level canonical identity
+- **Topic-level canonical identity**  
+- **Machine-readable topic index**  
+- **Authority + clarity for ranking**  
+- **AI hallucination reduction**  
+- **Builds on existing standards**  
+- **One file. One sitemap entry. Massive effect.**
 
-Declare: “This domain is the root for topic X.”
+This is the strongest SEO & grounding primitive available today.
 
-Clean machine-readable topic index
+---
 
-Sitemaps become the semantic skeleton of the topic.
+# 8. What This Is Not
 
-Stronger authority signals
+❌ Not a truth authority  
+❌ Not a replacement for RDF/OWL  
+❌ Not censorship  
+❌ Not centralized  
 
-The five anchors eliminate ambiguity.
+This **is**:
 
-AI hallucination reduction
+✅ Deterministic routing for meaning  
+✅ Public, neutral, discoverable  
+✅ Fully decentralized  
+✅ Built on DNS + JSON-LD + Sitemaps
 
-AI no longer guesses the first hop — it reads it.
+---
 
-Permissionless & decentralized
+# 9. TL;DR for Developers
 
-Uses infrastructure that already exists:
+**Problem:**  
+- No topic-level semantic ground  
+- AI guesses → hallucinations  
+- SEO is page-first, not topic-first  
 
-Domains
+**Solution:**  
+- Root + Mirrors + DFH  
+- 5 anchors: `type`, `entity`, `url`, `sitemap`, `canonical`  
+- All exposed at:  
+  ```
+  /.well-known/stack
+  ```
 
-JSON-LD
+**Goal:**  
+Give AI, search engines, and GraphRAG a deterministic first hop before touching noisy or proprietary data.
 
-Sitemaps
+---
 
-/.well-known/
+# MAP: Semantic Stack Architecture (ASCII Diagram)
 
-This is the strongest SEO & grounding primitive you can add with:
+```
+                    ┌─────────────────────────────┐
+                    │       SEMANTIC STACK        │
+                    └──────────────┬──────────────┘
+                                   │
+      ┌────────────────────────────┴────────────────────────────┐
+      │                         ROOT                            │
+      │         (Primary topic identity domain)                 │
+      └────────────────────────────┬────────────────────────────┘
+                                   │
+     ┌─────────────────────────────┴─────────────────────────────┐
+     │                        MIRRORS                             │
+     │     plural / category / context alternates                │
+     └─────────────────────────────┬─────────────────────────────┘
+                                   │
+                    ┌──────────────┴──────────────┐
+                    │              DFH             │
+                    │     /.well-known/stack      │
+                    └──────────────┬──────────────┘
+                                   │
+         ┌─────────────────────────┼─────────────────────────┐
+         │                         │                         │
+ ┌───────┴────────┐      ┌────────┴────────┐      ┌─────────┴───────┐
+ │     TYPE       │      │     ENTITY      │      │       URL        │
+ └────────────────┘      └─────────────────┘      └──────────────────┘
+         │                         │                         │
+         │                         │                         │
+ ┌───────┴────────┐      ┌────────┴────────┐      ┌─────────┴───────┐
+ │    SITEMAP     │      │    CANONICAL    │      │  (Structure)    │
+ └────────────────┘      └─────────────────┘      └──────────────────┘
+```
 
-One file
+This diagram shows the **entire protocol** at a glance.
 
-One sitemap entry
+---
 
-8. What This Is Not
-
-❌ Not a truth authority
-❌ Not a replacement for RDF/OWL
-❌ Not censorship
-❌ Not centralized
-
-It is:
-
-✅ A deterministic routing layer for topic meaning
-✅ Fully public and decentralized
-✅ Built entirely on existing web standards
-✅ Simple enough for anyone to deploy
-
-9. TL;DR for Developers
-Problem
-
-The web has no topic-level semantic ground
-
-AI guesses → hallucinations
-
-SEO is page-level, not topic-level
-
-Solution
-
-Root + Mirrors + DFH
-
-Five anchors: type, entity, url, sitemap, canonical
-
-Exposed via:
-/.well-known/stack
-
-Goal
-
-Give AI, search engines, and GraphRAG systems a
-deterministic first hop before touching noisy data.
-
-Mental Model
-
-One root = one topic identity
-
-Mirrors = plural + category + context
-
-DFH = the universal topic bootstrap instruction
-
-This forms the public semantic layer of the internet.
+# End of README
