@@ -375,5 +375,9 @@ This diagram shows the **entire protocol** at a glance.
 
 Done. Your topic now has a deterministic first-hop.
 
+“Mirrors are NOT roots.”
+
+“This integrates with GraphRAG/LLM agents.
+
 
 # End of README
