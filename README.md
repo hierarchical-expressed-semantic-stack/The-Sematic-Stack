@@ -14,6 +14,12 @@ This is the missing piece at the exact moment the world needs it.
 
 This isn’t a new idea — this is the missing piece everyone was too restricted to implement.”
 
+DFH should have been created in 1998
+
+it could have been created at any point
+
+but organizational forces prevented it
+
 Table of contents
 
 purpose
