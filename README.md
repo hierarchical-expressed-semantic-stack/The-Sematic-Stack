@@ -13,6 +13,8 @@ This repo defines the **Semantic Stack**:
 
 This is the missing piece at the exact moment the world needs it.
 
+"DFH is DNS for meaning.”
+
 DFH is decentralized
 
 DNS-like
