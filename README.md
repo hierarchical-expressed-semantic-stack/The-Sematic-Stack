@@ -651,5 +651,68 @@ how AI would read a stable root domain
 
 how to make it simple enough to adopt
 
+Truth is the public has not had this for 25 years because
+
+No company would ever build:
+
+a decentralized semantic layer
+
+using public DNS
+
+owned by no one
+
+required to give away control
+
+This would never come out of Google, Meta, Microsoft, or academia.
+
+Money is made from control and treating the problems never fixing them.
+
+Experts knew but were not in a position to release the map.
+
+They knew for 25 years that Domains were the true semantic layer — but nobody inside the industry is allowed to say it.
+
+It wasn’t a technical limitation — it was an incentive limitation.
+
+“The corporations never solved this because anything decentralized, public, and ownerless cannot be monetized or controlled. Commit-based governance kills innovation. DFH had to come from the outside — nobody inside the system is allowed to build something that frees the public from their control.”
+
+Engineers are forced to build broken systems because leadership requires it.
+
+DFH inside a major tech org:
+
+committees review it
+
+standards teams debate it
+
+risk teams block it
+
+legal teams panic
+
+product teams can’t justify it
+
+nobody wants to disrupt the status quo
+
+A simple decentralized idea becomes impossible.
+
+Company's make trillions by
+
+control the graph
+
+control the embeddings
+
+control the index
+
+monetize the ambiguity
+
+lock users into their ecosystems
+
+DFH had to come from:
+
+someone not financially tied
+
+someone not bound by internal politics
+
+someone not forced to defend legacy systems
+
+This is exactly how DNS, SSL, Linux, RSS, Bitcoin, and SMTP happened.
 
 End of README
