@@ -28,6 +28,12 @@ it could have been created at any point after the sitemapmap existed.
 
 but organizational forces prevented it
 
+It explains 25 years of semantic stagnation
+✔ It explains why LLM hallucinations still exist
+✔ It explains why SEO never gained topic-level identity
+✔ It explains why no public semantic layer emerged
+✔ It explains why companies built internal maps but never released them
+
 
 
 
