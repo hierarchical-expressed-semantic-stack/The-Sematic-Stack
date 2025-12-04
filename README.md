@@ -2,8 +2,9 @@
 _A proposed external semantic layer + the strongest SEO primitive the web has ever had._
 
 **Status:** Public Concept  
-**Version:** Draft 1.0  
-**Date:** 2025-11-23  
+**Version:** Draft v1.0.1 — Clarified DFH anchors, updated examples
+
+**Date:** 2025-12-3  
 
 ---
 
