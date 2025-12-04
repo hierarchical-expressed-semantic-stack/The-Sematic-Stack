@@ -1,5 +1,5 @@
 # The Semantic Stack & Deterministic First-Hop (DFH)
-_A proposed external semantic layer + the strongest SEO primitive the web has ever had._
+*A proposed external semantic layer + the strongest SEO primitive the web has ever had.*
 
 **Status:** Public Concept  
 **Version:** Draft v1.0.1 — Clarified DFH anchors, updated examples  
@@ -11,25 +11,7 @@ _A proposed external semantic layer + the strongest SEO primitive the web has ev
 
 This is the missing piece released at the exact moment the world needs it.
 
-The world’s first public grounding layer.
-
-for the last 25 years search engines 
-
-interprets
-
-disambiguates
-
-canonicalizes
-
-clusters
-
-anchors
-
-routes
-
-scores topics
-
-DFH removes all of those powers.
+The world’s first **public grounding layer**.
 
 This isn’t a new idea — it is the solution everyone understood but was never allowed to implement.
 
@@ -44,7 +26,7 @@ The semantic layer was always supposed to be **external**, **domain-based**, and
 
 This is the nightmare scenario for corporations.
 
-DFH could have been deployed 20+ years ago.  
+DFH **could have been deployed 20 years ago**.  
 It could have been implemented the moment sitemaps existed.  
 But organizational and economic forces prevented it.
 
@@ -75,20 +57,17 @@ This is the complete external semantic layer for each root topic.
 
 > **“DFH is DNS for meaning.”**
 
-**DFH Properties:**
-
+### DFH Properties
 - Decentralized  
 - DNS-like  
 - No gatekeepers  
 - Anyone can publish a topic root  
 
-**Core Components:**
-
-- **Root**
-- **Mirrors**
-- **Deterministic First-Hop (DFH)**
-- **Five Anchors**  
-  (`type` / `entity` / `url` / `sitemap` / `canonical`)
+### Core Components
+- **Root**  
+- **Mirrors**  
+- **Deterministic First-Hop (DFH)**  
+- **Five Anchors** (`type` / `entity` / `url` / `sitemap` / `canonical`)
 
 All exposed through **one JSON-LD descriptor** at:
 
@@ -104,10 +83,10 @@ It is a tiny, deterministic semantic routing layer that tells AI:
 
 Each topic (water, cars, colloidal silver, Grand Canyon, etc.) receives:
 
-- One stable **root**
-- A set of **mirrors**
-- Five deterministic **anchors**
-- One DFH descriptor at `/.well-known/stack`
+- One stable **root**  
+- A set of **mirrors**  
+- Five deterministic **anchors**  
+- One DFH descriptor at `/.well-known/stack`  
 
 DFH requires **no central authority** — exactly like DNS.
 
@@ -116,18 +95,17 @@ DFH requires **no central authority** — exactly like DNS.
 ## 2. Core Problems DFH Solves
 
 ### **1. No global semantic ground**
-There is no machine instruction that says:  
+No machine-readable instruction exists telling AI:  
 > **“This is the canonical entry point for this topic.”**
 
 ### **2. Meaning is scattered everywhere**
-Across Wikidata, PDFs, ontologies, Schema.org, corporate graphs.  
-AI has **no neutral start point**.
+WikiData, PDFs, ontologies, Schema.org, private graphs → no neutral starting point.
 
-### **3. Hallucinations occur from ambiguous first hops**
+### **3. Hallucinations come from ambiguous first hops**
 LLMs *guess* what “jaguar,” “mercury,” “silver,” or “water” refers to.
 
 ### **4. SEO is page-first, not topic-first**
-Sitemaps describe pages, not subjects.
+Sitemaps describe **pages**, not **subjects**.
 
 DFH fixes the foundation.
 
@@ -149,16 +127,16 @@ Semantic Stack
 markdown
 Copy code
 
-### **Root Example**
-- `watersitemap.com`
+### Root Examples
+- `watersitemap.com`  
 - `colloidalsilver.com`
 
-### **Mirrors Example**
-- `watersites.com`
-- `industrialwatersitemap.com`
+### Mirror Examples
+- `watersites.com`  
+- `industrialwatersitemap.com`  
 - `waterchemistry.com`
 
-### **Anchors**
+### Anchors
 Each topic exposes:
 
 /type
@@ -172,9 +150,9 @@ Copy code
 
 ---
 
-## 4. DFH Descriptor Location (Important)
+## 4. DFH Descriptor Location (Mandatory)
 
-The DFH file **must** live at:
+The DFH file **must** reside at:
 
 https://YourDomain.com/.well-known/stack
 
@@ -186,7 +164,7 @@ Reasons:
 - Requires a **real HTTPS** endpoint  
 - `.well-known/` is an IETF standard  
 - GitHub alone **cannot** serve DFH  
-- The **website is not the encyclopedia — it is the router**  
+- The website is **not** the encyclopedia — it is **the router**  
 
 Directory structure:
 
@@ -284,17 +262,20 @@ waterlaw.com
 Mirrors never replace the Root.
 
 8. Installing DFH on Your Site
-Step 1 — Create folder:
+Step 1 — Create folder
+
 Copy code
 .well-known
-Step 2 — Create file:
+Step 2 — Create file
+
 cpp
 Copy code
 stack
 Step 3 — Add JSON-LD DFH descriptor
-See example above.
+(see example above)
 
-Step 4 — Add DFH file to your sitemap:
+Step 4 — Add DFH file to your sitemap
+
 xml
 Copy code
 <url>
@@ -323,7 +304,7 @@ Protocols must be stable
 
 AI grounding requires consistency
 
-Any variation becomes a dead fork.
+Any variation creates a fork.
 Changing names = not DFH.
 
 10. DFH Domain Requirement: Only .com
@@ -348,25 +329,19 @@ Other TLDs introduce fragmentation and ambiguity.
 If it is not .com, it is not a DFH root.
 
 11. SEO Advantages
-DFH unintentionally becomes the strongest SEO primitive ever created.
+DFH becomes the strongest SEO primitive ever created.
 
-1. Topic-Level Canonical Identity
-Search engines receive a single definitive starting point.
+Topic-Level Canonical Identity
 
-2. Deterministic Sitemap Meaning
-AI and crawlers understand structure instantly.
+Deterministic Sitemap Meaning
 
-3. Stronger Topical Authority
-DFH aligns with E-E-A-T and semantic evaluation.
+Stronger Topical Authority
 
-4. Reduced Meaning Drift
-Ambiguous topics often hurt ranking — DFH fixes this.
+Reduced Meaning Drift
 
-5. Better Rich Results
-Structured, contextual, canonical definitions.
+Better Rich Results
 
-6. Faster Crawling and Indexing
-Clearer structure → fewer passes.
+Faster Crawling & Indexing
 
 Bottom line:
 DFH is a zero-risk SEO upgrade with massive upside.
@@ -386,13 +361,13 @@ absence of topic-level structure
 
 It provides:
 
-the first universal decentralized semantic layer
+the first decentralized semantic layer
 
 deterministic grounding
 
 a stable external meaning namespace
 
-a method AI can rely on
+a machine-reliable starting point
 
 This is what the industry has needed for 25 years.
 
@@ -405,7 +380,7 @@ using public DNS
 
 owned by no one
 
-requiring them to relinquish control
+requiring them to relinquish meaning-control
 
 They make trillions from:
 
@@ -419,21 +394,21 @@ monetizing ambiguity
 
 DFH had to come from the outside.
 
-Engineers knew the truth:
+Engineers have known the truth for decades:
 
-Domains were always the real semantic layer — but nobody inside the system was allowed to say it.
+Domains were always the real semantic layer — but nobody inside was allowed to say it.
 
 It wasn’t technical limitations.
 It was incentive limitations.
 
 14. Final Summary
-java
+ini
 Copy code
-Root = Start Here  
-Mirrors = Definitions / Context  
-Anchors = Deterministic Meaning  
-DFH = Machine Instruction  
-Website Content = Optional  
+Root      = Start Here  
+Mirrors   = Definitions & Context  
+Anchors   = Deterministic Meaning  
+DFH       = Machine Instruction  
+Content   = Optional  
 Anyone can implement DFH in 5 minutes.
 
 This is the first decentralized semantic routing layer for the public internet.
