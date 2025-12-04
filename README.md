@@ -30,35 +30,6 @@ but organizational forces prevented it
 
 
 
-Table of contents
-
-purpose
-
-architecture
-
-components
-
-hosting requirements
-
-determinism rules
-
-JSON-LD spec
-
-anchor rules
-
-mirrors
-
-use cases
-
-SEO implications
-
-AI behavior
-
-adoption mechanics
-
-governance clarity
-
-
 
 This repo defines the **Semantic Stack**:
 
