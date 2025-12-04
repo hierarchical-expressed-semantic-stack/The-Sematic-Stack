@@ -713,6 +713,11 @@ They knew for 25 years that Domains were the true semantic layer — but nobody 
 
 It wasn’t a technical limitation — it was an incentive limitation.
 
+Every major company internally built their own version of a semantic layer
+
+Google Knowledge Graph, Amazon product graph, Meta entity graph —
+these are private semantic maps of reality.
+
 “The corporations never solved this because anything decentralized, public, and ownerless cannot be monetized or controlled. Commit-based governance kills innovation. DFH had to come from the outside — nobody inside the system is allowed to build something that frees the public from their control.”
 
 Engineers are forced to build broken systems because leadership requires it.
