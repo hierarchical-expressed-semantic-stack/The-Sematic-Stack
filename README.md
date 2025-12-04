@@ -16,7 +16,7 @@ This isn’t a new idea — this is the missing piece everyone was too restricte
 
 The semantic layer was always supposed to be external and domain-based.
 
-The ontology format was NEVER the barrier the issues were
+“The ontology format was NEVER the barrier. The issues were incentives and control.”
 
 No company can charge for proprietary embeddings
 
