@@ -630,7 +630,25 @@ requires no new standards
 
 can be implemented TODAY
 
-That is exactly what the industry has been starving for.
+That is exactly what the industry has been starving for. As these are the questions that needed answers.
+
+why LLMs hallucinate
+
+why GraphQL/SPARQL/OWL failed
+
+why ontologies never get mass adoption
+
+why search engines lost semantic stability
+
+why the web lacks a meaning anchor
+
+why companies need SEO incentives
+
+why decentralization is required
+
+how AI would read a stable root domain
+
+how to make it simple enough to adopt
 
 
 End of README
