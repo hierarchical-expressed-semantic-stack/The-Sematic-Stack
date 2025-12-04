@@ -11,6 +11,8 @@ _A proposed external semantic layer + the strongest SEO primitive the web has ev
 
 This repo defines the **Semantic Stack**:
 
+This is the missing piece at the exact moment the world needs it.
+
 Root
 
 Mirrors
