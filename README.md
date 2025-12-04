@@ -13,6 +13,24 @@ This is the missing piece released at the exact moment the world needs it.
 
 The world’s first public grounding layer.
 
+for the last 25 years search engines 
+
+interprets
+
+disambiguates
+
+canonicalizes
+
+clusters
+
+anchors
+
+routes
+
+scores topics
+
+DFH removes all of those powers.
+
 This isn’t a new idea — it is the solution everyone understood but was never allowed to implement.
 
 The semantic layer was always supposed to be **external**, **domain-based**, and **decentralized**.
