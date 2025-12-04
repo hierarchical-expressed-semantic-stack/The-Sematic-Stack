@@ -10,11 +10,41 @@ _A proposed external semantic layer + the strongest SEO primitive the web has ev
 
 ## 0. What This Repo Is
 
-This repo defines the **Semantic Stack**:
-
 This is the missing piece at the exact moment the world needs it.
 
 This isn’t a new idea — this is the missing piece everyone was too restricted to implement.”
+
+Table of contents
+
+purpose
+
+architecture
+
+components
+
+hosting requirements
+
+determinism rules
+
+JSON-LD spec
+
+anchor rules
+
+mirrors
+
+use cases
+
+SEO implications
+
+AI behavior
+
+adoption mechanics
+
+governance clarity
+
+
+
+This repo defines the **Semantic Stack**:
 
 "DFH is DNS for meaning.”
 
