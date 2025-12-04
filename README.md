@@ -709,6 +709,16 @@ It wasn’t a technical limitation — it was an incentive limitation.
 
 Engineers are forced to build broken systems because leadership requires it.
 
+decentralization is unwelcome
+
+protocols that reduce dependency are blocked
+
+anything that weakens the corporate graph is killed
+
+open standards are treated as threats, not opportunities
+
+internal politics make simple solutions impossible
+
 DFH inside a major tech org:
 
 committees review it
