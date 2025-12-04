@@ -12,15 +12,23 @@ _A proposed external semantic layer + the strongest SEO primitive the web has ev
 
 This is the missing piece at the exact moment the world needs it.
 
-This isn’t a new idea — this is the missing piece everyone was too restricted to implement.”
+This isn’t a new idea — this is the missing piece everyone was too restricted to implement because.
 
-The semantic layer was designed in the late 90's.
+No company can charge for proprietary embeddings
+
+No company can claim “our graph is better”
+
+No lock-in
+
+This is the nightmare scenario for corporations.
 
 DFH could have been created 20 years ago its been another restricted topic.
 
 it could have been created at any point after the sitemapmap existed.
 
 but organizational forces prevented it
+
+
 
 Table of contents
 
