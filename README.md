@@ -14,6 +14,8 @@ This is the missing piece at the exact moment the world needs it.
 
 This isn’t a new idea — this is the missing piece everyone was too restricted to implement because.
 
+The semantic layer was always supposed to be external and domain-based.
+
 No company can charge for proprietary embeddings
 
 No company can claim “our graph is better”
