@@ -28,7 +28,7 @@ This is the nightmare scenario for corporations.
 
 DFH could have been created 20 years ago its been another restricted topic.
 
-it could have been created at any point after the sitemapmap existed.
+it could have been created at any point after the sitemap existed.
 
 but organizational forces prevented it
 
