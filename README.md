@@ -1,7 +1,7 @@
 # The Semantic Stack & Deterministic First-Hop (DFH)
 
 **Here is the real semantic layer + a deterministic grounding mechanism for AI and search.**  
-*This is the modern implementation of Berners-Lee’s original Semantic Web map.*
+*This is the modern implementation of Tim Berners-Lee’s original Semantic Web map.*
 
 ```
 The Transport Layer (TCP/IP)  → moves packets  
