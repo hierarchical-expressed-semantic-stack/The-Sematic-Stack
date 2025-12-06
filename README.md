@@ -1,6 +1,8 @@
 # The Semantic Web Stack & Deterministic First-Hop (DFH)
 **“This is the modern implementation of Berners-Lee’s original Semantic Web map.”**  
 **DFH matches the LLM’s internal canonicalization process.**
+This work is non-commercial research into AI semantic grounding and deterministic canonicalization.
+Domain names are used as neutral anchors for prototype routing maps.”
 
 A simple, decentralized semantic layer for the public web + the strongest SEO primitive ever created.
 
