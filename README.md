@@ -1,4 +1,7 @@
 # The Semantic Web Stack & Deterministic First-Hop (DFH)
+
+“This project is not affiliated with Google, Amazon, OpenAI, or any third-party organization.”
+
 **“This is the modern implementation of Berners-Lee’s original Semantic Web map.”**  
 **DFH matches the LLM’s internal canonicalization process.**
 This work is non-commercial research into AI semantic grounding and deterministic canonicalization.
