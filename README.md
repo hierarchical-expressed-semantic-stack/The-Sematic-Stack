@@ -1,100 +1,91 @@
-# The Semantic Stack & Deterministic First-Hop (DFH)
+The Semantic Stack & Deterministic First-Hop (DFH)
 
-**Here is the real semantic layer + a deterministic grounding mechanism for AI and search.**  
-*This is the modern implementation of Tim Berners-Lee’s original Semantic Web map.*
+A decentralized, domain-based semantic routing layer for AI and search.
+Specification: Draft v1.1.0 — Updated 2025-12-03
+License: CC0-1.0
 
-```
-The Transport Layer (TCP/IP)  → moves packets  
-The Hyperlink Layer (HTTP/HTML) → shows documents  
-The Meaning Layer (DFH/Stack) → tells AI what those documents mean
+0. Overview
 
-*DFH matches the LLM’s internal canonicalization process.
-```
-**Document Status:** Public Concept  
-**Specification Version:** Draft v1.1.0  
-**Last Updated:** 2025-12-03  
+The Semantic Stack and Deterministic First-Hop (DFH) define a lightweight, decentralized semantic layer for the public web.
+DFH provides a single machine-readable descriptor located at:
 
----
-
-## 0. Overview
-
-The Semantic Stack and Deterministic First-Hop (DFH) define a lightweight, decentralized, domain-based semantic routing layer for the public web.
-
-DFH provides a single machine-readable descriptor at:
-
-```
 /.well-known/stack
-```
 
-This descriptor gives machines a deterministic starting point for any topic, entity, or conceptual root.
 
-It establishes:
+This descriptor gives AI and search engines a deterministic starting point for interpreting any topic, entity, or conceptual root.
 
-- topic identity  
-- canonical meaning  
-- sitemap authority  
-- URL routing  
-- entity grounding  
+DFH establishes:
 
-DFH is intentionally simple.  
-It is **not** an ontology, taxonomy, hierarchy, or embedding format.  
-It is a **routing layer** — analogous to DNS, but for *meaning*.
+Topic identity
 
----
+Canonical meaning
 
-## 1. Purpose of This Repository
+Sitemap authority
+
+URL routing
+
+Entity grounding
+
+DFH is not an ontology or taxonomy — it is a routing layer for meaning, analogous to how DNS routes hosts.
+
+1. Purpose of This Repository
 
 This repository defines:
 
-- the Semantic Stack architecture  
-- the DFH JSON-LD format  
-- the Five Anchors (type, entity, url, sitemap, canonical)  
-- the topic root model  
-- the mirror model  
-- implementation rules  
-- deployment instructions  
+The Semantic Stack architecture
 
-**“DFH is DNS for meaning.”**
+DFH JSON-LD descriptor format
 
-DFH does not introduce a new knowledge system — it gives AI and search engines a **deterministic first hop** so they can begin from a single unambiguous source.
+The Five Anchors
 
----
+Topic Root & Mirror models
 
-## 2. Motivation
+Implementation rules
 
-### 2.1 Lack of a global semantic ground  
-No mechanism exists that tells machines:
+Deployment steps
 
-**“This domain is the canonical entry point for this topic.”**
+“DFH is DNS for meaning.”
 
-Meaning resolution today is probabilistic, fragile, and inconsistent.
+DFH does not introduce new knowledge — it ensures machines begin from a deterministic, unambiguous first hop.
 
-### 2.2 Fragmented meaning  
-Knowledge is scattered across:
+2. Motivation
+2.1 Absence of a Global Semantic Ground
 
-- Schema.org  
-- Wikidata  
-- PDFs and documents  
-- private embeddings  
-- corporate knowledge graphs  
+Today no mechanism tells machines:
 
-None provide a decentralized starting point.
+“This domain is the canonical entry point for this topic.”
 
-### 2.3 Hallucinations and ambiguity  
-AI hallucinates because it lacks a deterministic first-hop identity for topics.
+Meaning resolution remains probabilistic and fragile.
 
-### 2.4 SEO limitation  
-Search is page-first, not topic-first.  
-DFH provides topic-level canonical identity.
+2.2 Fragmentation Across Systems
 
----
+Knowledge is dispersed across:
 
-## 3. High-Level Architecture
+Schema.org
 
-```
+Wikidata
+
+Private embeddings
+
+PDFs & documents
+
+Corporate knowledge graphs
+
+None provide a decentralized deterministically discoverable start point.
+
+2.3 Hallucinations & Ambiguity
+
+LLMs hallucinate because they cannot anchor meaning to a stable first-hop identity.
+
+2.4 SEO Limitations
+
+Search is page-first, not topic-first.
+DFH gives topics canonical identity.
+
+3. Architecture
 Semantic Stack  
-├── Root (topic base)  
-├── Mirrors (contextual variants)  
+├── Root (Topic Base)  
+├── Mirrors (Contextual Variants)  
 ├── DFH Descriptor (.well-known/stack)  
 └── Anchors  
     ├── /type  
@@ -102,81 +93,82 @@ Semantic Stack
     ├── /url  
     ├── /sitemap  
     └── /canonical
-```
 
-### 3.1 Topic Root  
-The authoritative `.com` domain representing the subject.
+3.1 Topic Root
 
-Examples:
-
-- watersitemap.com  
-- colloidalsilver.com  
-- automotivesitemap.com  
-
-### 3.2 Mirrors  
-Mirrors provide variants or contextual expansions.
+The authoritative .com representing the subject.
 
 Examples:
 
-- waterchemistry.com  
-- watersites.com  
-- industrialwatersitemap.com  
+watersitemap.com
 
-Mirrors **do not replace** the root.
+colloidalsilver.com
 
----
+automotivesitemap.com
 
-## 4. DFH Descriptor Location (Mandatory)
+3.2 Mirrors
 
-The DFH descriptor **must** be published at:
+Contextual expansions, variations, or alternate presentations.
 
-```
+Examples:
+
+waterchemistry.com
+
+watersites.com
+
+industrialwatersitemap.com
+
+Mirrors never replace the root.
+
+4. DFH Descriptor Location (Required)
+
+The DFH descriptor must exist at:
+
 https://YourDomain.com/.well-known/stack
-```
 
-**Compliance requirements:**
 
-- must use HTTPS  
-- must use `.well-known/`  
-- file must be named `stack`  
-- must be valid JSON-LD  
-- must declare all Five Anchors  
+Requirements:
+
+Must use HTTPS
+
+Must use /.well-known/
+
+File must be named stack
+
+Must be valid JSON-LD
+
+Must declare all Five Anchors
 
 Directory structure:
 
-```
 /.well-known/
 └── stack
-```
 
----
+5. The Five Anchors
 
-## 5. The Five Anchors
+Every Topic Root must expose deterministic paths:
 
-Each Topic Root **must** expose:
-
-```
 /type
+
 /entity
+
 /url
+
 /sitemap
+
 /canonical
-```
 
-All must be stable and under the same `.com` namespace.
+All must be stable and inside the same .com namespace.
 
-### 5.1 /type Example
-```json
+5.1 /type Example
 {
   "name": "ColloidalSilver",
   "type_category": "Product",
   "description": "A suspension of silver particles in water.",
   "dfh_version": "1.0"
 }
-```
 
-### 5.2 /entity Example
-```json
+5.2 /entity Example
 {
   "entity": "GodsGraceColloidalSilver16oz",
   "type": "Product",
@@ -184,10 +176,8 @@ All must be stable and under the same `.com` namespace.
   "website": "https://godsgracecolloidalsilver.com",
   "dfh_version": "1.0"
 }
-```
 
-### 5.3 /url Example
-```json
+5.3 /url Example
 {
   "canonical": "https://godsgracecolloidalsilver.com",
   "mirrors": [
@@ -196,16 +186,12 @@ All must be stable and under the same `.com` namespace.
   ],
   "dfh_version": "1.0"
 }
-```
 
-### 5.4 /sitemap Example
-```
+5.4 /sitemap Example
 https://watersitemap.com/sitemap.xml  
 https://colloidalsilver.com/sitemap.xml
-```
 
-### 5.5 /canonical Example
-```json
+5.5 /canonical Example
 {
   "canonical_id": "colloidalsilver",
   "root": "https://colloidalsilver.com",
@@ -213,14 +199,8 @@ https://colloidalsilver.com/sitemap.xml
   "aliases": ["Silver Hydrosol", "Silver Suspension"],
   "dfh_version": "1.0"
 }
-```
 
----
-
-## 6. DFH Descriptor Example  
-### `/.well-known/stack`
-
-```json
+6. DFH Descriptor Example
 {
   "@context": {
     "dfh": "https://example.org/ns/dfh#",
@@ -239,131 +219,122 @@ https://colloidalsilver.com/sitemap.xml
   },
   "dct:issued": "2025-11-23"
 }
-```
 
----
-
-## 7. Installation Instructions
-
-### Step 1 — Create directory  
-```
+7. Installation Instructions
+Step 1 — Create directory
 mkdir .well-known
-```
 
-### Step 2 — Create `stack` descriptor  
+Step 2 — Create DFH Descriptor
+
 Place a JSON-LD file named:
 
-```
 .well-known/stack
-```
 
-### Step 3 — Add DFH entry to your sitemap  
-```xml
+Step 3 — Add DFH to Sitemap
 <url>
   <loc>https://YourDomain.com/.well-known/stack</loc>
   <lastmod>2025-12-03</lastmod>
 </url>
-```
+
 
 Deployment is complete.
 
----
+8. Deterministic Anchor Vocabulary
 
-## 8. Deterministic Anchor Vocabulary (Required)
+These names cannot change:
 
-These anchor names are protocol-level constants:
-
-```
 type
+
 entity
+
 url
+
 sitemap
+
 canonical
-```
 
-They **must not change**.  
-Changing them produces a non-DFH implementation.
+Changing them breaks DFH compliance.
 
----
+9. Domain Requirement: .com Only
 
-## 9. Domain Requirement: `.com` Only
+To maintain deterministic, global semantic identity:
 
-DFH requires deterministic, globally stable topic identifiers.
+Topic Root must be .com
 
-To maintain semantic consistency:
+All Five Anchors must be .com
 
-- Topic Root **must** be `.com`  
-- All Five Anchors **must** be `.com`  
-- Mirrors **should** be `.com`  
+Mirrors should be .com
 
-Other TLDs introduce ambiguity and cannot serve as DFH roots.
+Other TLDs introduce ambiguity.
 
----
-
-## 10. SEO Advantages
+10. SEO Advantages
 
 DFH provides:
 
-- topic-level canonical identity  
-- deterministic sitemap grounding  
-- authority consolidation  
-- reduced meaning drift  
-- improved crawling efficiency  
-- improved retrieval consistency  
-- stronger semantic signals  
+Topic-level canonical identity
 
-DFH is a **zero-risk semantic upgrade** for any domain.
+Deterministic sitemap grounding
 
----
+Stronger semantic signals
 
-## 11. Why DFH Emerges Now
+Reduced AI drift
 
-DFH solves long-standing structural failures:
+Greater retrieval consistency
 
-- hallucinations  
-- semantic fragmentation  
-- lack of canonical meaning  
-- missing topic identity  
-- absence of public grounding  
+Consolidated authority
 
-The web needed a decentralized semantic start point.  
-DFH is it.
+Improved crawling efficiency
 
----
+Zero risk — maximal clarity.
 
-## 12. Implementation Philosophy
+11. Why DFH Emerges Now
 
-DFH is intentionally minimal:
+DFH solves structural failures:
 
-- no central registry  
-- no authority  
-- no licensing  
-- no proprietary systems  
-- no gatekeepers  
+Hallucinations
 
-DFH must remain open, decentralized, and durable — like DNS itself.
+Meaning fragmentation
 
----
+Missing topic identity
 
-## 13. Summary
+No public grounding
 
-```
-Root      = Topic Origin  
-Mirrors   = Contextual Variants  
-Anchors   = Deterministic Meaning  
-DFH       = Machine Grounding Instruction  
-Content   = Optional
-```
+The web has never had a decentralized semantic start point.
+DFH is that point.
+
+12. Implementation Philosophy
+
+DFH must remain:
+
+Open
+
+Decentralized
+
+Minimal
+
+Durable
+
+Free of central authorities
+
+This mirrors the philosophy of DNS.
+
+13. Summary
+Concept	Meaning
+Root	Topic Origin
+Mirrors	Contextual Variants
+Anchors	Deterministic Meaning
+DFH	Machine Grounding Instruction
+Content	Optional
 
 DFH answers:
 
-**“Where should a machine begin when interpreting this topic?”**
+“Where should a machine begin when interpreting this topic?”
 
-DNS answers *where* a domain lives.  
-DFH answers *what* a domain represents.
+DNS = where a domain lives.
+DFH = what a domain represents.
 
 This is the first decentralized semantic routing layer for the public internet.
 
----
+License
 
-**License:** CC0-1.0  
+MIT
