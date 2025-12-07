@@ -345,4 +345,134 @@ SFH / DFH grows one domain at a time.
 11. License
 This project is released under the MIT License — open, decentralized, public.
 
+“How Linking Back Works” + “Required Contents of Sitemap + Mirrors”
+## 12. How SFH / DFH Links Back to the Main Site (Critical)
+
+Every SFH / DFH Root Domain **must point back to the authoritative website** using two mechanisms:
+
+1. **The `sfh:url` and `dfh:url` anchors**  
+   These list the official URLs for the topic or entity.
+
+2. **The `/canonical` and `/sitemap` anchors**  
+   These create the deterministic loop that lets AI resolve identity → structure.
+
+Example:
+
+{
+  "sfh:url": "https://godsgracecolloidalsilver.com/",
+  "sfh:canonical": "https://godsgracecolloidalsilver.com/",
+  "sfh:sitemap": "https://colloidalsilversitemap.com/sitemap.xml"
+}
+
+### What this achieves
+- AI resolves the **topic domain → canonical → main site**  
+- Search engines treat the Root Domain as **semantic identity**,  
+  and the main site as **content authority**
+- No ambiguity exists because the chain is deterministic.
+
+
+---
+
+## 13. What MUST Be Inside `/sitemap` for SFH / DFH to Function Correctly
+
+### ✔ The Topic Sitemap is NOT a normal website sitemap.
+It is the **topic-level structure**, not the page-level structure.
+
+### A valid SFH/DFH Topic Sitemap MUST contain:
+
+1. **Top-level conceptual pages**  
+   Example for *Colloidal Silver*:
+   - `/overview`
+   - `/safety`
+   - `/manufacturing`
+   - `/history`
+   - `/regulations`
+
+2. **Entity references**  
+   These point to `/entity` anchors or external product pages.
+
+3. **Mirror links**  
+   Each mirror domain must appear under a `<mirror>` tag.
+
+4. **Canonical confirmation**  
+   A `<canonicalRoot>` tag that points back to the main website.
+
+### Example Topic Sitemap (minimal working version)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<dfhTopicSitemap>
+  <rootTopic>colloidal-silver</rootTopic>
+
+  <canonicalRoot>https://godsgracecolloidalsilver.com/</canonicalRoot>
+
+  <anchors>
+    <type>https://colloidalsilvertype.com/</type>
+    <entity>https://colloidalsilverentity.com/</entity>
+    <url>https://godsgracecolloidalsilver.com/</url>
+    <canonical>https://godsgracecolloidalsilver.com/</canonical>
+  </anchors>
+
+  <sections>
+    <section url="https://colloidalsilversitemap.com/overview"/>
+    <section url="https://colloidalsilversitemap.com/history"/>
+    <section url="https://colloidalsilversitemap.com/regulations"/>
+  </sections>
+
+  <mirrors>
+    <mirror>https://mirror-1.com/</mirror>
+    <mirror>https://mirror-2.com/</mirror>
+  </mirrors>
+</dfhTopicSitemap>
+
+
+This is enough for any LLM, crawler, or semantic agent to fully ground the topic.
+
+14. What MUST Be Inside Each Mirror Domain
+
+Mirrors do not redefine the topic.
+They reinforce it using the same structure as the Root Domain.
+
+Every Mirror MUST contain:
+
+The same .well-known/stack file
+
+identical rootTopic
+
+identical anchor URLs
+
+same canonical
+
+Additional structured data
+(allowed to be richer than the Root)
+
+Zero contradictions
+The Root Domain always wins in conflicts.
+
+Mirror Example Structure
+mirror-1.com/
+  ├── .well-known/
+  │     └── stack
+  ├── research/
+  ├── context/
+  ├── graphs/
+  └── interpretations/
+
+
+Mirrors should expand, not alter, the canonical meaning.
+
+15. The Deterministic Loop (The Part All AI Systems Use)
+
+This is the true mechanism that makes SFH/DFH “DNS for meaning.”
+
+AI performs this loop:
+1. Resolve Root Domain → /.well-known/stack
+2. Read Anchors
+3. Fetch `/canonical` → main authoritative site
+4. Fetch `/sitemap` → topic-level structure
+5. Fetch Mirrors → additional context
+6. Build deterministic semantic graph
+
+
+This loop eliminates hallucination by forcing a stable first-hop.
 See LICENSE for full terms.
