@@ -493,4 +493,235 @@ Spreads like DNS: one domain at a time
 12. License
 This project is released under the MIT License — open, decentralized, public.
 
+
+What SFH / DFH Actually Is (Human Explanation)
+
+The internet has no official starting point for what something means.
+
+Example: Type “apple” anywhere online — you could get:
+
+the fruit
+
+the company
+
+a random blog
+
+a recipe
+
+a music label
+
+Computers and AI have to guess.
+That’s why AI hallucinates, search results bounce around, and meanings get mixed up.
+
+SFH / DFH fixes this by giving every topic ONE official starting point.
+
+It’s basically:
+
+“The homepage of meaning for whatever topic you’re talking about.”
+
+Not a homepage for a website —
+a homepage for a concept.
+
+Water has a single starting file.
+Money has a single starting file.
+Cars, silver, banks, companies, medicine — anything.
+
+Just one tiny JSON file in a .well-known folder, and AI finally knows:
+
+“Oh, THIS is the correct meaning of this topic. Start here.”
+
+That’s all SFH / DFH is.
+
+Why This Matters
+
+Right now:
+
+AI guesses what you mean
+
+Google guesses what you mean
+
+Websites fight for the top spot
+
+Meanings get mixed up
+
+Hallucinations happen
+
+SEO is chaos
+
+SFH / DFH stops the guessing.
+
+When AI sees a topic name, it checks your SFH / DFH file first.
+That file tells it:
+
+what kind of thing the topic is
+
+what the topic is actually called
+
+what URLs are official
+
+where the sitemap is
+
+where to find more context
+
+what counts as real vs. noise
+
+So instead of guessing… it KNOWS.
+
+The Whole Protocol in One Sentence
+
+SFH / DFH gives every topic one clean, official definition so AI and search engines stop guessing and start understanding.
+
+How It Works (Simple Version)
+
+On your domain, you create:
+
+a folder:
+/.well-known/
+
+a file in it named:
+stack
+
+inside that file, you tell AI:
+
+the name of your topic
+
+the official URLs
+
+the topic’s identity
+
+what type of thing it is
+
+where the sitemap is
+
+any mirrors (optional)
+
+That's literally it.
+
+The rest of the protocol — the 5 anchors, mirrors, sitemap — are just supporting files that give more detail if the AI wants it.
+
+The 5 Anchors (Human Explanation)
+1. /type — What kind of thing is this?
+
+Example:
+“Colloidal silver is a product.”
+
+2. /entity — A specific version of the thing
+
+Example:
+“This exact 16 oz bottle from this company.”
+
+3. /url — Where the official website(s) are
+
+Tells AI:
+“This is the real site. These are optional mirrors.”
+
+4. /sitemap — A list of everything important about the topic
+
+Not just your website —
+the structure of the topic itself.
+
+5. /canonical — The official name and identity
+
+Tells AI the one true label:
+“THIS is the name. These are nicknames. Don’t mix it up.”
+
+What Mirrors Are (Simple Version)
+
+Mirrors = extra sites that help explain the topic, but they are NOT allowed to change the meaning.
+
+They can only add, never override.
+
+End-to-End: What AI Actually Does (Super Simple)
+
+When AI sees a topic, like “colloidal silver,” it does this:
+
+Goes to the Root Domain
+
+Opens /.well-known/stack
+
+Reads the official meaning
+
+Follows the 5 anchors
+
+Loads the sitemap
+
+Checks mirrors
+
+Builds a clean, grounded understanding
+
+Stops hallucinating
+
+Result:
+
+No guessing. No ambiguity. No mixed meanings. No hallucinations.
+
+Why This Is Huge for SEO
+
+Right now websites fight each other for “who defines the topic.”
+
+SFH / DFH flips it:
+
+You define the topic FIRST, then your site builds on top of it.
+
+Search engines and AIs see your topic as clean, authoritative, and stable.
+
+This is why it’s the strongest SEO primitive ever created —
+it works above traditional SEO.
+
+Why It’s So Easy
+
+No servers, no APIs, no dependencies.
+
+Just:
+
+mkdir .well-known
+add stack file
+upload to domain
+done
+
+
+Works on:
+
+Netlify
+
+Cloudflare
+
+Vercel
+
+GitHub Pages
+
+Any static host
+
+30 seconds.
+
+What SFH / DFH Is NOT
+
+It’s not:
+
+a truth police
+
+a central authority
+
+controlled by Google
+
+controlled by AI
+
+controlled by you
+
+an ontology system
+
+a knowledge graph
+
+It’s just:
+
+a starting point
+that anyone can create
+for any topic
+anywhere on the internet.
+
+Simplest Summary Possible
+
+Here is the whole thing in one paragraph:
+
+SFH / DFH gives every topic one clean, official starting point so AI and search engines know exactly what it is. You place a tiny JSON file on your domain, add five supporting anchors (type, entity, url, sitemap, canonical), and that becomes the deterministic first-hop for meaning. No guessing, no hallucinations, no fighting for definition — it just works.
 See LICENSE for full terms.
