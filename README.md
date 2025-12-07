@@ -10,7 +10,7 @@ A simple, decentralized semantic layer for the public web —
 **and the strongest SEO primitive ever created.**
 
 **Status:** Public Concept  
-**Version:** Draft v1.0  
+**Version:** Draft v3.0  
 **SFH / DFH Ready Spec:** 1.0  
 **Date:** 2025-11-23  
 **License:** MIT  
