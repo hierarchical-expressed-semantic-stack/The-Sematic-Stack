@@ -1,5 +1,8 @@
 The Semantic Web Stack & Semantic First-Hop / Deterministic First-Hop (SFH / DFH)
 
+The DFH/SFH–KG Arbitration Model v1.0
+A Unified Framework for AI Truth Governance
+
 Safety and systemic coherence always override deterministic claims.
 
 DFH = deterministic input
