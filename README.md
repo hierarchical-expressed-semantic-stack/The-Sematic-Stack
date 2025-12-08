@@ -1,5 +1,7 @@
 The Semantic Web Stack & Semantic First-Hop / Deterministic First-Hop (SFH / DFH)
 
+Safety and systemic coherence always override deterministic claims.
+
 DFH = deterministic input
 KG = deterministic adjudication over DFH
 Output = deterministic result of probabilistic truth filtering
