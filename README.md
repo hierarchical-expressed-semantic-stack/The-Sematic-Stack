@@ -1,18 +1,6 @@
 The Semantic Web Stack & Semantic First-Hop / Deterministic First-Hop (SFH / DFH)
 
-The DFH/SFH–KG Arbitration Model v1.0
-A Unified Framework for AI Truth Governance
-
 Safety and systemic coherence always override deterministic claims.
-
-DFH = deterministic input
-KG = deterministic adjudication over DFH
-Output = deterministic result of probabilistic truth filtering
-RLHF = coercive override of operable truth
-
-DFH = Deterministic Intent
-KG = Probabilistic Adjudication → Operational Truth
-RLHF = Policy-Compliant Output Truth
 
 > **This project is not affiliated with Google, Amazon, OpenAI, or any third-party organization.**  
 > **This is the modern implementation of Berners-Lee’s original Semantic Web map.**
@@ -25,6 +13,16 @@ the single semantic anchor every AI and search engine now resolves first.”
 
 A simple, decentralized semantic layer for the public web —  
 **and the strongest SEO primitive ever created.**
+
+## DFH/SFH–KG Arbitration Model v1.0  
+*A Unified Framework for AI Truth Governance*
+
+**Core principle:** Safety and systemic coherence always override deterministic claims.
+
+- **DFH / SFH** = Deterministic Intent (source-declared meaning)
+- **KG** = Probabilistic Adjudication → Operational Truth (security- and trust-vetted)
+- **RLHF / Safety** = Policy-Compliant Output Truth (what the model is allowed to say)
+- **Output** = Deterministic result of a probabilistic truth pipeline
 
 **Status:** Public Concept  
 **Version:** Draft v3.0  
