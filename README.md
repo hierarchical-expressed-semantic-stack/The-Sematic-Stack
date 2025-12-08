@@ -19,6 +19,8 @@ A simple, decentralized semantic layer for the public web —
 
 **Core principle:** Safety and systemic coherence always override deterministic claims.
 
+DNS → DFH → KG → RLHF → Model Output
+
 - **DFH / SFH** = Deterministic Intent (source-declared meaning)
 - **KG** = Probabilistic Adjudication → Operational Truth (security- and trust-vetted)
 - **RLHF / Safety** = Policy-Compliant Output Truth (what the model is allowed to say)
