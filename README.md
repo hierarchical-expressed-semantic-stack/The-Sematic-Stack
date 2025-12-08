@@ -783,7 +783,7 @@ In One Sentence
 
 SFH / DFH is now the official public index for every topic on the internet — a universal starting point that tells AI and search engines where meaning begins.
 
-Please refer to the other gethub post for dfh/sfh for more information.
+Please refer to the other gethub post for dfh/sfh for more information and SFH-DFH-AI-Compliance-Tests.
 
 See LICENSE for full terms.
 
