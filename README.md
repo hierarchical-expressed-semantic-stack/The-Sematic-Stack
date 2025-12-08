@@ -777,6 +777,8 @@ Whoever publishes the .well-known/stack file becomes the root authority for that
 
 This is the first time meaning itself has been standardized.
 
+“SFH / DFH establishes the public index of the internet — the canonical first-hop where meaning begins for every topic, for every AI.”
+
 In One Sentence
 
 SFH / DFH is now the official public index for every topic on the internet — a universal starting point that tells AI and search engines where meaning begins.
