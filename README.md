@@ -467,6 +467,19 @@ SFH / DFH is not:
 
 ❌ an ontology replacement
 
+DFH/SFH tells AI what things mean in a clean, fixed format.
+
+Bot reads it and makes AI follow it.
+
+It’s like:
+
+DNS → IP
+DFH/SFH → Meaning
+
+And the Bot is like:
+
+The resolver.
+
 SFH / DFH is:
 
 ✔ deterministic
