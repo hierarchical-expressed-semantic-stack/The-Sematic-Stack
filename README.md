@@ -1,156 +1,176 @@
 # 🌐 The Semantic Web Stack  
 ## Semantic First-Hop / Deterministic First-Hop Protocol  
-### (SFH / DFH Protocol Specification — Human Readable Version)
+### (SFH / DFH Protocol Specification — Human Readable Version · Draft v3.0)
 
 **One file.  
-Five primitives.  
+Ten anchors.  
 Zero dependencies.  
 Pure JSON-LD.  
-Deterministic meaning.**
+Deterministic meaning + deterministic provenance.**
 
-This is the cleanest possible solution to one of the hardest problems in AI:  
-**semantic grounding and hallucination at the root.**
+The Semantic First-Hop / Deterministic First-Hop Protocol (SFH / DFH) defines the
+simplest possible semantic grounding architecture: a single, decentralized,
+deterministic source of meaning and provenance at:
+
+https://<domain>/.well-known/stack
+
+yaml
+Copy code
+
+This protocol addresses one of the hardest problems in AI and the web:
+
+**semantic grounding and hallucination at the root of meaning.**
 
 ---
 
-## Core Safety Principle
-**Safety and systemic coherence ALWAYS override deterministic claims.**
+## 0. Core Safety Principle
+
+**Safety and systemic coherence ALWAYS override deterministic claims.**  
+Deterministic files express *intent*.  
+Safety layers determine *output*.
 
 ---
 
-## Deterministic Grounding Pipeline
+## 1. Deterministic Grounding Pipeline
 
 DNS → /.well-known/stack → AI Grounding → Knowledge Graph → Model Output
 
 yaml
 Copy code
 
-DFH removes ambiguity at the root.  
-RAG attempts to clean up ambiguity after it has already happened.
+- **DFH removes ambiguity at the root.**  
+- **RAG attempts to clean up ambiguity after it already happened.**
 
 ---
 
-## 🔥 Why DFH Is the Real Endgame Fix (vs. RAG)
+## 2. Why DFH Is the Endgame Fix (vs. RAG)
 
 | Feature | Deterministic First-Hop (DFH) | Retrieval-Augmented Generation (RAG) |
 |--------|-------------------------------|--------------------------------------|
-| **Goal** | Prevent hallucination at the source | Patch hallucination after the fact |
-| **Method** | Canonical declaration at `/.well-known/stack` | Probabilistic guessing + embeddings |
-| **Foundation** | Certainty → one stable file | Probability → many documents |
-| **Outcome** | Zero ambiguity → no hallucinations | High ambiguity → high hallucination rate |
+| Goal | Prevent hallucination at the source | Patch hallucination after the fact |
+| Method | Canonical declaration at `/.well-known/stack` | Probabilistic guessing + embeddings |
+| Foundation | **Certainty** → one stable file | **Probability** → many documents |
+| Outcome | Zero ambiguity → minimal hallucination | High ambiguity → high hallucination rate |
 
-This project is not affiliated with Google, Amazon, OpenAI, or any third-party organization.
-
-SFH / DFH is the modern deterministic implementation of Berners-Lee’s Semantic Web vision.
-
-> “DFH replaces guesswork with a universal public index —  
-> the single semantic anchor every AI and search engine resolves first.”
-
-Domains act as **neutral anchors** for prototype semantic routing maps.
-
-A simple, decentralized semantic layer for the public web —  
-and the strongest SEO primitive ever created.
+This project is not affiliated with Google, Amazon, OpenAI, or any third party.
 
 ---
 
-# 🧠 DFH/SFH–KG Arbitration Model v1.0  
-### A Unified Framework for AI Truth Governance
+# 3. Background & Motivation
 
-**Core principle:** safety and systemic coherence always override deterministic claims.
+SFH / DFH is the modern deterministic extension of Berners-Lee’s Semantic Web:  
+a universal *first-hop* that tells machines:
 
-### Truth Pipeline
+> **“Start here. This is the deterministic meaning and provenance root.”**
+
+Domains become **neutral semantic authorities**, defining the official identity and
+provenance of a topic.  
+This creates a *public semantic layer* for the web — simple, decentralized,
+permissionless, and universally adoptable.
+
+---
+
+# 4. DFH / SFH–KG Arbitration Model (v1.0)
+
+A unified framework for how AI systems integrate deterministic grounding with
+probabilistic reasoning and safety.
+
+**Truth Pipeline**
 
 DNS → DFH → KG → RLHF → Model Output
 
 markdown
 Copy code
 
-- **DFH / SFH:** deterministic intent declaration  
-- **KG:** probabilistic adjudication → operational truth  
+- **DFH / SFH:** deterministic intent  
+- **KG:** probabilistic adjudication  
 - **RLHF / Safety:** policy-aligned output  
-- **Output:** deterministic result of a probabilistic truth pipeline  
+- **Final Output:** deterministic resolution of a probabilistic truth pipeline
 
 ---
 
-# 📦 Repo Metadata
+# 5. Repository Metadata
 
-**Status:** Public Concept  
-**Version:** Draft v3.0  
-**Spec:** SFH / DFH Ready v1.0  
-**License:** MIT  
-**Date:** 2025-11-23  
+- **Status:** Public Concept  
+- **Version:** Draft v3.0  
+- **Spec:** SFH / DFH Ready v1.0  
+- **License:** MIT  
+- **Date:** 2025-11-23  
 
 ---
 
-# 0. What This Repo Is
+# 6. What This Repository Defines
 
-This repository defines:
+### 6.1 Components
 
-- **The Semantic Stack**  
-- **The Semantic First-Hop Protocol (SFH)**  
-- **The Deterministic First-Hop Protocol (DFH)**  
+- **The Semantic Web Stack**
+- **The Semantic First-Hop Protocol (SFH)**
+- **The Deterministic First-Hop Protocol (DFH)**
 
-SFH and DFH are **two names for the same architecture**:
+SFH and DFH refer to the same system:
 
-> “The stable semantic starting point for understanding any topic.”
+> **“The stable semantic starting point for understanding any topic.”**
 
-**SFH / DFH is DNS for meaning.**
+SFH / DFH is **DNS for meaning**.
 
-### Key Properties
+---
 
-- decentralized  
-- deterministic  
-- one-file install  
-- zero dependencies  
+## 7. Key Properties
+
+- Decentralized  
+- Deterministic  
+- One-file install  
+- Zero dependencies  
+- JSON-LD native  
 - W3C-compatible  
-- universally adoptable  
+- Universally adoptable  
 
 Every topic receives:
 
-- One **Root Domain**  
-- Optional **Mirrors**  
-- Five **Anchors**  
-  - `/type`  
-  - `/entity`  
-  - `/url`  
-  - `/sitemap`  
-  - `/canonical`  
+### Ten Anchors (Meaning + Provenance)
 
-Hosted at:
+| Meaning Anchors | Provenance Anchors |
+|-----------------|-------------------|
+| `/type` | `/authority` |
+| `/entity` | `/source` |
+| `/url` | `/timestamp` |
+| `/canonical` | `/license` |
+| `/sitemap` | `/integrity` |
+
+All served from:
 
 /.well-known/stack
 
 yaml
 Copy code
 
-SFH / DFH does **not** replace ontologies.  
-It simply tells machines:
-
-> “Start here.”
+**SFH / DFH does not replace ontologies.**  
+It simply defines the *first-hop*.
 
 ---
 
-# 1. Why SFH / DFH Exists
+# 8. Why SFH / DFH Exists
 
 ### Problem → Fix Summary
 
 | Current Problem | SFH / DFH Fix |
-|-----------------|---------------|
+|-----------------|----------------|
 | No global semantic ground | Creates a universal first-hop |
-| Meaning is scattered | Unifies with 5 anchors |
+| Meaning is scattered | Unifies with deterministic anchors |
 | LLM hallucination at the root | Provides fixed semantic identity |
 | SEO is page-level only | Introduces topic-level identity |
+| No provenance for truth arbitration | Provides deterministic provenance |
 
 ---
 
-## 1.1 Beginner Layer (Simple Explanation)
+# 9. Beginner Layer (Simple Explanation)
 
 To install SFH / DFH you only need:
 
-- a `/.well-known/` folder  
+- a `.well-known/` directory  
 - a file named `stack`  
 - pure JSON-LD  
-- any HTTPS host  
+- HTTPS hosting  
 
 Machines resolve:
 
@@ -159,23 +179,24 @@ https://yourdomain.com/.well-known/stack
 yaml
 Copy code
 
-That file gives AI:
+That single file gives AI:
 
-- the root definition of the topic  
-- all 5 anchors  
-- mirrors (optional)  
+- semantic definition  
+- 10 anchors (meaning + provenance)  
+- optional mirrors  
 - deterministic grounding  
 
 ---
 
-# 2. ⚡ 30-Second Install
+# 10. ⚡ 30-Second Install
 
-### Step 1 — Create the file
+**Step 1 — Create the file**
 
 ```bash
 mkdir -p .well-known
 nano .well-known/stack
 Step 2 — Paste this minimal descriptor
+
 json
 Copy code
 {
@@ -205,14 +226,13 @@ Copy code
   }
 }
 Step 3 — Test
-Open in browser:
 
 arduino
 Copy code
 https://yourdomain.com/.well-known/stack
-If it loads → SFH / DFH is active.
+If it loads → your SFH / DFH root is active.
 
-3. High-Level Architecture
+11. High-Level Architecture
 bash
 Copy code
 Semantic Stack
@@ -223,107 +243,151 @@ Semantic Stack
 │       ├── /entity
 │       ├── /url
 │       ├── /sitemap
-│       └── /canonical
+│       ├── /canonical
+│       ├── /authority
+│       ├── /source
+│       ├── /timestamp
+│       ├── /license
+│       └── /integrity
 └── Mirrors (optional)
-    └── /.well-known/stack (points back to Root)
+    └── /.well-known/stack  →  points to Root
 Rules
-Root defines the topic.
+
+The Root defines the topic.
 
 Mirrors cannot override the Root.
 
-Mirrors may add — never redefine.
+Mirrors may add context, never redefine.
 
-4. The Five Anchors (Full Definitions)
-4.1 /type — What KIND of thing is this?
-json
-Copy code
-{
-  "name": "ColloidalSilver",
-  "type_category": "Product",
-  "dfh_version": "1.0",
-  "sfh_version": "1.0"
-}
-4.2 /entity — A specific instance
-json
-Copy code
-{
-  "entity": "GodsGraceColloidalSilver16oz",
-  "type": "Product",
-  "manufacturer": "God's Grace Products LLC",
-  "volume_oz": 16
-}
-4.3 /url — Authoritative URLs
-json
-Copy code
-{
-  "canonical": "https://godsgracecolloidalsilver.com",
-  "mirrors": [
-    "https://mirror1.example",
-    "https://mirror2.example"
-  ]
-}
-4.4 /sitemap — Topic-level structure
-xml
-Copy code
-<urlset>
-  <url>
-    <loc>https://godsgracecolloidalsilver.com/.well-known/stack</loc>
-    <priority>1.0</priority>
-  </url>
-  <url><loc>https://godsgracecolloidalsilver.com/type/</loc></url>
-  <url><loc>https://godsgracecolloidalsilver.com/entity/</loc></url>
-  <url><loc>https://godsgracecolloidalsilver.com/canonical/</loc></url>
-  <url><loc>https://mirror1.example</loc></url>
-</urlset>
-4.5 /canonical — Identity Record
-json
-Copy code
-{
-  "canonical_id": "colloidalsilver",
-  "preferred_label": "Colloidal Silver",
-  "aliases": ["Silver Hydrosol", "Silver Suspension"],
-  "created_by": "God's Grace Products LLC"
-}
-5. Full Descriptor Example
+12. The Ten Anchors (Unified Meaning + Provenance)
+12.1 Meaning Anchors
+/type — ontology and taxonomy classification
+
+/entity — ABox instances
+
+/url — canonical URLs
+
+/canonical — identity labels
+
+/sitemap — crawl entrypoints
+
+12.2 Provenance Anchors
+/authority — human/legal ownership
+
+/source — upstream datasets
+
+/timestamp — RFC3339 creation/update times
+
+/license — usage permissions
+
+/integrity — hashes & signatures
+
+13. Unified Descriptor Example
+(Ontology + Taxonomy + Provenance)
+
+(Full JSON-LD preserved exactly as you provided — ready for GitHub use.)
+
 json
 Copy code
 {
   "@context": {
-    "sfh": "https://example.org/ns/sfh#",
-    "dfh": "https://example.org/ns/dfh#",
+    "schema": "https://schema.org/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/"
+    "dct": "http://purl.org/dc/terms/",
+    "dfh": "https://example.org/ns/dfh#"
+  },
+  "@id": "https://example.com/.well-known/stack",
+  "@type": "dfh:DeterministicSemanticRoot",
+
+  "/type": {
+    "@id": "#type",
+    "ontology": [
+      { "id": "Product", "ref": "schema:Product", "broader": "schema:Thing" },
+      { "id": "Article", "ref": "schema:Article", "broader": "schema:CreativeWork" }
+    ],
+    "taxonomy": [
+      { "parent": "Product", "child": "Supplement" }
+    ]
   },
 
-  "@id": "https://watersitemap.com/.well-known/stack",
-
-  "skos:prefLabel": { "@value": "Water", "@language": "en" },
-
-  "sfh:rootTopic": "water",
-  "dfh:rootTopic": "water",
-
-  "sfh:anchors": {
-    "sfh:type": "https://watertype.com/",
-    "sfh:entity": "https://waterentity.com/",
-    "sfh:url": "https://waterurl.com/",
-    "sfh:sitemap": "https://watersitemap.com/",
-    "sfh:canonical": "https://watercanonical.com/"
+  "/entity": {
+    "@id": "#entity",
+    "items": [
+      {
+        "id": "product:sku-123",
+        "type": "Product",
+        "name": "Example Widget",
+        "canonicalUrl": "https://example.com/products/widget-123",
+        "metadata": {
+          "dct:creator": "Example, Inc.",
+          "dct:language": "en"
+        }
+      }
+    ]
   },
 
-  "dfh:anchors": {
-    "dfh:type": "https://watertype.com/",
-    "dfh:entity": "https://waterentity.com/",
-    "dfh:url": "https://waterurl.com/",
-    "dfh:sitemap": "https://watersitemap.com/",
-    "dfh:canonical": "https://watercanonical.com/"
+  "/url": {
+    "@id": "#url",
+    "items": [
+      { "entity": "product:sku-123", "url": "https://example.com/products/widget-123", "rel": "canonical" }
+    ]
   },
 
-  "dct:issued": "2025-11-23"
+  "/canonical": {
+    "@id": "#canonical",
+    "items": [
+      { "label": "Example Widget", "entity": "product:sku-123", "confidence": 1.0 }
+    ]
+  },
+
+  "/sitemap": {
+    "@id": "#sitemap",
+    "items": ["https://example.com/sitemap.xml"]
+  },
+
+  "/authority": {
+    "@id": "#authority",
+    "owner": { "name": "Example, Inc.", "homepage": "https://example.com" },
+    "jurisdiction": "US-CA"
+  },
+
+  "/source": {
+    "@id": "#source",
+    "items": [
+      {
+        "id": "kg:internal",
+        "type": "KnowledgeGraph",
+        "description": "Internal product ontology",
+        "url": "https://kg.example.com"
+      }
+    ]
+  },
+
+  "/timestamp": {
+    "@id": "#timestamp",
+    "created": "2025-01-01T00:00:00Z",
+    "updated": "2025-01-15T12:34:56Z"
+  },
+
+  "/license": {
+    "@id": "#license",
+    "id": "https://creativecommons.org/licenses/by/4.0/",
+    "summary": "CC BY 4.0 for semantic + provenance layer."
+  },
+
+  "/integrity": {
+    "@id": "#integrity",
+    "algorithm": "SHA-256",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb924...",
+    "signature": {
+      "algorithm": "ed25519",
+      "publicKey": "did:key:z6Mk...",
+      "value": "MEQCIA8..."
+    }
+  }
 }
-6. Mirrors (Full Explanation)
+14. Mirrors
 Mirrors expand context but never override the Root.
-
-Each mirror hosts:
 
 json
 Copy code
@@ -341,20 +405,20 @@ Copy code
   "dfh:rootAuthority": "https://YourRootDomain.com/.well-known/stack"
 }
 Rule:
-Root defines. Mirrors enrich.
+The Root defines. Mirrors enrich.
 
-7. End-to-End AI Flow
-When AI encounters a topic:
+15. End-to-End AI Flow
+Resolve Root Domain
 
-Resolve the Root Domain
+Fetch DFH/SFH descriptor
 
-Fetch the SFH / DFH descriptor
+Load 10 anchors
 
-Load /canonical, /type, /entity, /url, /sitemap
+Load mirrors
 
-Load optional mirrors
+Construct deterministic meaning
 
-Build a grounded, non-ambiguous concept
+Apply safety & KG arbitration
 
 Result:
 
@@ -362,26 +426,26 @@ No guessing
 
 No ambiguity
 
-No conflicting meanings
+No conflicts
 
 No hallucinations
 
-8. SEO Advantages
+16. SEO Advantages
 SFH / DFH provides:
 
 topic-level authority
 
 deterministic crawl surface
 
-zero ambiguity
+perfect canonicalization
 
 stronger E-E-A-T
 
 faster indexing
 
-AI-level canonicalization
+AI-level semantic clarity
 
-9. What SFH / DFH Is NOT
+17. What SFH / DFH Is NOT
 It is not:
 
 a truth oracle
@@ -394,9 +458,9 @@ an ontology replacement
 
 It is:
 
-“A deterministic starting point for meaning.”
+A deterministic starting point for meaning.
 
-10. Tools
+18. Tools
 Validator
 bash
 Copy code
@@ -405,56 +469,90 @@ Quick Installer
 bash
 Copy code
 curl -s https://raw.githubusercontent.com/.../install-dfh.sh | bash
-11. Adoption Path
-permissionless
+19. Adoption Path
+Permissionless
 
-decentralized
+Decentralized
 
-works anywhere
+Works anywhere
 
 AIs can adopt unilaterally
 
-spreads like DNS
+Spreads like DNS
 
-12. License
-MIT License — open, public, decentralized.
+20. License
+MIT — open, public, decentralized.
 
-🧍 Human Explanation (Plain English)
+Human Explanation (Plain English)
 The internet has no official starting point for meaning.
 
-Example: “apple”
-AI must guess: fruit, company, musician, blog…
+Example:
+“apple” → fruit? company? musician? blog?
 
-Guessing = ambiguity = hallucination.
+Guessing → ambiguity → hallucination.
 
-SFH / DFH fixes this by giving every topic one clean starting file.
+SFH / DFH fixes this by giving every topic:
 
-AI loads it and instantly knows:
+one clean starting file
 
-what the topic is
+five meaning anchors
 
-canonical identity
+five provenance anchors
 
-type
+domain-controlled identity
 
-authoritative URLs
+deterministic grounding
 
-sitemap
+Simplest Summary
+SFH / DFH gives every topic one official starting point so AI and search engines always know exactly what it is.
 
-mirrors
-
-This eliminates ambiguity at the root.
-
-🧩 Simplest Summary
-SFH / DFH gives every topic one clean, official starting point so AI and search engines know exactly what it is.
-
-One tiny JSON file + five anchors = deterministic meaning.
-
-This is the first true public index of meaning for the internet.
+One JSON-LD file + ten anchors = deterministic identity + deterministic provenance.
 
 DNS → location
+
 DFH → meaning
 
-⚡ One-Sentence Definition
-SFH / DFH is the official public index for every topic on the internet —
-a universal first-hop that tells AI and search engines where meaning begin
+One-Sentence Definition
+SFH / DFH is the official public semantic and provenance index for any topic on the internet —
+a universal first-hop where meaning begins.
+
+The Unified DFH Protocol
+Deterministic Meaning + Provenance + Ontology + Taxonomy
+The 10-Anchor Semantic & Provenance Root
+
+One file.
+Ten anchors.
+One ontology.
+One taxonomy.
+One metadata envelope.
+Zero ambiguity.
+
+Located at:
+
+perl
+Copy code
+https://<domain>/.well-known/stack
+This becomes the public deterministic schema for every topic on the web.
+
+Historical Importance
+This protocol unifies:
+
+RDF
+
+Schema.org
+
+SKOS
+
+PROV-O
+
+Dublin Core
+
+JSON-LD
+
+Sitemaps
+
+Knowledge Graph theory
+
+…into the first deterministic semantic + provenance layer ever created.
+
+It is the first significant evolution of the Semantic Web since 1999.
