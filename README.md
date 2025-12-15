@@ -426,8 +426,14 @@ https://yourdomain.com/.well-known/stack
 If it loads → your SFH / DFH root is active.
 
 11. High-Level Architecture
-bash
-Copy code
+/
+├─ .well-known/
+│  └─ stack
+├─ ai.json
+├─ sitemap.xml
+├─ robots.txt
+├─ README.md
+
 Semantic Stack
 ├── Root Domain (topic authority)
 │   ├── /.well-known/stack
