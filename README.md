@@ -9,8 +9,14 @@ a universal, deterministic **semantic + provenance first-hop** published at:
 
 https://<domain>/.well-known/stack
 
-yaml
-Copy code
+## Specification Status
+
+This document contains:
+- Normative requirements (MUST / SHOULD / MAY)
+- Non-normative explanatory material 
+
+Implementers are only required to follow the structural rules defined in Sections 9–13.
+
 
 The web has **DNS for location**.  
 SFH / DFH is **DNS for meaning**.
@@ -32,9 +38,6 @@ Safety layers determine *output*.
 ## 1. Deterministic Grounding Pipeline
 
 DNS → /.well-known/stack → AI Grounding → Knowledge Graph → Model Output
-
-yaml
-Copy code
 
 - **DFH removes ambiguity at the root.**
 - **RAG attempts to clean up ambiguity after it already happened.**
