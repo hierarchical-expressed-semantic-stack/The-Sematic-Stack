@@ -140,9 +140,6 @@ All served from:
 
 /.well-known/stack
 
-yaml
-Copy code
-
 **SFH / DFH does not replace ontologies.**  
 It simply defines the *first-hop*.
 
@@ -372,9 +369,6 @@ Machines resolve:
 
 https://yourdomain.com/.well-known/stack
 
-yaml
-Copy code
-
 That single file gives AI:
 
 - semantic definition  
@@ -393,8 +387,6 @@ mkdir -p .well-known
 nano .well-known/stack
 Step 2 — Paste this minimal descriptor
 
-json
-Copy code
 {
   "@context": {
     "sfh": "https://example.org/ns/sfh#",
@@ -424,7 +416,7 @@ Copy code
 Step 3 — Test
 
 arduino
-Copy code
+
 https://yourdomain.com/.well-known/stack
 If it loads → your SFH / DFH root is active.
 
@@ -488,7 +480,7 @@ Mirrors may add context, never redefine.
 (Ontology + Taxonomy + Provenance — JSON-LD)
 
 json
-Copy code
+
 {
   "@context": {
     "schema": "https://schema.org/",
@@ -590,7 +582,7 @@ Copy code
 Mirrors expand context but never override the Root.
 
 json
-Copy code
+
 {
   "@context": {
     "sfh": "https://example.org/ns/sfh#",
@@ -669,12 +661,12 @@ A deterministic starting point for meaning and provenance.
 Validator
 
 bash
-Copy code
+
 node tools/dfh-validator.js https://example.com
 Quick Installer
 
 bash
-Copy code
+
 curl -s https://raw.githubusercontent.com/.../install-dfh.sh | bash
 19. Adoption Path
 Permissionless
@@ -690,7 +682,7 @@ Spreads like DNS
 20. License
 MIT — open, public, decentralized.
 
-Human Explanation (Plain English)
+
 The internet has no official starting point for meaning.
 
 Example:
@@ -800,3 +792,5 @@ Typical business / website → deploy anchors 1–5
 High-trust publisher / regulator → extend to anchors 6–10
 
 One protocol. Two layers. Universal adoption, optional provenance.
+
+Please refer to the other repos reguarding ai grounding and dfh/shf under colts70 for more information.
