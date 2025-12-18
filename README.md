@@ -16,6 +16,8 @@ AI-first grounding (not human markup)
 
 Zero platform lock-in
 
+Why Other systems are different:
+
 RAG → after documents diverge
 
 Embeddings → after meaning is smeared
