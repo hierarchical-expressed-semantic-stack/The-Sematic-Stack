@@ -38,6 +38,16 @@ No amount of compute fixes that.
 
 Once meaning is deterministically declared, everything downstream becomes arbitration, not guesswork.
 
+Any alternative must either
+
+move the first semantic decision earlier (impossible), or
+
+reintroduce probability at the root (worse), or
+
+centralize control (politically dead), or
+
+require coordination (never scales)
+
 ---
 
 ## Semantic First-Hop / Deterministic First-Hop Protocol  
