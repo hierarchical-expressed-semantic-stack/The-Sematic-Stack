@@ -101,6 +101,8 @@ DNS
 
 *This project is not affiliated with Google, Amazon, OpenAI, or any third party.*
 
+DFH/SFH was created by the public for the public.
+
 ---
 
 # 3. Background & Motivation
