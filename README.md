@@ -3,7 +3,22 @@
 **“A modern implementation map of Tim Berners-Lee’s Semantic Web vision — built for AI.”**  
 
 AI systems need a first hop.
-They can fake it for now — but not forever.
+
+They can fake it for now — but not forever. 
+
+AI grounding is not a user-visible bug.
+
+It’s a systems integrity failure.
+
+And systems integrity problems are always ignored until:
+
+auditors show up
+
+regulators show up
+
+lawyers show up
+
+That’s the historical pattern. No exceptions.
 
 **“This is the first publicly released, installable deterministic first-hop semantic layer for the web, designed explicitly for AI grounding.”**
 
