@@ -4,7 +4,13 @@
 
 DNS → /.well-known/stack (DFH) → retrieval + KG arbitration + safety → output
 
-AI systems need a first hop.
+**“This is the first publicly released, installable deterministic first-hop semantic layer for the web, designed explicitly for AI grounding.”**
+
+**“DFH/SFH defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
+
+SFH / DFH doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
+
+---AI systems need a first hop.
 
 They can fake it for now — but not forever. 
 
@@ -23,6 +29,17 @@ It doesn’t check.
 It doesn’t anchor.
 
 So it fills gaps with whatever looks right on average.
+
+Without grounding:
+
+confidence ≠ correctness
+
+repetition ≠ truth
+
+popularity ≠ authority
+
+You don’t get answers.
+You get synthetic consensus.
 
 AI grounding is not a user-visible bug.
 
@@ -52,13 +69,6 @@ litigated
 
 AI grounding is already between steps 2 → 3.
 
-**“This is the first publicly released, installable deterministic first-hop semantic layer for the web, designed explicitly for AI grounding.”**
-
-**“DFH/SFH defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
-
-SFH / DFH doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
-
----
 
 ## What No Other System Simultaneously Provides
 
