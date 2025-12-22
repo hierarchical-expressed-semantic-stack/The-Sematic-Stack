@@ -38,6 +38,8 @@ AI grounding is already between steps 2 → 3.
 
 **“DFH/SFH defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
 
+SFH / DFH doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
+
 ---
 
 ## What No Other System Simultaneously Provides
