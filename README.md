@@ -24,12 +24,6 @@ Safety / Policy
 ↓
 Model Output
 
-**HESS/DFH is the first publicly released, installable deterministic first-hop semantic machine layer for the web, designed explicitly for AI systems.**
-
-HESS defines **semantic intent, not factual correctness**.  
-
-**HESS is the first publicly released, installable deterministic first-hop semantic machine layer for the web, designed explicitly for AI systems.**
-
 **“HESS defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
 
  HESS doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
@@ -120,8 +114,8 @@ HESS / Deterministic First-Hop Protocol
 > It defines a deterministic semantic first hop — the point at which meaning and provenance are declared before any model inference, retrieval, or reasoning occurs.  
 > All existing grounding techniques operate downstream of this hop.”**
 
-> **“The model is difficult to beat because it fixes the first semantic decision point.  
-> Anything else is downstream enrichment.”**
+> **“This model is correct as fixes the problem at the first semantic decision point.  
+> Everything else is downstream enrichment.”**
 
 **One file. 5 mandatory anchors for light to moderate topics, and an optional Ten anchor system for the heavy topics. Zero dependencies. Pure JSON-LD.  
 Deterministic meaning + deterministic provenance.**
