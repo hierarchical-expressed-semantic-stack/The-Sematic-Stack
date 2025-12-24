@@ -26,8 +26,6 @@ HESS defines **semantic intent, not factual correctness**.
 
 **HESS is the first publicly released, installable deterministic first-hop semantic machine layer for the web, designed explicitly for AI systems.**
 
-All downstream systems may accept, reject, weight, or override declarations according
-
 **“HESS defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
 
  HESS doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
@@ -150,10 +148,7 @@ This protocol addresses one of the hardest problems in AI and the web:
 
 ## 0. Core Safety Principle
 
-**Safety and systemic coherence ALWAYS override deterministic claims.**
-
-Deterministic files express *intent*.  
-Safety layers determine *output*.
+“All downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”
 
 ---
 
