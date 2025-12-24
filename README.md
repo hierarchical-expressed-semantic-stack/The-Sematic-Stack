@@ -12,7 +12,9 @@ Core property:
 ## What HESS Is
 
 HESS is the stack
+
 DFH is the protocol
+
 SPLI is the resulting public semantic layer
 
 HESS applies **JSON-style hierarchical structure to the web itself**, replacing inferred meaning with **explicitly declared semantic roots**.
