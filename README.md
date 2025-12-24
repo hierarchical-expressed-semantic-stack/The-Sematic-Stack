@@ -1,22 +1,28 @@
-🌐 Hierarchical Expressed Semantic Stack (HESS)
+# 🌐 Hierarchical Expressed Semantic Stack (HESS)
 
-“This protocol is a modern, AI-era continuation of Tim Berners-Lee’s original Semantic Web vision—implemented as a deterministic, installable first-hop rather than an inferred graph.”
+> **A deterministic, installable first-hop semantic layer for the web — built for AI.**
 
-HESS/ DFH is a deterministic discovery file at /.well-known/stack that declares a domain’s semantic identity and crawl entrypoints via a small set of JSON-LD anchors, enabling machines to start grounding from an explicit root instead of inference.
+HESS is a modern, AI-era continuation of **Tim Berners-Lee’s original Semantic Web vision**, implemented not as an inferred graph, but as a **deterministic, domain-owned first hop**.
+
+It defines a single discovery file published at:
+
+/.well-known/stack
+
+That file declares a domain’s **semantic identity and crawl entrypoints** using a minimal set of **JSON-LD anchors**, allowing machines to ground meaning from an explicit root instead of probabilistic inference.
 
 DNS (location)
-   ↓
+↓
 HESS / DFH (declared meaning)
-   ↓
-Retrieval / KG (probabilistic)
-   ↓
+↓
+Retrieval / Knowledge Graph (probabilistic)
+↓
 Safety / Policy
-   ↓
+↓
 Model Output
 
+**HESS is the first publicly released, installable deterministic first-hop semantic machine layer for the web, designed explicitly for AI systems.**
 
-**“HESS is the first publicly released, installable deterministic first-hop semantic machine layer for the web, designed explicitly for AI.”**
-
+All downstream systems may accept, reject, weight, or override declarations according
 **“HESS defines semantic intent, not factual correctness; downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”**
 
  HESS doesn’t replace anything. It amplifies everything that already exists by fixing the one decision none of them can fix alone.
