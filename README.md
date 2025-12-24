@@ -1,5 +1,7 @@
 # 🌐 Hierarchical Expressed Semantic Stack (HESS)
 
+HESS is a proposed, open, installable semantic first-hop stack designed to solve AI grounding.”
+
 > **A deterministic, installable public owned first-hop, the (Semantic Layer Public Index) SLPI for the web — built for AI.**
 
 HESS applies JSON-style hierarchical structure to the web itself — with a declared semantic root instead of inferred meaning.
