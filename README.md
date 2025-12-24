@@ -1,4 +1,5 @@
-# 🌐 The Semantic Web Stack
+# 🌐 Hierarchical Expressed Semantic Stack (HESS)
+A deterministic, domain-owned semantic first-hop layer for AI and web systems.
 
 **“A modern implementation map of Tim Berners-Lee’s Semantic Web vision — built for AI.”**  
 
