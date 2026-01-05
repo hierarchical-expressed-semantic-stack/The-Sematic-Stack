@@ -7,6 +7,8 @@ How HESS Gives Every Topic a Stack (Root + Mirrors)
 **Every topic has exactly ONE authoritative HESS stack.**  
 **All variants (plurals, aliases, translations, sub-domains) are MIRRORS and MUST NOT replace the root.**
 
+In HESS, pillars are implemented as domains. Registrars sell domains, and these domains are intentionally purchased to serve as semantic pillars. Pillar-domains are required, but they are non-authoritative and MUST bind back to a single root domain.
+
 HESS is deterministic because it collapses meaning to **one domain-owned semantic root**.
 
 -
