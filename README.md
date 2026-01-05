@@ -1,6 +1,29 @@
 # 🌐 Hierarchical Expressed Semantic Stack (HESS)
 > **A deterministic, installable semantic first-hop for the web a 7 Layer Semantic Protocol.— built for AI.**
 
+How HESS Gives Every Topic a Stack (Root + Mirrors)
+
+### Core Rule (Read Once)
+**Every topic has exactly ONE authoritative root stack.**  
+**All variants (plurals, aliases, translations, sub-domains) are MIRRORS and MUST NOT replace the root.**
+
+HESS is deterministic because it collapses meaning to **one domain-owned semantic root**.
+
+-
+## 1) Every Topic Gets a Root Stack
+
+A **topic** in HESS is a **semantic surface bound to a domain you control**.
+
+That domain publishes the authoritative root descriptor at:
+
+https://<root-domain>/.well-known/stack
+
+This is the **root semantic identity** for the topic.
+
+### Example: Topic = "Beer"
+Root stack (authoritative):
+
+https://beer.com/.well-known/stack
 
 “HESS / DFH is built specifically for machine grounding — with AI as the primary consumer.”
 
@@ -216,9 +239,12 @@ The stack at https://<yourdomain>/.well-known/stack is the domain-owner-declared
 
 Your main website domain is the authoritative semantic root because you control it. HESS binds meaning to the same surface you own https://<yourdomain>/.well-known/stack
 
-
-
 The 5 mandatory anchors
+
+Both of these must be included in each pilliar, 
+
+Root domain: https://example.com
+Stack file:  https://example.com/.well-known/stack
 
 
 ✅ /type
@@ -338,6 +364,40 @@ HESS is to Meaning what DNS is to Location. It is decentralized, permissionless,
 
 Anchor locality requirement
 All mandatory HESS / DFH meaning anchors (/type, /entity, /url, /canonical, /sitemap) MUST be served from the same domain as the stack root. This ensures semantic intent and provenance are bound to a domain the publisher controls. Anchors MAY reference external identifiers or resources but MUST NOT relocate authoritative declarations off-domain.
+
+🔒 The Non-Negotiable Invariant
+
+Every pillar must “point home.”
+
+If any pillar:
+
+lacks the root domain in its @id, and
+
+lacks a binding to a root entity or root URL
+
+then:
+
+🚨 DFH grounding is invalid for that pillar
+→ agent MUST degrade to probabilistic inference for that aspect
+
+🧪 Validation Checklist (simple, brutal)
+
+For each of the 5 pillars, ask:
+
+Does this file live on https://yourdomain/?
+
+Does it reference https://yourdomain explicitly?
+
+Does it bind entities, labels, or crawl entrypoints back to that domain?
+
+If the answer is no to any → it doesn’t work.
+
+🧠 Final Mental Model (lock this in)
+
+Meaning may reference outward.
+Authority must always point home.
+
+That’s the rule that makes HESS / DFH deterministic, non-spoofable, and real.
 ---
 
 🏁 30-Second Verification
