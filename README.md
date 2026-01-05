@@ -17,6 +17,27 @@ The **root domain is your real website** that already represents the topic.
 - The **root domain defines the topic**
 - The root domain publishes the authoritative stack file at:
 
+`https://<root-domain>/.well-known/stack`
+
+This file is the **root semantic identity** for that topic.
+
+### ✅ Pillar Domains (Required but Non-Authoritative)
+In HESS, “pillars” are implemented as **domains** (registrars sell domains, not “pillars”).
+
+- Pillar domains are **required** for the deterministic 5-anchor model
+- Pillar domains are **NOT the topic authority**
+- Pillar domains **do not define the topic**
+- Pillar domains **only bind back to the root domain**
+- They create deterministic, human-auditable “semantic routing lanes” that converge on one root authority
+
+> **The root defines the topic. Pillars only point home.**
+
+### ✅ Root Domain (Authoritative)
+The **root domain is your real website** that already represents the topic.
+
+- The **root domain defines the topic**
+- The root domain publishes the authoritative stack file at:
+
 **`https://<root-domain>/.well-known/stack`**
 
 This file is the **root semantic identity** for that topic.
