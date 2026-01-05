@@ -4,13 +4,13 @@
 How HESS Gives Every Topic a Stack (Root + Mirrors)
 
 ### Core Rule (Read Once)
-**Every topic has exactly ONE authoritative root stack.**  
+**Every topic has exactly ONE authoritative HESS stack.**  
 **All variants (plurals, aliases, translations, sub-domains) are MIRRORS and MUST NOT replace the root.**
 
 HESS is deterministic because it collapses meaning to **one domain-owned semantic root**.
 
 -
-## 1) Every Topic Gets a Root Stack 5 mandatory domains to bind to your exiting website of the same topic.
+## 1) Every Topic Gets a HESS Stack 5 mandatory domains to bind to your exiting website of the same topic.
 
 For exampe lets say you sell light bulbs and your main website is classicbulbsusa.com. You need to purchase the light bulb stack, You would buy these 5 domains
 
