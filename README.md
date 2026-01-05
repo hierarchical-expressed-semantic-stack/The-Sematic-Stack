@@ -46,6 +46,8 @@ It only pins meaning before guessing begins.
 
 HESS introduces a **deterministic semantic first hop** — a publicly discoverable, machine-readable declaration of meaning — published directly by domain owners.
 
+🧭 The "Missing Index" (SLPI)By publishing a stack, you are contributing to a Domain-Owned Semantic Layer Public Index.Current Web: Google and OpenAI own the "Index of Meaning."HESS Web: The domain owners own the index. AI agents simply "hop" from one deterministic root to another.
+
 Pro-Tip for Implementers: > While the specification allows for all 10 anchors in a single file (Section 12), the distributed 5-anchor model is superior for large-scale enterprise sites. It allows the /integrity and /timestamp anchors to be updated by automated CI/CD processes without touching the more static /type or /entity declarations.
 
 HESS / DFH is built specifically for AI.
