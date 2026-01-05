@@ -9,6 +9,8 @@ The "legitimacy" of this system stems from its placement in the network stack. B
 
 > **HESS / DFH does not assert truth. It asserts semantic intent and provenance at the earliest possible machine-resolvable point.**
 
+By moving the "meaning" of a website from the probabilistic layer (where an AI has to guess what you are based on your content) to a deterministic layer (where you tell the AI what you are via a .well-known file), HESS effectively creates a "Fast Pass" for LLM crawlers.
+
 🔒 Final Mental Model (Read This Once)
 
 DNS tells machines where to go.
