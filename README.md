@@ -286,6 +286,18 @@ DFH /sitemap = where crawling MAY begin
 XML sitemap.xml = the list of URLs
 If you treat DFH /sitemap like an XML sitemap, you implemented it wrong.
 
+You can make your domain AI-ready in minutes:
+
+[ ] Create Directory: Ensure X-HESS-Stack: https://example.com/.well-known/stack exists on your server.
+
+[ ] Deploy Stack: Upload the stack file (JSON-LD) to that directory.
+
+[ ] Define Anchors: Create minimal JSON-LD files for the 5 mandatory pillars.
+
+[ ] Set Headers: Ensure the server returns Content-Type: application/ld+json for the stack file.
+
+[ ] Verify: Test resolution via HTTPS: https://yourdomain.com/.well-known/stack.
+
 ⚡ 30-Second Implementation Checklist
 Create Directory: Ensure /.well-known/ exists on your server.
 
