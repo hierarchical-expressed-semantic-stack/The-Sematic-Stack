@@ -1017,18 +1017,22 @@ Client fetches:
 
 example we will use Beer as the topic 
 
-beertype.com → what it is. A categorical classification of beer based on brewing method, fermentation style, ingredients, and characteristic flavor profile.
+Both of these must be included in each pilliar,
+
+Root domain: https://example.com Stack file: https://example.com/.well-known/stack
+
+beertype.com → what it is.  https://example.com Stack file: https://example.com/.well-known/stack A categorical classification of beer based on brewing method, fermentation style, ingredients, and characteristic flavor profile.
 
 
-beerentity.com → what the entity is Beer is a fermented malt beverage produced from cereal grains, water, hops, and yeast, containing alcohol by volume as defined by applicable law.
+beerentity.com → what the entity is Beer is  https://example.com Stack file: https://example.com/.well-known/stack a fermented malt beverage produced from cereal grains, water, hops, and yeast, containing alcohol by volume as defined by applicable law.
 
-beerurl.com → where it lives becomes Your main domain.com DFH grounding must resolve to a domain you control, because meaning cannot be authoritative if it lives somewhere you don’t own. The DFH URL is your main website, because DFH only works if the first hop lands on a domain you own.
+beerurl.com → where it lives  https://example.com Stack file: https://example.com/.well-known/stack becomes Your main domain.com DFH grounding must resolve to a domain you control, because meaning cannot be authoritative if it lives somewhere you don’t own. The DFH URL is your main website, because DFH only works if the first hop lands on a domain you own.
 
-beercanonical.com → what to call it 
+beercanonical.com → what to call it https://example.com Stack file: https://example.com/.well-known/stack     Adam's Beer
 
-beersitemap.com → where to crawl. The crawl entrypoint. The first hop. The directory AI reads first. It is NOT an XML sitemap. It is NOT SEO navigation. It is NOT a page list. It is a semantic directory. Put in the sitemap your main website, and whaterver you want to be crawled, The offical public ground for AI, The offical start here for AI.
+beersitemap.com → where to crawl. The crawl entrypoint. The first hop. The directory AI reads first.  https://example.com Stack file: https://example.com/.well-known/stack.  It is NOT an XML sitemap. It is NOT SEO navigation. It is NOT a page list. It is a semantic directory. Put in the sitemap your main website, and whaterver you want to be crawled, The offical public ground for AI, The offical start here for AI.
 
-This is a bit redundant as people get really confused here and they need to clearly understand this. Its actually very simple.
+THe doomains become the street signs, roads, and offical grounding layer for AI.
 
 Type answers what class of thing
 
@@ -1049,7 +1053,7 @@ Use HTTPS only
 
 Keep the root descriptor tiny and stable
 
-Keep anchors minimal and machine-readable
+Keep domain anchors minimal and machine-readable
 
 Prefer index.jsonld per anchor for predictable fetching
 
@@ -1061,11 +1065,11 @@ mkdir -p .well-known already exist
 create a tiny root descriptor a file named stack
 HTTPS:///yourdoain .well-known/stack
 
-TYPE: consumable-beverage
-ENTITY: beer
-URL: https://yourdomain.com
-SITEMAP: lager, ale, stout, /sitemap → “declared conceptual crawl surface (not exhaustive)”
-CANONICAL: brand beer ≠ brewery beer ≠ medical substance beer ≠ legal or health advice beer ≠ ranking or opinion.
+TYPE:  https://example.com Stack file: https://example.com/.well-known/stack  consumable-beverage
+ENTITY:  https://example.com Stack file: https://example.com/.well-known/stack  beer
+URL:  https://example.com Stack file: https://example.com/.well-known/stack 
+SITEMAP:  https://example.com Stack file: https://example.com/.well-known/stack lager, ale, stout, /sitemap → “declared conceptual crawl surface (not exhaustive)”
+CANONICAL:  https://example.com Stack file: https://example.com/.well-known/stack  brand beer ≠ brewery beer ≠ medical substance beer ≠ legal or health advice beer ≠ ranking or opinion.
 
 
 Step 3 — Test
