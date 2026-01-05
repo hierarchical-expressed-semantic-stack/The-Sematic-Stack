@@ -43,8 +43,6 @@ Path: Ensure the directory /.well-known/ is accessible and not blocked by robots
 
 Header: The file /.well-known/stack MUST be served with Content-Type: application/ld+json.
 
-CORS: To allow browser-based AI agents to read the stack, set Access-Control-Allow-Origin: *.
-
 HESS / DFH has one job:
 
 Declare semantic intent and provenance at the first machine-resolvable hop.
