@@ -258,6 +258,13 @@ HESS is to Meaning what DNS is to Location. It is decentralized, permissionless,
 
 ---
 
+🏁 30-Second Verification
+If you have already created your /.well-known/stack file, you can verify your "First Hop" readiness with these two checks:
+
+Header Check: Does /.well-known/stack return Content-Type: application/ld+json?
+
+Pointer Check: Does the dfh:anchors object in your stack file resolve to absolute HTTPS URLs?
+
 ## Specification Status
 This document contains:
 - Normative requirements (**MUST / SHOULD / MAY**)
