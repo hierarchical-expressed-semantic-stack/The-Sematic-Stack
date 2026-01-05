@@ -11,6 +11,11 @@
 
 ## Root vs Pillars (Do Not Confuse These)
 
+⚠️ IMPORTANT — READ THIS ONCE:
+In HESS, pillar domains are NOT websites.
+They contain no content, define no topic, and exist only as semantic binding objects that point back to the root domain.
+The root domain is the only website and only topic authority.
+
 ### ✅ Root Domain (Authoritative)
 The **root domain is your real website** that already represents the topic.
 
