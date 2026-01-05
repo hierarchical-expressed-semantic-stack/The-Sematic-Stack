@@ -1,6 +1,8 @@
 # 🌐 Hierarchical Expressed Semantic Stack (HESS)
 > **A deterministic, installable semantic first-hop for the web a 7 Layer Semantic Protocol.— built for AI.**
 
+HESS does not replace current AI techniques like RAG (Retrieval-Augmented Generation); it grounds them. Without HESS, AI enters a domain in a "semantic fog." With HESS, the AI has a clear, domain-owner-authorized map of intent.
+
 HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** designed to solve a core AI systems problem: **lack of grounding**.
 
 The "legitimacy" of this system stems from its placement in the network stack. By utilizing the /.well-known/ directory—a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
