@@ -1,6 +1,10 @@
 # 🌐 Hierarchical Expressed Semantic Stack (HESS)
 > **A deterministic, installable semantic first-hop for the web a 7 Layer Semantic Protocol.— built for AI.**
 
+Domains MAY include an X-HESS-Stack HTTP response header pointing to the stack root.
+Agents SHOULD treat this as a discovery hint only and MUST verify the referenced stack resource directly.
+Absence of the header MUST NOT be interpreted as absence of DFH support.
+
 HESS does not replace current AI techniques like RAG (Retrieval-Augmented Generation); it grounds them. Without HESS, AI enters a domain in a "semantic fog." With HESS, the AI has a clear, domain-owner-authorized map of intent.
 
 HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** designed to solve a core AI systems problem: **lack of grounding**.
@@ -41,6 +45,8 @@ It does not: assert truth, rank content, replace ontologies, replace XML sitemap
 It only pins meaning before guessing begins.
 
 HESS introduces a **deterministic semantic first hop** — a publicly discoverable, machine-readable declaration of meaning — published directly by domain owners.
+
+Pro-Tip for Implementers: > While the specification allows for all 10 anchors in a single file (Section 12), the distributed 5-anchor model is superior for large-scale enterprise sites. It allows the /integrity and /timestamp anchors to be updated by automated CI/CD processes without touching the more static /type or /entity declarations.
 
 HESS / DFH is built specifically for AI.
 If you have any questions, confusion, or concerns, copy-paste this spec into a chat to get unstuck and understand it quickly.
