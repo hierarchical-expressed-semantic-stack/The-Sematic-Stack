@@ -1,7 +1,9 @@
 # 🌐 Hierarchical Expressed Semantic Stack (HESS)
 > **A deterministic, installable semantic first-hop for the web — built for AI.**
 
-HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** designed to solve a core AI systems problem: **lack of grounding**. “Semantic ID Card”
+HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** designed to solve a core AI systems problem: **lack of grounding**.
+
+The "legitimacy" of this system stems from its placement in the network stack. By utilizing the /.well-known/ directory—a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
 
 > **HESS / DFH does not assert truth. It asserts semantic intent and provenance at the earliest possible machine-resolvable point.**
 
