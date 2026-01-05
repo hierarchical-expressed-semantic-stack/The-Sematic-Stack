@@ -12,9 +12,9 @@ In HESS, pillars are implemented as domains. Registrars sell domains, and these 
 HESS is deterministic because it collapses meaning to **one domain-owned semantic root**.
 
 -
-## 1) Every Topic Gets a HESS Stack 5 mandatory domains to bind to your exiting website of the same topic.
+## 1) Every Topic Gets a HESS Stack 5 mandatory pilliar domains.
 
-For exampe lets say you sell light bulbs and your main website is classicbulbsusa.com. You need to purchase the light bulb stack, You would buy these 5 domains
+For exampe lets say you sell light bulbs and your main website is classicbulbsusa.com. You need to purchase the light bulb stack, You would buy these 5 domain pilliars
 
 lightbubtype.com, lightbulbentity.com, lightbulburl.com, lightbulbsitemap.com and lightbulbcanonical.com. 
 
