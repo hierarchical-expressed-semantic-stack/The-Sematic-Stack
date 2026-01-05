@@ -10,7 +10,35 @@ How HESS Gives Every Topic a Stack (Root + Mirrors)
 HESS is deterministic because it collapses meaning to **one domain-owned semantic root**.
 
 -
-## 1) Every Topic Gets a Root Stack
+## 1) Every Topic Gets a Root Stack 5 mandatory domains to bind to your exiting website of the same topic. For exampe lets say you sell light bulbs and your main website is classicbulbsusa.com. You need to purchase the light bulb stack, You would buy these 5 domains lightbubtype.com, lightbulbentity.com, lightbulburl.com, lightbulbsitemap.com and lightbulbcanonical.com.  These will be tied to gether with your main site. So HESS/DFH requires 6 domains to function including the main site you already have. All domains can purchased from what ever register you prefer. Porkbun seems to be the best ive found overall. 
+
+Recommended free Hosting
+
+I recommend hosting HESS stacks on:
+
+✅ Vercel
+
+Free tier supports custom domains
+
+Serves /.well-known/stack correctly
+
+Great for static JSON / Markdown
+
+GitHub-based deploys
+
+Good for: clean, fast HESS installs
+
+✅ Netlify
+
+Free tier supports custom domains
+
+Fully supports /.well-known/
+
+Simple drag-and-drop or GitHub deploy
+
+Easy headers + redirects if needed
+
+Good for: most people, simplest setup
 
 A **topic** in HESS is a **semantic surface bound to a main website domain of the same topic you already control**. A topic in HESS is a semantic surface bound to a main website domain that already represents that same topic.
 
