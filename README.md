@@ -40,27 +40,7 @@ In HESS, “pillars” are implemented as **domains** (registrars sell domains, 
 
 ## 1) Every Topic Gets a HESS Stack + 5 Mandatory Pillar Domains
 
-### Example Topic (Light Bulbs)
-Let’s say your real website is:
 
-- Root (authoritative): **classicbulbsusa.com**
-
-To implement HESS for the topic “light bulb”, you buy 5 pillar domains:
-
-- **lightbulbtype.com**
-- **lightbulbentity.com**
-- **lightbulburl.com**
-- **lightbulbsitemap.com**
-- **lightbulbcanonical.com**
-
-All five pillars MUST bind back to the one root:
-
-- **classicbulbsusa.com**
-- `https://classicbulbsusa.com/.well-known/stack`
-
-Domains can be purchased from any registrar (Porkbun is solid in practice).
-
----
 
 ## Recommended Free Hosting (for stacks + pillar files)
 
