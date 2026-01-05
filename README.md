@@ -12,6 +12,8 @@ DFH tells machines what it means when they get there — before guessing starts.
 DFH does not tell machines what is true.
 It tells machines where meaning officially begins.
 
+With HESS: The AI immediately checks /.well-known/stack. It is told exactly what the entity is before it reads a single word of content.
+
 HESS / DFH has one job:
 
 Declare semantic intent and provenance at the first machine-resolvable hop.
