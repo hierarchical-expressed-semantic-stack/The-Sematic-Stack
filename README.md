@@ -12,7 +12,7 @@ HESS is deterministic because it collapses meaning to **one domain-owned semanti
 -
 ## 1) Every Topic Gets a Root Stack
 
-A **topic** in HESS is a **semantic surface bound to a domain you control**.
+A **topic** in HESS is a **semantic surface bound to a main website domain you already control**.
 
 That domain publishes the authoritative root descriptor at:
 
