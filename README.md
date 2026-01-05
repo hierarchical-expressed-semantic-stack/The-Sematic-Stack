@@ -16,11 +16,9 @@ For exampe lets say you sell light bulbs and your main website is classicbulbsus
 
 lightbubtype.com, lightbulbentity.com, lightbulburl.com, lightbulbsitemap.com and lightbulbcanonical.com. 
 
-These will be tied to gether with your main site. So HESS/DFH requires 6 domains to function including the main site you already have. All domains can purchased from what ever register you prefer. Porkbun seems to be the best ive found overall. 
+These will be tied together with your main site. All domains can purchased from what ever register you prefer. Porkbun seems to be the best ive found overall. 
 
-Recommended free Hosting
-
-I recommend hosting HESS stacks on:
+Recommended free Hosting, I recommend hosting HESS stacks on:
 
 ✅ Vercel
 
