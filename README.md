@@ -12,7 +12,27 @@ HESS is deterministic because it collapses meaning to **one domain-owned semanti
 -
 ## 1) Every Topic Gets a Root Stack
 
-A **topic** in HESS is a **semantic surface bound to a main website domain you already control**.
+A **topic** in HESS is a **semantic surface bound to a main website domain of the same topic you already control**. A topic in HESS is a semantic surface bound to a main website domain that already represents that same topic.
+
+The topic and the domain MUST match.
+
+The One Rule That Matters
+
+You cannot declare a HESS topic on a domain that is not already about that topic.
+
+If the domain is not relevant, the stack is invalid.
+
+What This Means in Practice
+
+The root domain is the topic authority
+
+The stack describes what the domain already is
+
+HESS does not let you redefine a domain
+
+HESS does not let you “claim” unrelated topics
+
+The stack can clarify meaning, but it cannot change it.
 
 That domain publishes the authoritative root descriptor at:
 
