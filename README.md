@@ -207,9 +207,16 @@ They can fake it for now — but not forever.
 “Like robots.txt and ads.txt, DFH is designed to become de facto through adoption before formal standardization.”
 
 HESS / DFH is the missing layer the internet never had:  
-a universal, deterministic semantic + provenance first-hop published at:
+a universal, deterministic semantic + provenance first-hop published at: X-HESS-Stack: https://<yourdomain>/.well-known/stack
 
-https://<yourdomain>/.well-known/stack
+Agents SHOULD treat this as a discovery hint only and MUST verify the referenced resource directly over HTTPS. Absence of the header MUST NOT be interpreted as absence of HESS/DFH support.
+
+ HESS requires a domain you control to serve as the authoritative semantic root.
+The stack at https://<yourdomain>/.well-known/stack is the domain-owner-declared source of semantic intent and provenance for that domain (not a truth oracle). Downstream systems may accept, reject, or weight declarations using their own trust, safety, and policy models.
+
+Your main website domain is the authoritative semantic root because you control it. HESS binds meaning to the same surface you own https://<yourdomain>/.well-known/stack
+
+
 
 The 5 mandatory anchors
 
@@ -328,6 +335,9 @@ Test: Ensure https://yourdomain.com/.well-known/stack resolves via HTTPS.
 
 HESS is to Meaning what DNS is to Location. It is decentralized, permissionless, and fixes the "hallucination at the root" problem that currently plagues AI systems.
 
+
+Anchor locality requirement
+All mandatory HESS / DFH meaning anchors (/type, /entity, /url, /canonical, /sitemap) MUST be served from the same domain as the stack root. This ensures semantic intent and provenance are bound to a domain the publisher controls. Anchors MAY reference external identifiers or resources but MUST NOT relocate authoritative declarations off-domain.
 ---
 
 🏁 30-Second Verification
