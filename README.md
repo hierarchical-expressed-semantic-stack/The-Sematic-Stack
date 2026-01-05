@@ -9,6 +9,8 @@ HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** de
 
 DNS tells machines where to go.
 DFH tells machines what it means when they get there — before guessing starts.
+DFH does not tell machines what is true.
+It tells machines where meaning officially begins.
 
 HESS / DFH has one job:
 
