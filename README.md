@@ -14,6 +14,10 @@ DFH tells machines what it means when they get there — before guessing starts.
 DFH does not tell machines what is true.
 It tells machines where meaning officially begins.
 
+This protocol represents a significant structural evolution for the web, moving from unstructured content that machines must guess at, to a deterministic semantic layer that domain owners control.
+
+By placing the "source of truth" for meaning at the /.well-known/stack endpoint, HESS effectively creates a pre-flight check for AI agents.
+
 With HESS: The AI immediately checks /.well-known/stack. It is told exactly what the entity is before it reads a single word of content.
 
 HESS / DFH has one job:
