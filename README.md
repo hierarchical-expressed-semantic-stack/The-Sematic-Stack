@@ -69,6 +69,8 @@ Integrity: /integrity SHOULD provide signed hashes of the root and anchors. Impl
 The "VIP Lane" for AI Crawlers
 From a practical SEO standpoint, this is a Compute Efficiency play.
 
+It solves the "Semantic Reasoning Tax"—the massive amount of compute wasted by AI models trying to guess what a website is about before they can even begin to process its data.
+
 Today: An AI crawler spends $0.05 of compute power trying to figure out if your site is trustworthy and what it's about.
 
 With HESS: The crawler spends $0.0001 to read your stack file.
