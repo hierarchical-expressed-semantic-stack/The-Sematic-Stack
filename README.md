@@ -5,6 +5,18 @@ HESS is a proposed, open, **domain-owned Semantic Layer Public Index (SLPI)** de
 
 > **HESS / DFH does not assert truth. It asserts semantic intent and provenance at the earliest possible machine-resolvable point.**
 
+🔒 Final Mental Model (Read This Once)
+
+HESS / DFH has one job:
+
+Declare semantic intent and provenance at the first machine-resolvable hop.
+
+Nothing more. Nothing less.
+
+It does not: assert truth, rank content, replace ontologies, replace XML sitemaps, replace SEO
+
+It only pins meaning before guessing begins.
+
 HESS introduces a **deterministic semantic first hop** — a publicly discoverable, machine-readable declaration of meaning — published directly by domain owners.
 
 HESS / DFH is built specifically for AI.
