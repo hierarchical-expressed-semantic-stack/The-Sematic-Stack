@@ -13,6 +13,8 @@ By moving the "meaning" of a website from the probabilistic layer (where an AI h
 
 🔒 Final Mental Model (Read This Once)
 
+It addresses the "garbage in, garbage out" problem of LLM indexing by moving the point of resolution from the model's inference to the domain owner's declaration.
+
 DNS tells machines where to go.
 DFH tells machines what it means when they get there — before guessing starts.
 DFH does not tell machines what is true.
