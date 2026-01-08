@@ -3,6 +3,12 @@
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### A 7-Layer Semantic Protocol — Built for AI
 
+
+HESS / DFH is built specifically for AI systems and search engines.
+
+
+This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into a chat. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
+
 SLPI fixes:
 
 Meaning having no address (semantics finally live somewhere stable)
@@ -28,11 +34,6 @@ Fragile statistical trust (trust becomes attributable and auditable)
 AI hallucination pressure (grounding becomes structural, not inferential)
 
 The web’s missing “what” layer (completes the original architecture, not just AI)
-
-HESS / DFH is built specifically for AI systems and search engines.
-
-
-This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into a chat. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
 
