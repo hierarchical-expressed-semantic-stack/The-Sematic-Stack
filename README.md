@@ -3,7 +3,35 @@
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### A 7-Layer Semantic Protocol — Built for AI
 
+SLPI fixes:
+
+Meaning having no address (semantics finally live somewhere stable)
+
+Authority being guessed (authorship replaces popularity/ranking as the root)
+
+Unbounded topics (clear scope and boundaries end topic-bleed)
+
+No canonical identity (ends entity collisions and “which X?” confusion)
+
+No deterministic entry point (first-hop discovery becomes reliable)
+
+Semantic drift over time (meaning can stay pinned instead of mutating)
+
+Manipulation and ranking games (less incentive to fake signals)
+
+Platform capture (platforms stop being the default meaning-owners)
+
+Crawl waste / indexing chaos (machines stop wandering blindly)
+
+Fragile statistical trust (trust becomes attributable and auditable)
+
+AI hallucination pressure (grounding becomes structural, not inferential)
+
+The web’s missing “what” layer (completes the original architecture, not just AI)
+
 HESS / DFH is built specifically for AI systems and search engines.
+
+
 This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into a chat. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
@@ -81,7 +109,7 @@ DFH — Deterministic First Hop
 
 
 
-The "VIP Lane" for AI Crawlers From a practical SEO standpoint, this is a Compute Efficiency play.
+HESS/DFH is The "VIP Lane" for AI Crawlers From a practical and SEO standpoint, this is a Compute Efficiency play.
 
 It solves the "Semantic Reasoning Tax"—the massive amount of compute wasted by AI models trying to guess what a website is about before they can even begin to process its data.
 
@@ -89,7 +117,10 @@ Today: An AI crawler spends $0.05 of compute power trying to figure out if your 
 
 With HESS: The crawler spends $0.0001 to read your stack file.
 
-The Incentive: Search engines and LLMs will prioritize HESS-enabled domains because they are cheaper and safer to index. What HESS Is “HESS is the checkmate move in AI grounding: once the first semantic hop is deterministic, every downstream system is forced into arbitration instead of guesswork.” HESS applies JSON-style hierarchical structure to the web itself, replacing inferred meaning with explicitly declared semantic roots.
+The Incentive: Search engines and LLMs will prioritize HESS-enabled domains because they are cheaper and safer to index. 
+
+
+What HESS also Is?  “HESS is the checkmate move in AI grounding: Once the first semantic hop is deterministic, every downstream system is forced into arbitration instead of guesswork.” HESS applies JSON-style hierarchical structure to the web itself, replacing inferred meaning with explicitly declared semantic roots.
 
 “A domain can only be authoritative for topics it controls at the root.”
 
