@@ -9,31 +9,36 @@ HESS / DFH is built specifically for AI systems and search engines.
 
 This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into a chat. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
 
-SLPI fixes:
+What SLPI / HESS Actually Fixes (Nothing Missing)
 
-Meaning having no address (semantics finally live somewhere stable)
+HESS fixes structural failures of the web, not just AI symptoms:
 
-Authority being guessed (authorship replaces popularity/ranking as the root)
+Meaning had no address → Meaning now lives at a stable, public, machine-readable root
 
-Unbounded topics (clear scope and boundaries end topic-bleed)
+Authority was inferred from popularity → Authorship replaces ranking as the starting signal
 
-No canonical identity (ends entity collisions and “which X?” confusion)
+Topics were unbounded → Clear semantic scope prevents topic-bleed
 
-No deterministic entry point (first-hop discovery becomes reliable)
+No canonical identity → Ends entity collisions (“which X?” problems)
 
-Semantic drift over time (meaning can stay pinned instead of mutating)
+No deterministic entry point → First-hop discovery becomes reliable
 
-Manipulation and ranking games (less incentive to fake signals)
+Semantic drift over time → Meaning stays pinned instead of mutating
 
-Platform capture (platforms stop being the default meaning-owners)
+Manipulation & ranking games → Less incentive to fake signals
 
-Crawl waste / indexing chaos (machines stop wandering blindly)
+Platform capture → Platforms stop being default meaning-owners
 
-Fragile statistical trust (trust becomes attributable and auditable)
+Crawl waste & index chaos → Machines stop wandering blindly
 
-AI hallucination pressure (grounding becomes structural, not inferential)
+Fragile statistical trust → Provenance becomes attributable and auditable
 
-The web’s missing “what” layer (completes the original architecture, not just AI)
+AI hallucination pressure → Grounding becomes structural, not inferential
+
+The web’s missing “what” layer → Completes the original web architecture
+
+This is not an AI patch.
+It is a missing internet layer.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
 
