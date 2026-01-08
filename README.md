@@ -42,9 +42,12 @@ It is a missing internet layer.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
 
-Only the public domain owner can define semantic intent for a topic at the root.
-Everyone else can interpret, dispute, or ignore it — but not authoritatively replace it.
+Core Rule (Read Once)
 
+Only the public domain owner can define semantic intent at the root.
+Everyone else may interpret, dispute, or ignore it — but not authoritatively replace it.
+
+HESS asserts intent and provenance, not truth.
 > Domains **MAY** include an `X-HESS-Stack` HTTP response header pointing to the stack root:  
 > `X-HESS-Stack:https://yourdomain.com/.well-known/stack
 
