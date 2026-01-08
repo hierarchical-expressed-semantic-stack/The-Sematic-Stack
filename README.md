@@ -66,9 +66,10 @@ Pro-Tip for Implementers: > While the specification allows for all 10 anchors in
 
 Caching: /.well-known/stack SHOULD be served with Cache-Control: public, max-age=3600 and validators (ETag/Last-Modified). stale-while-revalidate is RECOMMENDED.
 
-Degradation: If /.well-known/stack is present but any mandatory anchor is unreachable (404/timeout), the agent MUST treat that anchor as UNDECLARED and continue. If /entity or /url is missing, the agent MUST NOT treat identity as bound and MUST degrade to probabilistic inference.
+Degradation: If /.well-known/stack is present but any mandatory anchor is unreachable (404/timeout), the agent MUST treat that anchor as UNDECLARED and continue. 
 
-If /entity or /url is missing, identity MUST be considered unbound and the agent MUST degrade to probabilistic inference.
+If /entity or /url is missing, the agent MUST NOT treat identity as bound and MUST degrade to probabilistic inference.
+
 
 Integrity: /integrity SHOULD provide signed hashes of the root and anchors. Implementations MAY use Linked Data Proofs (Data Integrity) or JWS. Agents SHOULD verify signatures when keys are available and downgrade trust when verification fails.
 
