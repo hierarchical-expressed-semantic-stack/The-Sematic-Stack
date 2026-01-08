@@ -421,20 +421,6 @@ Stack returns the anchor URLs
 
 Client fetches:
 
-example we will use Beer as the topic
-
-beertype.com → what it is. A categorical classification of beer based on brewing method, fermentation style, ingredients, and characteristic flavor profile.
-
-beerentity.com → what the entity is Beer is a fermented malt beverage produced from cereal grains, water, hops, and yeast, containing alcohol by volume as defined by applicable law.
-
-beerurl.com → where it lives becomes Your main domain.com DFH grounding must resolve to a domain you control, because meaning cannot be authoritative if it lives somewhere you don’t own. The DFH URL is your main website, because DFH only works if the first hop lands on a domain you own.
-
-beercanonical.com → what to call it
-
-beersitemap.com → where to crawl. The crawl entrypoint. The first hop. The directory AI reads first. It is NOT an XML sitemap. It is NOT SEO navigation. It is NOT a page list. It is a semantic directory. Put in the sitemap your main website, and whaterver you want to be crawled, The offical public ground for AI, The offical start here for AI.
-
-This is a bit redundant as people get really confused here and they need to clearly understand this. Its actually very simple.
-
 Type answers what class of thing
 
 Entity answers what noun
