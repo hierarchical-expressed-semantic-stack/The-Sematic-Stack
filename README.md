@@ -12,7 +12,7 @@ Only the public domain owner can define semantic intent for a topic at the root.
 Everyone else can interpret, dispute, or ignore it — but not authoritatively replace it.
 
 > Domains **MAY** include an `X-HESS-Stack` HTTP response header pointing to the stack root:  
-> `X-HESS-Stack: https://example.com/.well-known/stack`  
+> `X-HESS-Stack:https://yourdomain.com/.well-known/stack
 
 >
 > Agents **SHOULD** treat this header as a discovery hint only and **MUST** verify the referenced stack resource directly.  
@@ -29,11 +29,11 @@ HESS does not replace current AI techniques like RAG (Retrieval-Augmented Genera
 
 HESS is a proposed, open, domain-owned Semantic Layer Public Index (SLPI) designed to solve a core AI systems problem: lack of grounding.
 
-The "legitimacy" of this system stems from its placement in the network stack. By utilizing the /.well-known/ directory—a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
+The "legitimacy" of this system stems from its placement in the network stack. By utilizing the https://yourdomain.com/.well-known/stack directory —a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
 
-Without HESS: An AI crawler enters a domain, scrapes 5,000 pages, generates embeddings, and guesses that the site is about "Artisanal Beer" with 85% confidence.
+Without HESS: An AI crawler enters a domain, scrapes 5,000 pages, generates embeddings, and guesses that the site is about with 80% confidence.
 
-With HESS: The crawler reads one JSON-LD file in milliseconds. It knows the site is about "Artisanal Beer" with much higher certainty because the owner declared it at the root.
+With HESS: The crawler reads one JSON-LD file in milliseconds. It knows the site is about with much higher certainty because the owner declared it at the root.
 
 HESS / DFH does not assert truth. It asserts semantic intent and provenance at the earliest possible machine-resolvable point.
 
@@ -49,7 +49,7 @@ This protocol represents a significant structural evolution for the web, moving 
 
 By placing the "source of truth" for meaning at the /.well-known/stack endpoint, HESS effectively creates a pre-flight check for AI agents.
 
-With HESS: The AI immediately checks /.well-known/stack. It is told exactly what the entity is before it reads a single word of content.
+With HESS: The AI immediately checks https://yourdomain.com/.well-known/stack. It is told exactly what the entity is before it reads a single word of content.
 
 HESS / DFH has one job:
 
@@ -91,7 +91,7 @@ It is a modern, AI-era continuation of the original Semantic Web vision — impl
 
 Each domain publishes a single discovery file at:
 
-/.well-known/stack
+https://yourdomain.com/.well-known/stack
 
 This file declares:
 
@@ -115,7 +115,7 @@ Why HESS Can Exist It can be adopted unilaterally AIs do not need permission Dom
 
 AI systems need a first hop. They can fake it for now — but not forever.
 
-HESS / Deterministic First-Hop Protocol (HESS / DFH Protocol Specification — Human Readable Version · Draft v3.0)
+HESS / Deterministic First-Hop Protocol (HESS / DFH Protocol Specification —  · Draft v3.0)
 
 HESS / DFH is not an AI model and does not compete with models. It defines a deterministic semantic first hop — the point at which meaning and provenance are declared before any model inference, retrieval, or reasoning occurs. All existing grounding techniques operate downstream of this hop.
 
@@ -125,7 +125,7 @@ One file. 5 mandatory anchors for light to moderate topics, and an optional 10-a
 
 HESS / DFH is the missing layer the internet never had: a universal, deterministic semantic + provenance first-hop published at:
 
-https:///.well-known/stack
+https://yourdomain.com/.well-known/stack
 
 The 5 mandatory anchors
 
@@ -215,9 +215,9 @@ Test: Ensure https://yourdomain.com/.well-known/stack resolves via HTTPS.
 
 HESS is to Meaning what DNS is to Location. It is decentralized, permissionless, and fixes the "hallucination at the root" problem that currently plagues AI systems.
 
-🏁 30-Second Verification If you have already created your /.well-known/stack file, you can verify your "First Hop" readiness with these two checks:
+🏁 30-Second Verification If you have already created your https://yourdomain.com/.well-known/stack, you can verify your "First Hop" readiness with these two checks:
 
-Header Check: Does /.well-known/stack return Content-Type: application/ld+json?
+Header Check: Does /https://yourdomain.com/.well-known/stack return Content-Type: application/ld+json?
 
 Pointer Check: Does the dfh:anchors object in your stack file resolve to absolute HTTPS URLs?
 
@@ -231,11 +231,11 @@ This protocol addresses one of the hardest problems in AI and the web: semantic 
 
 Core Safety Principle “All downstream systems may accept, reject, weight, or override declarations according to their own trust, safety, and policy models.”
 
-Deterministic Grounding Pipeline DNS → /.well-known/stack → AI Grounding → Knowledge Graph → Model Output
+Deterministic Grounding Pipeline DNS → /https://yourdomain.com/.well-known/stack → AI Grounding → Knowledge Graph → Model Output
 
 HESS removes ambiguity at the root. RAG attempts to clean up ambiguity after it already happened.
 
-Why HESS Is the Endgame Fix (vs. RAG) Feature Deterministic First-Hop (DFH) Retrieval-Augmented Generation (RAG) Goal Prevent hallucination at the source Patch hallucination after the fact Method Canonical declaration at /.well-known/stack Probabilistic retrieval + embeddings Foundation Certainty → one stable file Probability → many documents Outcome Zero ambiguity → minimal hallucination High ambiguity → higher error rate This project is not affiliated with Google, Amazon, OpenAI, or any third party. HESS/DFH was created by the public for the public.
+Why HESS Is the Endgame Fix (vs. RAG) Feature Deterministic First-Hop (DFH) Retrieval-Augmented Generation (RAG) Goal Prevent hallucination at the source Patch hallucination after the fact Method Canonical declaration at https://yourdomain.com/.well-known/stack Probabilistic retrieval + embeddings Foundation Certainty → one stable file Probability → many documents Outcome Zero ambiguity → minimal hallucination High ambiguity → higher error rate This project is not affiliated with Google, Amazon, OpenAI, or any third party. HESS/DFH was created by the public for the public.
 
 Background & Motivation HESS / DFH is the modern deterministic extension of Berners-Lee’s Semantic Web: a universal first-hop that tells machines:
 
@@ -304,7 +304,7 @@ It is a directory of meaning surfaces, not pages.
 
 8.2 Provenance Anchors /authority — human/legal ownership /source — upstream datasets /timestamp — RFC3339 creation/update times /license — usage permissions /integrity — hashes & signatures All served from:
 
-/.well-known/stack
+https://yourdomain.com/.well-known/stack
 
 HESS / DFH does not replace ontologies. It simply defines the first hop.
 
@@ -333,11 +333,12 @@ The Shift Old SEO Model DFH Model Page-level signals Topic-level identity Infere
 
 By publishing a deterministic semantic root at:
 
-/.well-known/stack
+https://yourdomain.com/.well-known/stack
 
 A domain becomes:
 
 the canonical authority for a topic the primary entity resolver the semantic root for all downstream pages No meta tag, schema snippet, or sitemap alone can do this.
+
 
 🧭 Deterministic Crawl Geometry (No More Guessing) HESS / DFH gives crawlers an explicit, deterministic crawl surface:
 
@@ -345,17 +346,30 @@ the canonical authority for a topic the primary entity resolver the semantic roo
 
 fewer duplicate URLs faster convergence on canonical pages reduced crawl waste higher index stability Search engines stop discovering structure and start following declared structure.
 
+
+
 🧠 Entity Disambiguation at the Root Classic SEO fails hardest at entity ambiguity:
 
 Apple → fruit? company? label? Mercury → planet? element? god? HESS / DFH resolves this before crawling even begins:
 
 /type fixes ontology /entity fixes identity /canonical fixes labels /authority fixes ownership This improves:
 
-entity graphs knowledge panels AI summaries cross-language alignment multi-domain topic coherence 🏗️ E-E-A-T, But Deterministic E-E-A-T today is inferred. HESS / DFH declares it:
+entity graphs knowledge panels AI summaries cross-language alignment multi-domain topic coherence
+
+
+
+🏗️ E-E-A-T, But Deterministic E-E-A-T today is inferred. HESS / DFH declares it:
 
 /authority → who controls this topic /source → where the data comes from /license → how it may be reused /timestamp → freshness and lineage /integrity → tamper resistance Trust becomes machine-verifiable.
 
-🏗️ The Grounding Flow: How AI Sees Your SiteHESS creates a structured pipeline that ensures an AI agent knows exactly what your domain represents before it processes a single paragraph of content.LayerResponsibilityStateDNSLocates the server IPPhysical LocationHESS/DFHDeclares the entity, intent, and crawl entry pointsDeterministic MeaningRAG/KGRetrieves specific documents and reconciles factsProbabilistic KnowledgeInferenceGenerates the response based on the aboveReasoning 🤖 AI-First Indexing Readiness Search engines are becoming AI systems.
+
+
+🏗️ The Grounding Flow: How AI Sees Your SiteHESS creates a structured pipeline that ensures an AI agent knows exactly what your domain represents before it processes a single paragraph of content.LayerResponsibilityStateDNSLocates the server IPPhysical LocationHESS/DFHDeclares the entity, intent, and crawl entry pointsDeterministic MeaningRAG/KGRetrieves specific documents and reconciles factsProbabilistic KnowledgeInferenceGenerates the response based on the aboveReasoning
+
+
+
+
+🤖 AI-First Indexing Readiness Search engines are becoming AI systems.
 
 AI systems require:
 
@@ -441,13 +455,8 @@ Prefer index.jsonld per anchor for predictable fetching
 
 Treat /url + /canonical as your anti-ambiguity layer
 
-⚡ 30-Second Install Step 1 — Create the file mkdir -p .well-known already exist create a tiny root descriptor a file named stack HTTPS:///yourdoain .well-known/stack
-TYPE: consumable-beverage ENTITY: beer URL: https://yourdomain.com SITEMAP: lager, ale, stout, /sitemap → “declared conceptual crawl surface (not exhaustive)” CANONICAL: brand beer ≠ brewery beer ≠ medical substance beer ≠ legal or health advice beer ≠ ranking or opinion.
-
-Step 3 — Test text https://yourdomain.com/.well-known/stack If it loads → your HESS / DFH root is active.
-
 High-Level Architecture text
-/ ├─ .well-known/ │ └─ stack ├─ ai.json ├─ sitemap.xml ├─ robots.txt └─ README.md
+/ ├https://yourdomain.com/.well-known/stack │ └─ stack ├─ ai.json ├─ sitemap.xml ├─ robots.txt └─ README.md
 
 Semantic Stack ├── Root Domain (topic authority) │ ├── /.well-known/stack │ └── Anchors │ ├── /type │ ├── /entity │ ├── /url │ ├── /sitemap │ ├── /canonical │ ├── /authority │ ├── /source │ ├── /timestamp │ ├── /license │ └── /integrity └── Mirrors (optional) └── /.well-known/stack → points to Root Rules
 
