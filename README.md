@@ -10,7 +10,7 @@ HESS / DFH is built specifically for AI systems and search engines.
 HESS / DFH directly impacts revenue by deciding who becomes the canonical source for a topic: adopt it first and your company is treated by search engines and AI as the default authority, capturing stable rankings, AI citations, and high-intent traffic while reducing SEO spend; ignore it and the risk is asymmetric — a competitor who adopts first can lock in that authority, siphon demand, push you into permanent catch-up mode, and force you to spend more just to win back traffic you used to earn naturally.
 
 
-This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into a chat. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
+This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into an AI chat and ask away. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
 
 What SLPI / HESS Actually Fixes:
 
