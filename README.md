@@ -5,6 +5,9 @@
 
 > Domains **MAY** include an `X-HESS-Stack` HTTP response header pointing to the stack root:  
 > `X-HESS-Stack: https://example.com/.well-known/stack`  
+
+Only the public domain owner can define semantic intent for a topic at the root.
+Everyone else can interpret, dispute, or ignore it — but not authoritatively replace it.
 >
 > Agents **SHOULD** treat this header as a discovery hint only and **MUST** verify the referenced stack resource directly.  
 > Absence of this header **MUST NOT** be interpreted as absence of DFH support.
