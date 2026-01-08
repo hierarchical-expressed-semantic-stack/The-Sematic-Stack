@@ -29,7 +29,7 @@ HESS does not replace current AI techniques like RAG (Retrieval-Augmented Genera
 
 HESS is a proposed, open, domain-owned Semantic Layer Public Index (SLPI) designed to solve a core AI systems problem: lack of grounding.
 
-The "legitimacy" of this system stems from its placement in the network stack. By utilizing the https://yourdomain.com/.well-known/stack directory —a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
+The "legitimacy" of this system stems from its placement in the network stack. By utilizing the https://yourdomain.com/.well-known/stack  —a standard reserved for site-wide metadata (like security.txt or Let's Encrypt challenges)—it creates a "Semantic ID Card" that machines read before they begin the expensive process of crawling and reasoning.
 
 Without HESS: An AI crawler enters a domain, scrapes 5,000 pages, generates embeddings, and guesses that the site is about with 80% confidence.
 
@@ -114,6 +114,7 @@ No amount of compute fixes that.
 Why HESS Can Exist It can be adopted unilaterally AIs do not need permission Domains already control this surface Nothing else occupies this layer Once meaning is deterministically declared, everything downstream becomes arbitration, not guesswork.
 
 AI systems need a first hop. They can fake it for now — but not forever.
+
 
 HESS / Deterministic First-Hop Protocol (HESS / DFH Protocol Specification —  · Draft v3.0)
 
@@ -248,7 +249,9 @@ This creates a public semantic layer for the web — simple, decentralized, perm
 HESS KG Arbitration Model (v1.0) A unified framework for how AI systems integrate deterministic grounding with probabilistic reasoning and safety.
 Truth Pipeline DNS → HESS → KG → RLHF → Model Output
 
-HESS: deterministic intent KG: probabilistic adjudication RLHF / Safety: policy-aligned output Final Output: controlled resolution of a probabilistic truth pipeline 5. Repository Metadata Status: Public Concept Version: Draft v3.0 Spec: DFH Ready v1.0 License: MIT Date: 2025-11-23 6. What This Repository Defines 6.1 Components The Semantic Web Stack Hierarchical Expressed Semantic Stack (HESS) The Deterministic First-Hop Protocol (DFH) HESS and DFH refer to the same system: “The stable semantic starting point for understanding any topic.”
+HESS: deterministic intent KG: probabilistic adjudication RLHF / Safety: policy-aligned output Final Output: controlled resolution of a probabilistic truth pipeline 5. Repository Metadata Status: Public Concept Version:
+
+Draft v3.0 Spec: DFH Ready v1.0 License: MIT Date: 2025-11-23 6. What This Repository Defines 6.1 Components The Semantic Web Stack Hierarchical Expressed Semantic Stack (HESS) The Deterministic First-Hop Protocol (DFH) HESS and DFH refer to the same system: “The stable semantic starting point for understanding any topic.”
 
 HESS / DFH is DNS for meaning.
 
@@ -400,7 +403,20 @@ The web has DNS for location. HESS/DFH adds a first hop for meaning.
 
 ✅ The 5 Mandatory Pillars (Meaning Layer) Anchor Purpose (what it answers) What you put inside /type “What kind of thing is this domain about?” A small ontology/taxonomy declaration (JSON-LD) using stable vocabularies (Schema.org/W3C terms) /entity “What is the primary entity identity?” Entity records (IDs, names, aliases, optional links) /url “What URLs map to what entities?” URL bindings URLs, alternates, language variants, key routes /canonical “What is the canonical label/name?” Canonical naming table: canonical label + aliases (helps disambiguation) /sitemap “What is the crawl surface?” Declared list of sitemap entrypoints (not the whole sitemap contents) Rule: These are meaning anchors (intent + identity), not “truth”. Downstream systems arbitrate truth and safety.
 
-📌 Where Everything Lives (Minimal Structure) yourdomain.com/ ├─ .well-known/ │ └─ stack <-- root descriptor (JSON-LD) ├─ type/ <-- meaning anchor 1 │ └─ index.jsonld ├─ entity/ <-- meaning anchor 2 │ └─ index.jsonld ├─ url/ <-- meaning anchor 3 │ └─ index.jsonld ├─ canonical/ <-- meaning anchor 4 │ └─ index.jsonld ├─ sitemap/ <-- meaning anchor 5 │ └─ index.jsonld └─ sitemap.xml <-- standard XML sitemap (for crawlers)
+📌 yourdomain.com/
+├─ .well-known/
+│  └─ stack                 <-- root descriptor (JSON-LD)
+├─ type/
+│  └─ index.jsonld          <-- meaning anchor 1
+├─ entity/
+│  └─ index.jsonld          <-- meaning anchor 2
+├─ url/
+│  └─ index.jsonld          <-- meaning anchor 3
+├─ canonical/
+│  └─ index.jsonld          <-- meaning anchor 4
+├─ sitemap/
+│  └─ index.jsonld          <-- meaning anchor 5 (DFH crawl declaration)
+└─ sitemap.xml              <-- standard XML sitemap (URL enumeration)
 
 /.well-known/stack (Root Descriptor) This file is the “bootstrap.” It points machines to the anchors.
 json { "@context": { "dfh": "https://example.org/ns/dfh#" }, "@id": "https://yourdomain.com/.well-known/stack", "@type": "dfh:DeterministicSemanticRoot", "dfh:anchors": { "dfh:type": "https://yourdomain.com/type/index.jsonld", "dfh:entity": "https://yourdomain.com/entity/index.jsonld", "dfh:url": "https://yourdomain.com/url/index.jsonld", "dfh:canonical": "https://yourdomain.com/canonical/index.jsonld", "dfh:sitemap": "https://yourdomain.com/sitemap/index.jsonld" } } Keep it stable. This should almost never change except anchor URLs or root identity.
@@ -430,8 +446,6 @@ json { "@context": { "dfh": "https://example.org/ns/dfh#" }, "@id": "https://you
 
 xml
 
-https://yourdomain.com/ https://yourdomain.com/about https://yourdomain.com/products 🔗 How It All Links Up (Deterministic Flow) Client resolves https://yourdomain.com/.well-known/stack
-Stack returns the anchor URLs
 
 Client fetches:
 
