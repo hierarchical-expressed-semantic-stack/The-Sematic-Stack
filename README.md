@@ -21,9 +21,13 @@ https://yourdomain.com/.well-known/stack
 ## 🧱 The 5 Mandatory Anchors
 
 /type = what kind of thing
+
 /entity = what noun it is
+
 /url = where meaning lives
+
 /canonical = what it’s called
+
 /sitemap = where crawling may begin
 
 
