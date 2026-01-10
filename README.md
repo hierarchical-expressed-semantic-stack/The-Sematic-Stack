@@ -4,7 +4,9 @@
 #### A 7-Layer Semantic Protocol — Built for AI
 
 
-Status: Draft v3.0 — Conceptually Stable
+Status: Draft v3.0 — Conceptually Stable 
+
+Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting the web from "Probabilistic Discovery" (guessing) to "Deterministic Discovery" (declaration).
 
 ## ♟️ HESS: Checkmate at the First Semantic Hop
 
