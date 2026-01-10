@@ -312,9 +312,13 @@ If /entity or /url is missing, the agent MUST NOT treat identity as bound and MU
 
 Integrity: /integrity SHOULD provide signed hashes of the root and anchors. Implementations MAY use Linked Data Proofs (Data Integrity) or JWS. Agents SHOULD verify signatures when keys are available and downgrade trust when verification fails.
 
-Core Terms (keep these straight) HESS = the stack (the installable semantic layer pattern)
+Core Terms (keep these straight) 
 
-DFH = the protocol (Deterministic First Hop) SLPI = the resulting public layer (the semantic + provenance index that emerges as adoption grows) Core property:
+HESS = the stack (the installable semantic layer pattern)
+
+DFH = the protocol (Deterministic First Hop) 
+
+SLPI = the resulting public layer (the semantic + provenance index that emerges as adoption grows)
 
 DFH — Deterministic First Hop
 
@@ -329,6 +333,8 @@ Today: An AI crawler spends $0.05 of compute power trying to figure out if your 
 With HESS: The crawler spends $0.0001 to read your stack file.
 
 The Incentive: Search engines and LLMs will prioritize HESS-enabled domains because they are cheaper and safer to index. 
+
+
 
 🚀 Why You Need HESS / DFH (Revenue + Competitive Advantage)
 
