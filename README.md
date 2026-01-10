@@ -2,6 +2,8 @@
 ## Hierarchical Expressed Semantic Stack (HESS)
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### A 7-Layer Semantic Protocol — Built for AI
+Status: Draft v3.0 — Conceptually stable
+Core semantics are frozen. Clarifications only unless versioned.
 
 
 HESS / DFH is built specifically for AI systems and search engines.
