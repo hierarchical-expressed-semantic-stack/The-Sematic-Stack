@@ -224,6 +224,7 @@ AI hallucination pressure → Grounding becomes structural, not inferential
 The web’s missing “what” layer → Completes the original web architecture
 
 This is not an AI patch.
+Its a structural upgrade to the internet's discovery layer.
 It is a missing internet layer.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
