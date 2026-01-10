@@ -87,9 +87,13 @@ They exist only to bind, ground, and reinforce the root authority.
 
 ## 🧱 The 5 Mandatory Anchors
 
-The five mandatory semantic anchors are purchased as domains and hosted as anchor endpoints, each binding a single, non-overlapping semantic role for a topic or corporation.
+The five anchors are domains you own, but you don’t “build sites” on them.
+Each one exists only to define one specific meaning for a topic or company, with no overlap or ambiguity.
 
- topic type = what kind of thing
+The five mandatory semantic anchors are acquired as domains but are not operated as public websites.
+Each domain is hosted solely as a semantic anchor endpoint, and each anchor binds exactly one non-overlapping semantic role for a topic or organization.
+
+topic type = what kind of thing
 
 topic entity = what noun it is
 
