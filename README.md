@@ -12,7 +12,7 @@ Status: Draft v3.0 — Conceptually stable
 
 ## 🌐 Root Descriptor
 
-https://yourdomain.com/.well-known/stack
+https://yourdomain.com/.well-known/stack   Your websitye Domain becomes the root athority, the root website needs to be of the same topic as the 5 anchors / pilliars.
 
 
 
@@ -20,15 +20,17 @@ https://yourdomain.com/.well-known/stack
 
 ## 🧱 The 5 Mandatory Anchors
 
-/type = what kind of thing
+The five mandatory semantic anchors are purchased as domains and hosted as anchor endpoints, each binding a single, non-overlapping semantic role for a topic or corporation.
 
-/entity = what noun it is
+ topic type = what kind of thing
 
-/url = where meaning lives
+topic entity = what noun it is
 
-/canonical = what it’s called
+topic url = where meaning lives
 
-/sitemap = where crawling may begin
+topic canonical = what it’s called
+
+topic sitemap = where crawling may begin
 
 
 HESS / DFH is built specifically for AI systems and search engines.
