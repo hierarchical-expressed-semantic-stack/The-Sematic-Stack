@@ -437,7 +437,9 @@ HESS / DFH is not an AI model and does not compete with models. It defines a det
 
 “This model is correct as fixes the problem at the first semantic decision point. Everything else is downstream enrichment.”
 
-One file. 5 mandatory anchors for light to moderate topics, and an optional 10-anchor system for heavy topics. Zero dependencies. Pure JSON-LD. Deterministic meaning + deterministic provenance. “Like robots.txt and ads.txt, DFH is designed to become de facto through adoption before formal standardization.”
+One file. 5 mandatory anchors for light to moderate topics, and an optional 10-anchor system for heavy topics. Zero dependencies. Pure JSON-LD. Deterministic meaning + deterministic provenance.
+
+“Like robots.txt and ads.txt, DFH is designed to become de facto through adoption before formal standardization.”
 
 HESS / DFH is the missing layer the internet never had: a universal, deterministic semantic + provenance first-hop published at:
 
@@ -483,9 +485,7 @@ Non-marketing, boring, factual
 
 /sitemap (DFH) vs sitemap.xml (SEO)
 
-This single sentence is the anchor truth:
-
-HESS/sitemap declares crawl permission and geometry. Its the table of contents, the crawl here first, the directory, table of contents 
+HESS/sitemap declares crawl permission and geometry. Its the table of contents, the crawl here first, the directory.
 
 🧠 Solving the "Sitemap" Mental Block The Hess/sitemap anchor is where most implementers "break their brains." It is vital to remember: HESS sitemaps are conceptual, not navigational.
 
@@ -523,7 +523,7 @@ The XML Sitemap: A list of every page for a crawler to visit.
 
 “Declare the entrypoints through which crawling MAY begin for this semantic surface.”
 
-HESS /sitemap: A semantic directory of "conceptual surfaces." It tells the AI: "This domain contains knowledge about 'Lager' and 'Ale'—if you want to understand these concepts, start crawling here." “/sitemap is a semantic crawl declaration, not a URL list.”
+HESS /sitemap: A semantic directory of "conceptual surfaces." It tells the AI: "This domain contains knowledge about 'Lager' and 'Ale'—if you want to understand these concepts, start crawling here.
 
 What it IS
 
@@ -623,15 +623,6 @@ What it is NOT
 
 ❌ Not SEO structure
 
-/sitemap answers “What concepts exist here that are safe and intended to be crawled?”
-
-Not:
-
-“Here are all the pages.”
-
-That’s why it points to sitemap(s) — it never is one.
-
-/sitemap is NOT an XML sitemap. It is a semantic crawl declaration.
 
 Think of it as:
 
@@ -755,11 +746,13 @@ The web has DNS for location. HESS/DFH adds a first hop for meaning.
 
 /entity “What is the primary entity identity?” Entity records (IDs, names, aliases, optional links)
 
-/url “What URLs map to what entities?” URL bindings URLs, alternates, language variants, key routes
+/url  = where the entity officially lives your root main wabsite (authoritative URL bindings)
 
 /canonical “What is the canonical label/name?” Canonical naming table: canonical label + aliases (helps disambiguation) 
 
-/sitemap “What is the crawl surface?” Declared list of sitemap entrypoints (not the whole sitemap contents) Rule: These are meaning anchors (intent + identity), not “truth”.
+/sitemap “What is the crawl surface?” entrypoints the table of contents, the directory.
+
+Rule: These are meaning anchors (intent + identity), not “truth”.
 
 Downstream systems arbitrate truth and safety.
 
@@ -789,7 +782,7 @@ url": "https://yourdomain.com/url/index.jsonld", "dfh:
 
 canonical": "https://yourdomain.com/canonical/index.jsonld", "dfh:
 
-sitemap": "https://yourdomain.com/sitemap/index.jsonld" } } Keep it stable. This should almost never change except anchor URLs or root identity.
+sitemap": "https://yourdomain.com/canonical/index.jsonld", "dfh: Keep it stable. This should almost never change except anchor URLs or root identity.
 
 
 
