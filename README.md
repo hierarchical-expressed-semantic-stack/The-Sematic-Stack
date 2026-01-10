@@ -3,7 +3,28 @@
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### A 7-Layer Semantic Protocol — Built for AI
 Status: Draft v3.0 — Conceptually stable
-Core semantics are frozen. Clarifications only unless versioned.
+
+## 🔒 Core Semantics (Frozen)
+
+> **Clarifications only unless versioned.**
+
+---
+
+## 🌐 Root Descriptor
+
+https://yourdomain.com/.well-known/stack
+
+
+
+---
+
+## 🧱 The 5 Mandatory Anchors
+
+/type = what kind of thing
+/entity = what noun it is
+/url = where meaning lives
+/canonical = what it’s called
+/sitemap = where crawling may begin
 
 
 HESS / DFH is built specifically for AI systems and search engines.
