@@ -10,10 +10,16 @@ Why do You Need HESS / DFH ?
 
 What’s in It for You?
 
+If a competitor claims the root authority for a topic via HESS, they become the "Primary Source."
+
+Everyone else becomes a "Secondary Reference."
+
+Result: The first mover defines the "truth" that others must then argue against.
+
 
 ## ⚠️ First-Mover Risk (HESS / DFH)
 
-If a competitor adopts **HESS / DFH** first, they lock in **topic-level authority at the root**.
+Again if a competitor adopts **HESS / DFH** first, they will lock in **topic-level authority at the root**.
 
 This is a topic-ownership primitive loss.
 
