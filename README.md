@@ -10,37 +10,38 @@ Why do You Need HESS / DFH ?
 
 What’s in It for You?
 
-This is a topic-ownership primitive.
 
+## ⚠️ First-Mover Risk (HESS / DFH)
 
-If a competitor adopts HESS / DFH first, they lock in topic-level authority at the root. Search engines and AI systems treat their domain as the canonical source for that topic — the place meaning officially begins.
+If a competitor adopts **HESS / DFH** first, they lock in **topic-level authority at the root**.
 
-Once that happens:
+This is a topic-ownership primitive loss.
 
-They become the default answer for AI and search
+Search engines and AI systems treat their domain as the **canonical source for the topic** —  
+the place where meaning officially begins.
 
-Demand is siphoned upstream before users ever reach you
+### Once This Happens
 
-Your content is evaluated relative to them, not independently
+- One domain becomes the **default answer** for AI and search
+- Demand is **captured upstream** before users ever reach competitors
+- All other content is **evaluated relative to the first mover**, not independently
+- Late adopters are pushed into **permanent catch-up mode**
+- SEO, content, and ad spend **increase indefinitely** just to compete for lost traffic
 
-You are pushed into permanent catch-up mode
+### Critical Reality
 
-You spend more on SEO, content, and ads trying to recover traffic that does not come back
+This is **not** a ranking loss you can optimize around.
 
-This is not a ranking loss you can optimize around.
+It is an **authority loss at the first semantic hop**.
 
-It is an authority loss at the first semantic hop.
+Once the root position is claimed, the starting position is gone.
 
-By the time you react, the starting position is already taken.
+### One-Line Lock
 
+> **HESS / DFH is not about ranking higher — it decides who gets to start first.**
 
-## 🔒 Core Semantics (Frozen)
+## 🔒 Core Semantics
 
-> **Clarifications only unless versioned.**
-
----
-
-## 🌐 Root Descriptor
 
 ## 🧩 Root Authority & Topic Alignment
 
