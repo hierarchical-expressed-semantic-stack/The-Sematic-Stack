@@ -2,7 +2,10 @@
 ## Hierarchical Expressed Semantic Stack (HESS)
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### A 7-Layer Semantic Protocol — Built for AI
+
 Status: Draft v3.0 — Conceptually stable
+
+This specification is intentionally redundant it explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles.
 
 HESS / DFH lets a domain owner declare what a topic is at the root, before AI or search engines guess.
 Whoever does this first becomes the semantic starting point everyone else is compared against.
@@ -194,7 +197,7 @@ You either own the first hop — or you don’t.
 HESS / DFH lets you tell them what your *domain* means — before guessing starts.**
 
 
-This specification is intentionally redundant and explains the same concepts from multiple angles (protocol, systems, SEO, and mental-model views). If you have questions, confusion, or concerns, copy-paste this spec into an AI chat and ask away. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
+If you have questions, confusion, or concerns, copy-paste this spec into an AI chat and ask away. The repetition is deliberate and exists to help you “click” the model quickly, not to add complexity.
 
 What SLPI / HESS Actually Fixes:
 
