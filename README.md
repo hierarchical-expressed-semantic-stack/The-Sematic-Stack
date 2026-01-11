@@ -16,6 +16,8 @@ HESS is the only publicly discoverable, domain-owned, deterministic mechanism on
 
 "Fills the Semantic Blind Spot" between location (DNS) and retrieval (HTTP).
 
+It answers why machines should keep guessing when owners can declare, and why DNS-like adoption is invalid here but valid everywhere else.
+
 Establishes the default semantic starting point unless contested or overridden by downstream arbitration”
 
 **HESS is the checkmate move in SEO and AI grounding:** once the first semantic hop is **deterministically owned and implemented**, every downstream system is forced into **arbitration instead of guesswork**.
