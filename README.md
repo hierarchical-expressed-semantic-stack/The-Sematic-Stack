@@ -21,7 +21,14 @@ This specification is intentionally redundant it explains as the first-hop SEO +
 
 “If this sounds too strong, paste it into an AI and ask whether the logic holds.”
 
-HESS / DFH lets a domain owner declare what a topic is at the root, before AI or search engines guess.
+HESS / DFH lets the root-domain website owner declare the site’s topic upfront — before AI systems or search engines have to guess.
+
+The root domain is the only authoritative semantic root.
+
+• The root domain MUST be the primary public website for the topic.
+• All 5 semantic anchors MUST match the root topic exactly.
+• Anchors MAY NOT define a broader or different topic.
+• Anchors exist only to bind and reinforce the root — never to replace it.
 
 Whoever does this first becomes the semantic starting point everyone else is compared against.
 
