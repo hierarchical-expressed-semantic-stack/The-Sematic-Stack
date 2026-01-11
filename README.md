@@ -30,7 +30,6 @@ The root domain is the only authoritative semantic root.
 • Anchors MAY NOT define a broader or different topic.
 • Anchors exist only to bind and reinforce the root — never to replace it.
 
-Whoever does this first becomes the semantic starting point everyone else is compared against.
 
 “HESS defines the claim surface, not the winner.”
 
@@ -41,6 +40,10 @@ You’re not claiming correctness — you’re claiming authorship of intent.
 Why do You Need HESS / DFH ?
 
 What’s in It for You?
+
+By implementing this, you aren't just improving your SEO—you are becoming a Primary Source in a world where AI agents are the new gatekeepers.
+
+Whoever does this first becomes the semantic starting point everyone else is compared against.
 
 If a competitor claims the root authority for a topic via HESS, they become the "Primary Source."
 
