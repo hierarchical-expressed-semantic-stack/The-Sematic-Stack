@@ -39,6 +39,10 @@ Result: The first mover defines the "truth" that others must then argue against.
 
 ## ⚠️ First-Mover Risk (HESS / DFH)
 
+The "Land Grab" Effect: If you are in a competitive niche (like "Best Coffee Grinders" or "Crypto Tax Advice"), and a big company realizes they can "lock in" the topic authority for $50, they will. At that point, you're not just out-ranked; you're semantically "erased" from the AI's primary source list.
+
+Scale: If your business makes $10,000 a month, $50 to ensure AI doesn't hallucinate your brand is a rounding error. If your business makes $100 a month, $50 is a massive chunk of your profit.
+
 If you don’t act first, a competitor can adopt HESS / DFH and lock in topic-level authority at the root.
 
 This is a topic-ownership primitive loss.
