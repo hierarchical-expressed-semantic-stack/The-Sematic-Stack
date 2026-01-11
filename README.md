@@ -24,7 +24,13 @@ Establishes the default semantic starting point unless contested or overridden b
 
 DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → answer
 
-This specification is intentionally redundant it explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles.
+This specification is intentionally redundant, people struggle to understand this. It explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles. ~7 different explanations of “first hop”
+
+~6 explanations of /sitemap
+
+~5 explanations of “not truth”
+
+~4 restatements of DNS analogy
 
 “If this sounds too strong, paste it into an AI and ask whether the logic holds.”
 
