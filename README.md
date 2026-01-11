@@ -12,6 +12,8 @@ Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting t
 
 “If DNS tells machines where to go, HESS / DFH tells machines what it means when they get there — before inference begins.”
 
+DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → answer
+
 **HESS is the checkmate move in SEO and AI grounding:** once the first semantic hop is **deterministically owned and implemented**, every downstream system is forced into **arbitration instead of guesswork**.
 
 This specification is intentionally redundant it explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles.
