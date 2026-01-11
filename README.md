@@ -24,7 +24,9 @@ Establishes the default semantic starting point unless contested or overridden b
 
 DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → answer
 
-This specification is intentionally redundant, people struggle to understand this. It explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles. ~7 different explanations of “first hop”
+This specification is intentionally redundant, as average people struggle to understand this. It explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles.
+
+~7 different explanations of “first hop”
 
 ~6 explanations of /sitemap
 
@@ -32,7 +34,7 @@ This specification is intentionally redundant, people struggle to understand thi
 
 ~4 restatements of DNS analogy
 
-“If this sounds too strong, paste it into an AI and ask whether the logic holds.”
+“If this sounds too strong, or confusing just copyand paste it into an AI and ask whether the logic holds.”
 
 HESS / DFH lets the root-domain website owner declare the site’s topic upfront — before AI systems or search engines have to guess.
 
