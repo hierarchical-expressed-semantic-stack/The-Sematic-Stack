@@ -24,6 +24,8 @@ Whoever does this first becomes the semantic starting point everyone else is com
 
 “HESS defines the claim surface, not the winner.”
 
+You’re not claiming correctness — you’re claiming authorship of intent.
+
 🚀 Why exacty does this matter to you?
 
 Why do You Need HESS / DFH ?
