@@ -86,24 +86,28 @@ Your website domain is the ROOT AUTHORITY for the topic.
 The root website MUST be about the same topic as its five semantic anchors (pillars).
 
 Mandatory Requirements (Normative)
+
 The root domain MUST publish the authoritative stack at:
+
 https://yourdomain.com/.well-known/stack
 
-The root domain MUST be the primary website for the topic.
+The root domain MUST be the primary public website for the topic.
 
 The five anchors/pillars MUST match the root topic exactly.
+Anchors are not websites — they are tiny machine-readable JSON-LD endpoints (like robots.txt for meaning).
 (Same topic, same entity scope — no unrelated subjects.)
 
 The anchors/pillars MUST NOT define a different topic than the root.
-They exist only to bind, ground, and reinforce the root authority.
+They exist only to bind, ground, and reinforce the root authority (the main website on the root domain).
 ---
 
 ## 🧱 The 5 Mandatory Anchors
 
-The five anchors are domains you own, but you don’t “build sites” on them.
+The five anchors are domains you need to purchase, but you don’t “build sites” on them.
 Each one exists only to define one specific meaning for a topic or company, with no overlap or ambiguity.
 
 The five mandatory semantic anchors are acquired as domains but are not operated as public websites.
+
 Each domain is hosted solely as a semantic anchor endpoint, and each anchor binds exactly one non-overlapping semantic role for a topic or organization.
 
 topic type = what kind of thing
