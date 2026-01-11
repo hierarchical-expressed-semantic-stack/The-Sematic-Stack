@@ -14,6 +14,8 @@ Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting t
 
 HESS is the only publicly discoverable, domain-owned, deterministic mechanism on today’s web that allows a site owner to declare semantic intent and provenance before crawling, retrieval, or inference begins “the only root-level, domain-owned, first-hop deterministic mechanism…”
 
+"Fills the Semantic Blind Spot" between location (DNS) and retrieval (HTTP).
+
 Establishes the default semantic starting point unless contested or overridden by downstream arbitration”
 
 **HESS is the checkmate move in SEO and AI grounding:** once the first semantic hop is **deterministically owned and implemented**, every downstream system is forced into **arbitration instead of guesswork**.
