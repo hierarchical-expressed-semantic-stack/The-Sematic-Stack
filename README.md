@@ -367,6 +367,22 @@ By moving the "meaning" of a website from the probabilistic layer (where an AI h
 
 “Every AI system must answer one question first: ‘What am I looking at?’
 
+HESS / DFH is the strongest upstream SEO primitive possible because it targets the earliest decision point: “what is this domain?”
+
+It does four things better than anything else at that layer:
+
+Crawl tax reduction (compute efficiency)
+A crawler can read one small, cacheable file to get site identity + scope + entrypoints, instead of exploring blindly.
+
+Hallucination reduction (intent pinned before inference)
+Models hallucinate hardest when the “what am I looking at?” question is fuzzy. A deterministic first-hop lowers that entropy.
+
+Drift reduction (identity stays pinned over time)
+Drift happens when systems re-infer identity from changing page mixes. A stable root declaration anchors the frame.
+
+Ambiguity collapse (entity + canonical resolution at the root)
+“Apple / Mercury / Jaguar” problems are root-level. If you bind type/entity/canonical early, downstream disambiguation is cheaper and cleaner.
+
 HESS moves that question from guessing to reading.”
 
 It addresses the "garbage in, garbage out" problem of LLM indexing by moving the point of resolution from the model's inference to the domain owner's declaration.
