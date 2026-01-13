@@ -824,6 +824,8 @@ HESS / DFH:is domain-owned is topic-scoped is machine-first works before ranking
 
 a deterministic semantic root a canonical topic authority explicit entity resolution declared crawl geometry machine-verifiable trust Search stops guessing. Ranking stabilizes. Authority compounds.
 
+
+
 DNS told machines where to go. HESS / DFH tells them what it means when they get there.
 
 
@@ -1138,6 +1140,17 @@ One-Sentence Definition DFH is the official public semantic and provenance index
 /canonical: The canonical name / label / ID
 
 /sitemap: The Crawl here first directory.
+
+🛠️ 30-Second Implementation Checklist
+Create Directory: Ensure /.well-known/ is accessible on your root domain.
+
+Deploy Stack: Upload stack.json (JSON-LD) to /.well-known/stack.
+
+Define Anchors: Host the 5 minimal JSON-LD files (Type, Entity, URL, Canonical, Sitemap).
+
+Header Check: Add X-HESS-Stack: https://yourdomain.com/.well-known/stack to your HTTP responses.
+
+Verify: Ensure the Content-Type is strictly application/ld+json.
 
 To claim Topic-Level Authority, you must move your identity from the "semantic fog" of your HTML into the deterministic light of the /.well-known/ directory.
 
