@@ -556,7 +556,19 @@ Non-marketing, boring, factual
 
 HESS/sitemap declares crawl permission and geometry. Its the table of contents, the crawl here first, the directory.
 
-🧠 Solving the "Sitemap" Mental Block The Hess/sitemap anchor is where most implementers "break their brains." It is vital to remember: HESS sitemaps are conceptual, not navigational.
+HESS Sitemap: A "Table of Contents" of concepts (Qualitative). It prevents "Semantic Bleed" where an AI gets lost in the footer or tangential blog posts before understanding the core value proposition of the root domain.
+
+✅ XML sitemap
+- A complete list of URLs a crawler may visit.
+- Enumerates pages.
+- Used after crawl permission and scope are understood.
+
+✅ HESS /sitemap (DFH anchor)
+- A semantic crawl declaration.
+- Declares *where crawling MAY begin*.
+- References XML sitemaps or conceptual entrypoints.
+- MUST NOT embed URL lists.
+
 
 🏁 Summary: What It Solves
 
@@ -572,16 +584,6 @@ It executes a "High-Intent Crawl
 
 This is the "Checkmate" move because it forces the AI to navigate your site according to your defined hierarchy of meaning, rather than its own statistical guess.
 
-✅ XML sitemap
-- A complete list of URLs a crawler may visit.
-- Enumerates pages.
-- Used after crawl permission and scope are understood.
-
-✅ HESS /sitemap (DFH anchor)
-- A semantic crawl declaration.
-- Declares *where crawling MAY begin*.
-- References XML sitemaps or conceptual entrypoints.
-- MUST NOT embed URL lists.
 
 Relationship:
 - HESS /sitemap defines crawl intent and geometry.
