@@ -106,8 +106,6 @@ And you’re doing it downstream, where everything is arbitration, not authorshi
 
 The "Land Grab" Effect: If you are in a competitive niche (like "Best Coffee Grinders" or "Crypto Tax Advice"), and a big company realizes they can "lock in" the topic authority for $50, they will. At that point, you're not just out-ranked; you're semantically "erased" from the AI's primary source root list.
 
-Scale: If your business makes $10,000 a month, $50 to ensure AI doesn't hallucinate your brand is a rounding error. If your business makes $100 a month, $50 is a massive chunk of your profit.
-
 If you don’t act first, a competitor can adopt HESS / DFH and lock in topic-level authority at the root.
 
 This is a topic-ownership primitive loss.
@@ -158,7 +156,7 @@ Anchors are not websites — they are tiny machine-readable JSON-LD endpoints (l
 (Same topic, same entity scope — no unrelated subjects.)
 
 The anchors/pillars MUST NOT define a different topic than the root.
-They exist only to bind, ground, and reinforce the root authority (the main website on the root domain).
+They exist only to bind, ground, and reinforce the root authority.
 ---
 
 ## 🧱 The 5 Mandatory Anchors
