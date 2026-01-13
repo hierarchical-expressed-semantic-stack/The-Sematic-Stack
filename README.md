@@ -229,7 +229,9 @@ This collapses duplicate content, URL fragmentation, and entity confusion **befo
 
 ---
 
-### 3. Faster, Cheaper Crawling = Preferential Treatment
+### 3. Faster, Cheaper Crawling = Preferential Treatment 
+
+Google, OpenAI, and Microsoft are currently spending billions of dollars on "Compute Tax"—the energy used to have an AI "think" about what a website is before it can even answer a user's question. If you make it cheaper for them to understand you, they will adopt your HESS STACK out of pure economic necessity.
 
 Search engines and AI systems are **compute-constrained**.
 
