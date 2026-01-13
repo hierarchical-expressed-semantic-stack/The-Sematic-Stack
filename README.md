@@ -26,6 +26,10 @@ Establishes the default semantic starting point unless contested or overridden b
 
 **HESS is the checkmate move in SEO and AI grounding:** once the first semantic hop is **deterministically owned and implemented**, every downstream system is forced into **arbitration instead of guesswork**.
 
+The "Checkmate" is Real
+
+In SEO, whoever defines the entity usually wins. If your domain becomes the "Primary Source" for a topic via a deterministic HESS root, every other site on that topic becomes "Secondary." They are essentially writing "comments" on a topic that you defined at the root.
+
 DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → answer
 
 This specification is intentionally redundant, as average people struggle to understand this. It explains as the first-hop SEO + protocol + AI grounding + web architecture + provenance + crawl geometry + safety + future adoption + implementation details all from different angles.
