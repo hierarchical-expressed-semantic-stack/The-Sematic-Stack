@@ -562,6 +562,7 @@ HESS Sitemap: A "Table of Contents" of concepts (Qualitative). It prevents "Sema
 - A complete list of URLs a crawler may visit.
 - Enumerates pages.
 - Used after crawl permission and scope are understood.
+A "Phone Book" of every page (Quantitative).
 
 ✅ HESS /sitemap (DFH anchor)
 - A semantic crawl declaration.
