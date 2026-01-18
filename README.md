@@ -1137,3 +1137,54 @@ Squatting Resistance and Deterministic Arbitration — HESS does not treat root 
 
 Paragraph 2 — Versioning / drift / semantic depreciation & migration
 Versioning, Drift, and Semantic Migration — HESS anticipates that domains pivot. To prevent stale roots from becoming permanent “semantic debt,” the stack supports explicit versioning and lifecycle signaling: a root MAY publish a new stack version and mark prior definitions as deprecated, superseded, or migrated via a migration anchor that points to the successor root and provides continuity proofs (e.g., signature chaining from old to new). Agents SHOULD weight current, non-deprecated roots more heavily, reduce trust over time for deprecated roots (semantic depreciation), and follow migration pointers when continuity is verifiable. This allows a domain to evolve without breaking determinism, and it prevents abandoned or repurposed domains from retaining undue semantic authority indefinitely.
+
+
+1) Semantic Squatting, Collisions, and “Generic” Terms
+
+Squatting prevention: HESS does not treat a root claim as ownership by declaration. A root is only eligible to act as a Primary Source when it is backed by verifiable integrity (/integrity) and verifiable authority (/authority). Agents SHOULD treat unsigned or unverifiable roots as untrusted intent and fall back to arbitration (or probabilistic discovery) rather than accepting the claim.
+
+Collision resolution (deterministic tie-breakers): When two domains claim the same /entity, agents SHOULD compute a deterministic winner (or keep parallel primaries) using a scored signal set, for example:
+
+Integrity Verification (hard gate): cryptographically valid signature chain + continuity (root manifest has remained consistently signed over time).
+
+Authority Attestations: third-party verifiable credentials, recognized institutional proofs, or cross-references from established trusted roots (weighted, not absolute).
+
+First-Seen Timestamp: earliest verifiable publication of the same root claim (see “timestamp anchor”).
+
+Stability Signals: domain longevity + continuity of the root identity (not just domain age, but identity continuity).
+If scores are near-equal, agents SHOULD treat both as parallel primaries and shift to downstream arbitration rather than forcing a false singular truth.
+
+Generic trap (common nouns): HESS SHOULD discourage “topic squatting” on broad nouns by requiring explicit typing and scope. A claim to /entity=Coffee is ambiguous unless scoped (e.g., Coffee (Topic) vs Coffee (Product Category) vs Coffee (Organization)). Agents SHOULD prefer roots with narrower, typed entities and MAY down-rank overly generic unscoped roots unless backed by exceptional authority attestations. This forces granularity by making “generic” roots less authoritative by default.
+
+2) Technical Integrity, Tamper Resistance, and Validation TTL
+
+Signing standard: The spec can support multiple signature envelopes, but SHOULD pick one canonical baseline for interoperability. A practical approach is: JWS (or COSE) for the root manifest signature (simple, widely implemented, fast), with optional compatibility for Linked Data Proofs where graph-native semantics are needed. The key point is not the brand of signature—it’s that /integrity is verifiable, portable, and cheap to validate at ingest time.
+
+Validation frequency / TTL: Agents MUST assume /.well-known/stack is a high-value target and treat semantics like identity, not content. A safe default model:
+
+The stack response MUST include cache directives (e.g., Cache-Control) and a Semantic TTL (explicit field) for revalidation.
+
+Agents SHOULD revalidate on a short cadence (hours to a day) for identity-bearing claims, and immediately if signature continuity breaks or the authority set changes.
+
+If a stack changes but is not continuity-signed (no signature chaining), agents SHOULD treat it as a potential compromise and fail into degraded/arbitration mode until verified.
+This creates a bounded “time-to-live” window if a site is compromised and prevents long-lived poisoning.
+
+3) Structural Limits, Drift, Migration, and Multi-Topic Domains
+
+Pivot protocol (semantic migration): Domains evolve; HESS should make evolution explicit. Rather than silently overwriting identity, a root SHOULD support lifecycle states such as active → deprecated → migrated → retired. A migration is expressed via a Migration Anchor (e.g., /migrate) that points to the successor root and includes continuity proof (signature chaining from old root manifest to new). Agents SHOULD follow migration pointers when continuity is verifiable and apply semantic depreciation (reduced weight) to deprecated identities over time. This prevents models and agents from treating a pivot as the same identity.
+
+Multi-topic domains / nested stacks: Yes—large portals can’t be one entity. HESS SHOULD support Nested Stacks: a minimal root stack that declares the publisher and points to sub-stacks representing conceptual surfaces (sections, product taxonomies, knowledge bases). This preserves determinism while allowing a single domain to expose multiple distinct semantic roots without collapsing everything into one /entity.
+
+4) Machine Consumption, Payload Limits, and Failure Modes
+
+Payload limits: To keep first-hop parsing cheap, the root response SHOULD be small and bounded. A reasonable spec posture:
+
+/.well-known/stack SHOULD be ≤ 10KB (or similar), with larger graphs served via referenced documents (links) rather than inline payload.
+This keeps the “VIP lane” fast and prevents abuse.
+
+Strict vs loose schema (fail-closed vs fail-open): Identity should be treated as fail-closed for trust, but fail-open for discovery. In practice:
+
+If JSON-LD/schema is invalid or signature verification fails, the agent MUST NOT accept the identity claim (fail-closed on trust).
+
+The agent SHOULD revert to degraded mode: ignore the broken stack and fall back to probabilistic crawling/arbitration (fail-open on availability).
+This avoids granting authority to malformed or compromised declarations while still allowing the web to function.
