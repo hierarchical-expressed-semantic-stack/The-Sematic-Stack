@@ -912,6 +912,21 @@ Canonical what it is NOT (ambiguity fix)
 
 High-Level Architecture text
 
+"@context": "https://schema.org",
+  "@type": "EntryPoint",
+  "name": "HESS Semantic Stack",
+  "description": "Deterministic First-Hop for [Your Topic]",
+  "identifier": "https://yourdomain.com/.well-known/stack",
+  "dfh_protocol_version": "3.0",
+  "anchors": {
+    "type": "https://yourdomain.com/.well-known/type",
+    "entity": "https://yourdomain.com/.well-known/entity",
+    "url": "https://yourdomain.com/.well-known/url",
+    "canonical": "https://yourdomain.com/.well-known/canonical",
+    "sitemap": "https://yourdomain.com/.well-known/sitemap"
+  }
+}
+
 / ├https://yourdomain.com/.well-known/stack │ └─ stack ├─ ai.json ├─ sitemap.xml ├─ robots.txt └─ README.md
 
 Semantic Stack ├── Root Domain (topic authority) │ ├── /.well-known/stack │ └── Anchors │ ├── /type │ ├── /entity │ ├── /url │ ├── /sitemap │ ├── /canonical │ ├── /authority │ ├── /source │ ├── /timestamp │ ├── /license │ └── /integrity └── Mirrors (optional) └── /.well-known/stack → points to Root Rules
