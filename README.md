@@ -877,7 +877,7 @@ url": "https://yourdomain.com/url/index.jsonld", "dfh:
 
 canonical": "https://yourdomain.com/canonical/index.jsonld", "dfh:
 
-sitemap": "https://yourdomain.com/index.jsonld", "dfh: Keep it stable. This should almost never change except anchor URLs or root identity.
+"dfh:sitemap": "https://yourdomain.com/sitemap/index.jsonld"  Keep it stable. This should almost never change except anchor URLs or root identity.
 
 
 
