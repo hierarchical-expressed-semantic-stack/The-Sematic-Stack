@@ -90,7 +90,7 @@ You’re not claiming correctness — you’re claiming authorship of intent.
 
 The root domain is the only semantic authority.
 
-The five pillars are subordinate satellite domains that MUST be hosted as live semantic anchor endpoints. Each pillar defines exactly one semantic role and MUST bind back to the root domain, from which all semantic authority originates. Pillars have no independent authority and MUST NOT override the root.
+The five pillars MUST be hosted as live semantic anchor endpoints. Each pillar defines exactly one semantic role and MUST bind back to the root domain, from which all semantic authority originates. 
 
 Pillars do not replace the root domain website.
 Pillars exist only to bind and reinforce the root authority.
