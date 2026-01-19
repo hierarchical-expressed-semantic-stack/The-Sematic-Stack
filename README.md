@@ -68,6 +68,16 @@ The root domain is the only authoritative semantic root.
 • Anchors MAY NOT define a broader or different topic.
 • Anchors exist only to bind and reinforce the root — never to replace it.
 
+You buy 1 root domain (the real site).
+
+You buy 5 pillar domains (tiny “anchor” domains).
+
+Each pillar domain hosts one tiny JSON file.
+
+The root publishes one stack file that points to those five pillar files.
+
+That’s it.
+
 /type prevents class confusion (“what kind of thing is this?”)
 
 /entity pins the actual noun/ID (“which thing exactly?”)
