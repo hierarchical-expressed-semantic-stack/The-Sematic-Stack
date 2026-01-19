@@ -1476,3 +1476,17 @@ HESS does not replace truth arbitration.
 It moves ambiguity out of the crawl path and into explicit, inspectable signals, where machines can reason deterministically instead of guessing.
 
 That shift—from inference to declaration—is what makes this protocol not just conceptually sound, but operationally inevitable.
+
+MUST fetch /.well-known/stack only over HTTPS
+
+MUST validate JSON-LD parse + schema
+
+MUST require /entity + /url for identity acceptance
+
+MUST treat /integrity verification failure as ineligible
+
+SHOULD weight /authority attestations
+
+SHOULD treat ties as parallel primaries
+
+MUST degrade to legacy crawl if any mandatory anchor is missing/unreachable
