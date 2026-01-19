@@ -5,6 +5,8 @@
 
 Status: Draft v3.0 — Conceptually Stable 
 
+“This is the smallest possible standard surface that moves identity resolution earlier than crawling. Everything else in the AI stack assumes identity is already known; HESS makes that assumption explicit and machine-resolvable.”
+
 HESS/DFH is the "missing manual" built for machines to understand.
 
 The internet has spent 30 years perfecting location (where a site is) but completely ignored meaning (what a site is).
