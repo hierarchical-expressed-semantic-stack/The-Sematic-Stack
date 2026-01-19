@@ -1,7 +1,7 @@
 # 🌐 The Semantic Layer of the Public Internet (SLPI)
 ## Hierarchical Expressed Semantic Stack (HESS)
 ### A Deterministic, Installable Semantic First-Hop for the Web  
-#### A Semantic DNS Protocol — Built for search engines and AI
+#### “A /.well-known/-hosted semantic manifest scheme for AI crawlers” — Built for search engines and AI
 
 Status: Draft v3.0 — Conceptually Stable 
 
