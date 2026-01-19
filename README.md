@@ -39,7 +39,7 @@ In SEO, the party that defines the canonical entity usually controls the topic. 
 Hallucination Control at the Root: 
 When an AI system can deterministically identify a source as an Official Technical Manual rather than a Satirical Blog before content ingestion, the probability of hallucination is reduced because the context window is pre-weighted with authoritative intent and constraint metadata..
 
-HESS is a publicly discoverable, domain-owned, deterministic mechanism on today’s web that allows a site owner to declare semantic intent and provenance before crawling, retrieval, or inference begins “the only root-level, domain-owned, first-hop deterministic mechanism…”
+HESS is a publicly discoverable, domain-owned, deterministic mechanism on today’s web that allows a site owner to declare semantic intent and provenance before crawling, retrieval, or inference begins.
 
 "Fills the Semantic Blind Spot" between location (DNS) and retrieval (HTTP).
 
