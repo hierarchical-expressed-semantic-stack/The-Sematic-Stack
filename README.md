@@ -125,13 +125,31 @@ Pillars exist only to bind and reinforce the root authority.
 
 HESS is to meaning what DNS is to location: decentralized, permissionless, and designed to reduce “hallucination at the root” by pinning semantic intent before crawling or inference.
 
-🏁 30-Second Verification If you have already created your https://yourdomain.com/.well-known/stack, you can verify your "First Hop" readiness with these two checks:
+🏁 30-Second Verification
+If you have created your https://yourdomain.com/.well-known/stack, you can verify your First-Hop readiness with these two checks:
 
-Header Check: Does /https://yourdomain.com/.well-known/stack return Content-Type: application/ld+json?
+1. Root Header Check (Discovery Hint)
 
-Pointer Check: Do the dfh:anchors object in your stack file resolve to absolute HTTPS URLs?
+Header Check:
+Does your root domain (e.g., https://yourdomain.com/) return the following HTTP response header?
+
+X-HESS-Stack: https://yourdomain.com/.well-known/stack
 
 
+This header is a discovery hint only and MUST point to the stack root.
+
+2. Anchor Pointer Check (Binding)
+
+Pointer Check:
+Does the dfh:anchors object inside your stack file resolve to absolute HTTPS URLs for all five anchors?
+
+All 5 anchors present
+
+All 5 use https://
+
+All 5 are reachable 
+
+Why HESS Is Asymmetric
 
 If a competitor establishes the semantic root for a topic (e.g., “Best Espresso Machines”), any content published afterward is interpreted relative to that root definition. Subsequent content functions as opinion or commentary rather than authorship.
 
@@ -139,9 +157,7 @@ By implementing HESS, a domain does not merely improve SEO performance—it esta
 
 The first deterministic semantic root becomes the starting point against which all other sources are evaluated.
 
-Under HESS:
-
-The result is a shift from ranking competition to semantic hierarchy. Once a primary root exists, downstream publishers are no longer competing to define the topic—they are competing to be recognized in relation to an already established definition.
+Under HESS, the result is a shift from ranking competition to semantic hierarchy. Once a primary root exists, downstream publishers are no longer competing to define the topic—they are competing to be recognized in relation to an already established definition.
 
 At that point, participation occurs downstream, where interpretation and arbitration replace authorship.
 
