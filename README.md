@@ -24,7 +24,7 @@ Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting t
 
 “Reducing crawl cost and interpretation risk improves indexing and citation reliability.”
 
-## ♟️ HESS: A Checkmate Move in SEO and AI Grounding at the First Semantic Hop
+## ♟️ HESS: SEO and AI Grounding at the First Semantic Hop
 
 Traditional SEO is an arms race: content volume, links, tech audits, endless updates. If you can become the preferred machine-readable source, you reduce how hard you have to fight.
 
@@ -36,10 +36,10 @@ In SEO, the party that defines the canonical entity usually controls the topic. 
 
 “If DNS tells machines where to go, HESS / DFH tells machines what it means when they get there — before inference begins.”
 
-Hallucination Control at the Root: Fixed.
+Hallucination Control at the Root: 
 When an AI system can deterministically identify a source as an Official Technical Manual rather than a Satirical Blog before content ingestion, the probability of hallucination is reduced because the context window is pre-weighted with authoritative intent and constraint metadata..
 
-HESS is the only publicly discoverable, domain-owned, deterministic mechanism on today’s web that allows a site owner to declare semantic intent and provenance before crawling, retrieval, or inference begins “the only root-level, domain-owned, first-hop deterministic mechanism…”
+HESS is a publicly discoverable, domain-owned, deterministic mechanism on today’s web that allows a site owner to declare semantic intent and provenance before crawling, retrieval, or inference begins “the only root-level, domain-owned, first-hop deterministic mechanism…”
 
 "Fills the Semantic Blind Spot" between location (DNS) and retrieval (HTTP).
 
@@ -84,6 +84,22 @@ If any of the 5 anchors is missing/unreachable, the agent MUST degrade and MUST 
 
 You’re not claiming correctness — you’re claiming authorship of intent.
 
+⚡ 30-Second Implementation Checklist Create Directory: Ensure /.well-known/ exists on your server.
+
+1. Deploy Stack: Upload the stack file (JSON-LD) pointing to your anchors.
+
+2. Define Anchors: Create minimal JSON-LD files for /type, /entity, /url, /canonical, and /sitemap.
+
+3. Test: Ensure https://yourdomain.com/.well-known/stack resolves via HTTPS.
+
+HESS is to meaning what DNS is to location: decentralized, permissionless, and designed to reduce “hallucination at the root” by pinning semantic intent before crawling or inference.
+
+🏁 30-Second Verification If you have already created your https://yourdomain.com/.well-known/stack, you can verify your "First Hop" readiness with these two checks:
+
+Header Check: Does /https://yourdomain.com/.well-known/stack return Content-Type: application/ld+json?
+
+Pointer Check: Do the dfh:anchors object in your stack file resolve to absolute HTTPS URLs?
+
 
 
 If a competitor establishes the semantic root for a topic (e.g., “Best Espresso Machines”), any content published afterward is interpreted relative to that root definition. Subsequent content functions as opinion or commentary rather than authorship.
@@ -93,10 +109,6 @@ By implementing HESS, a domain does not merely improve SEO performance—it esta
 The first deterministic semantic root becomes the starting point against which all other sources are evaluated.
 
 Under HESS:
-
-The first publisher to claim a topic root becomes the Primary Source
-
-All later publishers are treated as Secondary References
 
 The result is a shift from ranking competition to semantic hierarchy. Once a primary root exists, downstream publishers are no longer competing to define the topic—they are competing to be recognized in relation to an already established definition.
 
@@ -445,7 +457,7 @@ DFH — Deterministic First Hop
 
 
 
-HESS/DFH is The "VIP Lane" for AI Crawlers From a practical and SEO standpoint, this is a Compute Efficiency play.
+HESS/DFH is for AI Crawlers, From a practical and SEO standpoint, this is a Compute Efficiency play.
 
 It solves the "Semantic Reasoning Tax"—the massive amount of compute wasted by AI models trying to guess what a website is about before they can even begin to process its data.
 
@@ -468,7 +480,7 @@ Ignore it → the risk is asymmetric: a competitor will adopt first, lock in aut
 This is topic-level authority (the missing SEO primitive), not page-level tricks.
 
 
-What HESS also Is?  “HESS is the checkmate move in AI grounding: Once the first semantic hop is deterministic, every downstream system is forced into arbitration instead of guesswork.” HESS applies JSON-style hierarchical structure to the web itself, replacing inferred meaning with explicitly declared semantic roots.
+What HESS also Is?  “HESS is built for AI grounding: Once the first semantic hop is deterministic, every downstream system is forced into arbitration instead of guesswork.” HESS applies JSON-style hierarchical structure to the web itself, replacing inferred meaning with explicitly declared semantic roots.
 
 “A domain can only be authoritative for topics it controls at the root.”
 
@@ -532,10 +544,6 @@ No amount of compute fixes that.
 
 Why HESS Can Exist It can be adopted unilaterally AIs do not need permission Domains already control this surface Nothing else occupies this layer Once meaning is deterministically declared, everything downstream becomes arbitration, not guesswork.
 
-AI systems need a first hop. They can fake it for now — but not forever.
-
-
-HESS / Deterministic First-Hop Protocol (HESS / DFH Protocol Specification —  · Draft v3.0)
 
 HESS / DFH is not an AI model and does not compete with models. It defines a deterministic semantic first hop — the point at which meaning and provenance are declared before any model inference, retrieval, or reasoning occurs. All existing grounding techniques operate downstream of this hop.
 
@@ -622,8 +630,8 @@ This is the "Checkmate" move because it forces the AI to navigate your site acco
 
 
 Relationship:
-- HESS /sitemap defines crawl intent and geometry.
-- XML sitemap.xml enumerates URLs within that declared surface.
+- HESS /sitemap defines crawl intent and geometry. The Directory
+- XML sitemap.xml enumerates URLs within that declared surface. The Phone book.
 
 
 The XML Sitemap: A list of every page for a crawler to visit. 
@@ -645,22 +653,6 @@ This anchor is not redundant. It’s the bridge between meaning and crawl behavi
 The HESS/DFH sitemap anchor MUST declare crawl entrypoints and MUST NOT embed URL lists.
 
 HESS/DFH sitemap = declared crawl geometry
-
-⚡ 30-Second Implementation Checklist Create Directory: Ensure /.well-known/ exists on your server.
-
-1. Deploy Stack: Upload the stack file (JSON-LD) pointing to your anchors.
-
-2. Define Anchors: Create minimal JSON-LD files for /type, /entity, /url, /canonical, and /sitemap.
-
-3. Test: Ensure https://yourdomain.com/.well-known/stack resolves via HTTPS.
-
-HESS is to Meaning what DNS is to Location. It is decentralized, permissionless, and fixes the "hallucination at the root" problem that currently plagues AI systems.
-
-🏁 30-Second Verification If you have already created your https://yourdomain.com/.well-known/stack, you can verify your "First Hop" readiness with these two checks:
-
-Header Check: Does /https://yourdomain.com/.well-known/stack return Content-Type: application/ld+json?
-
-Pointer Check: Do the dfh:anchors object in your stack file resolve to absolute HTTPS URLs?
 
 Specification Status This document contains:
 
