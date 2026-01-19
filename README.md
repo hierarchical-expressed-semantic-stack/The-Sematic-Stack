@@ -24,7 +24,7 @@ Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting t
 
 “Reducing crawl cost and interpretation risk improves indexing and citation reliability.”
 
-## ♟️ HESS: SEO and AI Grounding at the First Semantic Hop
+## HESS: SEO and AI Grounding at the First Semantic Hop
 
 Traditional SEO is an arms race: content volume, links, tech audits, endless updates. If you can become the preferred machine-readable source, you reduce how hard you have to fight.
 
@@ -83,6 +83,13 @@ If any of the 5 anchors is missing/unreachable, the agent MUST degrade and MUST 
 “HESS defines the claim surface, not the winner.”
 
 You’re not claiming correctness — you’re claiming authorship of intent.
+
+The root domain is the only semantic authority.
+
+The five pillars are subordinate satellite domains that MUST be hosted as live semantic anchor endpoints, whose only role is to define a single semantic function and bind back to the root domain, from which all semantic authority originates.
+
+Pillars do not replace the root domain website.
+Pillars exist only to bind and reinforce the root authority.
 
 ⚡ 30-Second Implementation Checklist Create Directory: Ensure /.well-known/ exists on your server.
 
