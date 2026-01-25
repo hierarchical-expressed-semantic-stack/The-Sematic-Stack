@@ -3,11 +3,14 @@
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### “A /.well-known/-hosted semantic manifest scheme for AI crawlers” — Built for search engines and AI
 
+Status: Draft v3.0 — Conceptually Stable 
+
 This protocol moves the first semantic index out of search engines’ private knowledge graphs and into a public, domain-owned layer defined by five deterministic anchors, including a sitemap indicating where to crawl first and a root descriptor providing the instruction used for first-hop resolution.
 
 Determinism requires a root descriptor at /.well-known/stack.
 
-Status: Draft v3.0 — Conceptually Stable 
+The anchors must be external domain-owned endpoints that point back to the Root Descriptor. This creates the "semantic triangle" that prevents spoofing and forces machine resolution.
+
 
 “This is the smallest possible standard surface that moves identity resolution earlier than crawling. Everything else in the AI stack assumes identity is already known; HESS makes that assumption explicit and machine-resolvable.”
 
