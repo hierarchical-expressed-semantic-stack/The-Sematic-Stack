@@ -5,6 +5,9 @@
 
 Status: Draft v3.0 — Conceptually Stable 
 
+HESS / DFH does not run inside AI systems or platforms.
+It is a public, network-resolvable protocol, hosted on the open web at a fixed, domain-owned address, with five mandatory external anchor endpoints that machines fetch before crawling or inference begins.
+
 This protocol moves the first semantic index out of search engines’ private knowledge graphs and into a public, domain-owned layer defined by five deterministic anchors, including a sitemap indicating where to crawl first and a root descriptor providing the instruction used for first-hop resolution.
 
 Determinism requires a root descriptor at /.well-known/stack.
