@@ -9,6 +9,8 @@ This protocol moves the first semantic index out of search engines’ private kn
 
 Determinism requires a root descriptor at /.well-known/stack.
 
+“The Root Descriptor is a deterministic discovery manifest, not an internal authority oracle; determinism comes from resolving the five external anchors and verifying their binding back to the Root Descriptor.”
+
 The anchors must be external domain-owned endpoints that point back to the Root Descriptor. This creates the "semantic triangle" that prevents spoofing and forces machine resolution.
 
 
