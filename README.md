@@ -739,7 +739,7 @@ Deterministic Grounding Pipeline DNS → /https://yourdomain.com/.well-known/sta
 
 This project is not affiliated with Google, Amazon, OpenAI, or any third party. HESS/DFH was created by the public for the public.
 
-
+In a HESS/DFH ecosystem, organizations naturally adopt a dual-identity model: a human-facing brand name, and a machine-facing semantic symbol. Just as financial markets operate on compact tickers (AAPL, GOOG, BTC) rather than full legal names, AI systems prefer short, deterministic identifiers that resolve unambiguously through a public registry. HESS provides the missing layer that binds human brands to machine-readable semantic tickers at the first hop, enabling stable, low-entropy identity resolution across the web.
 
 Background & Motivation HESS / DFH is the modern deterministic extension of Berners-Lee’s Semantic Web: a universal first-hop that tells machines:
 
