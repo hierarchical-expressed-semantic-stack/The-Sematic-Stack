@@ -186,7 +186,7 @@ If a competitor establishes the semantic anchors for a topic (e.g., “Best Espr
 
 By implementing HESS, a domain owner does not merely improve SEO performance—it establishes itself as a Primary Source in an ecosystem where AI agents act as the primary gatekeepers of information.
 
-The first deterministic semantic anchors  becomes the starting point against which all other sources are evaluated.
+The first deterministic semantic anchors become the starting point against which all other sources are evaluated.
 
 Under HESS, the result is a shift from ranking competition to semantic hierarchy. Once a primary set of anchors exists, downstream publishers are no longer competing to define the topic—they are competing to be recognized in relation to an already established definition.
 
@@ -233,7 +233,7 @@ The main Root Descriptor website MUST be about the same topic as its five semant
 
 Mandatory Requirements (Normative)
 
-The root deciptor domain MUST publish the authoritative stack at:
+The root deciptor domain yourmain website MUST publish the authoritative stack at:
 
 https://yourdomain.com/.well-known/stack
 
@@ -246,7 +246,7 @@ The Anchors MUST NOT define a different topic than the Root Descriptor site.
 
 ## 🧱 The 5 Mandatory Anchors
 
-The five anchors are domains you need to purchase, but you don’t “build sites” on them.
+The five anchors are domains you need to purchase as anchors, but you don’t “build sites” on them.
 Each one exists only to define one specific meaning for a topic or company, with no overlap or ambiguity.
 
 The five mandatory semantic anchors are acquired as domains but are not operated as public websites.
