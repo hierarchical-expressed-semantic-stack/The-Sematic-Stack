@@ -3,6 +3,8 @@
 ### A Deterministic, Installable Semantic First-Hop for the Web  
 #### “A /.well-known/-hosted semantic manifest scheme for AI crawlers” — Built for search engines and AI
 
+DNS → [hole] → HTTP
+
 A master key for one specific lock: first-hop semantic identity.
 
 Status: Draft v3.0 — Conceptually Stable 
