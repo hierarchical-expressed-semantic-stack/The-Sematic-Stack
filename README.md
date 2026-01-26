@@ -5,6 +5,9 @@
 
 Status: Draft v3.0 — Conceptually Stable 
 
+This is the cleanest option to address (semantic grounding + hallucination + identity + drift + provenance + crawl geometry + SEO)
+because it fixes the only place all of those failures originate: the first semantic hop.
+ 
 Buy 6 domains total:
 1 Root Descriptor (your real website)
 5 Anchor domains (the pillars)
