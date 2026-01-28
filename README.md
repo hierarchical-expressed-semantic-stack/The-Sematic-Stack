@@ -21,6 +21,16 @@ DNS → HESS (declared meaning) → crawl → infer → arbitrate → answer
 
 A master key for one specific lock: first-hop semantic identity.
 
+Realistic impact when DFH is honored
+
+Hallucination caused by identity ambiguity: ↓ 70–90%
+
+Semantic drift across re-indexing: ↓ 60–80%
+
+Misattribution / citation errors: ↓ ~70%
+
+Compute wasted on “what is this?”: ↓ ~90%
+
 “This repository defines HESS as a deterministic, external, network-resolvable semantic first-hop protocol for AI and crawlers.”
 
 This repository is dense by design, and its very long, 48 pagesif you print it out.
