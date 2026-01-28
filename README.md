@@ -121,9 +121,21 @@ How to install this:
  
 Buy 6 domains total:
 
-1 Root Descriptor:
+1. Root Descriptor
 
-(your real website) root is for discovery + routing only. 
+You MUST include a Root Descriptor on your domain address (your real website).
+
+The Root Descriptor is used only for discovery and routing.
+
+It MUST NOT assert semantic meaning.
+
+You MUST create a JSON (JSON-LD) file named stack.
+
+The Root Descriptor consists of this stack file and MUST be placed in the standard /.well-known/ directory on your domain address.
+
+Example (domain address)
+
+https://yourdomain.com/.well-known/stack
 
 Serves discovery and routing only
 
@@ -148,21 +160,40 @@ DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → ans
 
 Each topic = one canonical root descriptor domain (the domain that “owns” the topic’s primary semantic identity).
 
-That domain publishes a root descriptor file at a deterministic location so crawlers/agents can resolve meaning before they crawl pages.
-• The domain MUST be the primary public website for the topic.
-• All 5 semantic anchors MUST match the topic exactly.
-• Anchors MAY NOT define a broader or different topic.
+The website MUST be about the same topic.
+
+All five semantic anchors MUST match that topic exactly.
+
+Anchors MUST NOT define a broader or different topic.
+
+Keep It Simple
+
+1. Root Descriptor
+
+The Root Descriptor lives under your main website domain.
+
+It exists only for discovery and routing.
+
+It does not assert meaning and does not host anchors.
+
+Location
+
+Create a JSON-LD file named stack inside the standard /.well-known/ directory.
+
+Example
+
+https://yourdomain.com/.well-known/stack
 
 
-Keep it simple:
+This file is the entry point machines fetch first to resolve semantic intent before crawling or inference begins.
 
-You buy or create 1 Root Descriptor domain (the real site).
+You MUST purchase and host five pillar domains.
 
-You buy 5 pillars.
+These domains are hosted solely as Semantic Authority anchors.
 
-Each pillar domain hosts one tiny JSON file.
+Each pillar domain anchor hosts one tiny JSON file.
 
-The anchors point back to the Root Descriptor, not the other way around.
+The anchors point back to the Root Descriptor your website, not the other way around.
 
 That’s it.
 
@@ -200,7 +231,7 @@ If an XML sitemap exists, it MUST be referenced here.
 
 Binding Rule
 
-Every Anchor file must explicitly include your Root Descriptor domain.
+Every Anchor file must explicitly include your Root Descriptor domain with your main website. Example include https://yourdomain.com/.well-known/stack
 
 This is how machines know that all five anchors belong to the same topic owner.
 
@@ -266,7 +297,6 @@ It is a public, network-resolvable protocol, hosted on the open web at a fixed, 
 
 This protocol moves the first semantic index out of search engines’ private knowledge graphs and into a public, domain-owned layer defined by five deterministic anchors, including a sitemap indicating where to crawl first and a root descriptor providing the instruction used for first-hop resolution.
 
- Requires a root descriptor at /.well-known/stack.
 
 “The Root Descriptor is not an internal authority oracle; determinism comes from resolving the five external anchors and verifying their binding back to the Root Descriptor.”
 
@@ -1628,7 +1658,7 @@ Wikipedia infobox vs article text
 
 HESS defines intentional identity, not empirical exhaustiveness.
 
-“I wasn’t trying to be a visionary. I was chasing SEO, consolidating every 301 redirect I could, and trying to claim the semantic identity of my topic — when I accidentally stumbled onto a hole.”
+“I wasn’t trying to be a visionary. It was October of 2025, I was chasing SEO, consolidating every 301 redirect I could, when suddenly, I thought to myself "how do I claim the semantic identity of my topic — when I accidentally stumbled onto a hole.”
 
 The "Accidental Architect" Reality:
 
@@ -1638,7 +1668,7 @@ The Discovery: I realized modern platforms were inferring identity by guessing a
 
 “I found the exact choke point where the web has been guessing for 30 years, and I pinned it.”
 
-The Invention: I created the five-pillar HESS stack to provide the minimal mechanism required to do what I assumed was already being handled by the infrastructure.
+The Invention: I created the five-pillar HESS stack and a root deciptor via /.well-known/ (Stack)` endpoint. to provide the minimal mechanism required to do what I assumed was already being handled by the infrastructure.
 
 I just bought the “Meaning” via DNS and told the algorithm to read the file via a `/.well-known/` endpoint.
 
