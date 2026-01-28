@@ -14,6 +14,9 @@ An installable, deterministic, network-resolvable semantic first-hop protocol, h
 
 DNS → [hole] → HTTP
 
+ingest → guess → embed → reconcile → hallucinate
+
+
 DNS → HESS (declared meaning) → crawl → infer → arbitrate → answer
 
 A master key for one specific lock: first-hop semantic identity.
