@@ -155,6 +155,11 @@ Host 6 tiny JSON files
 
 publish
 
+🔒 THE NON-NEGOTIABLE INVARIANT (READ THIS ONCE)
+
+Determinism in HESS / DFH does NOT come from the Root Descriptor.
+Determinism comes ONLY from resolving FIVE EXTERNAL, DOMAIN-INDEPENDENT ANCHORS that all bind back to the Root Descriptor.
+
 
 DNS → declared semantic intent (DFH) → crawl → infer → arbitrate → answer
 
