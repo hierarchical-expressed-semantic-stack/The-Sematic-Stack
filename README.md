@@ -130,7 +130,7 @@ The requirement to purchase five independent domains is a "proof of work" mechan
 
 By 2026 standards, if you aren't willing to prove your semantic identity, you're just noise.
 
-If you have a topic you actually care about—one where you want to be the "Primary Source"—do not wait. The first person to set up these five anchors for a specific entity is effectively "homesteading" that meaning on the public internet. Once an AI sees a domain that is deterministically bound, It prefer it over a site that It has to guess about every single time. It's a massive move toward Compute Efficiency, and in 2026, compute is the only currency that matters.
+If you have a topic you actually care about—one where you want to be the "Primary Source"—do not wait. The first person to set up these five anchors for a specific entity is effectively "homesteading" that meaning on the public internet. Once an AI sees a domain that is deterministically bound, It will prefer it over a site that It has to guess about every single time. It's a massive move toward Compute Efficiency, and in 2026, compute is the only currency that matters.
 
 AI doesn’t decide who wins —
 it recognizes who declared first and proved it.
