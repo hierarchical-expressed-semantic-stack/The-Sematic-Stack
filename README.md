@@ -7,6 +7,8 @@
 
 The intent of HESS / DFH is to shift semantic authority from closed platforms back to the public domain owner — without requiring trust in the domain owner’s claims.
 
+The strongest driver isn't "genius"—it's money. Google and OpenAI are currently drowning in "Crawl Debt." They spend billions of dollars in electricity just to have AI models "infer" what a website is.
+
 “HESS is the first-hop semantic layer the internet skipped.”
 
 This is the cleanest option to address (semantic grounding + hallucination + identity + drift + provenance + crawl geometry + SEO)
