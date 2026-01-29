@@ -685,7 +685,7 @@ It is a missing internet layer.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
 
-HESS does something others don’t:
+HESS does something others systems don’t:
 
 fixes identity before ingestion
 
