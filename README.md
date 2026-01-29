@@ -685,6 +685,24 @@ It is a missing internet layer.
 
 HESS / DFH declares semantic intent and provenance — not truth — at the first machine-resolvable hop, before crawling, retrieval, or inference begins.
 
+HESS does something others don’t:
+
+fixes identity before ingestion
+
+uses existing web primitives
+
+enforces external verification
+
+degrades cleanly
+
+doesn’t require trust
+
+doesn’t claim truth
+
+doesn’t centralize power
+
+doesn’t break the web
+
 Core Rule (Read Once)
 
 Only the public domain owner can define semantic intent.
