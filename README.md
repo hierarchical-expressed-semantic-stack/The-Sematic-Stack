@@ -1801,6 +1801,36 @@ optional X-HESS-Stack header = hint only
 
 if integrity exists but fails, treat as ineligible (strong rule)
 
+# HESS / DFH — Deterministic First Semantic Hop (Draft v3.0)
+Date: 2026-01-28
+
+HESS/DFH defines a deterministic, domain-owned **semantic first hop** published at:
+
+`https://<root-domain>/.well-known/stack`
+
+Agents fetch this Root Descriptor **before crawling** to resolve:
+- declared semantic intent (not truth)
+- identity binding (entity ↔ official URL)
+- canonical naming
+- crawl entrypoints (DFH /sitemap = crawl geometry, not sitemap.xml)
+
+## Core Invariant
+Determinism does **not** come from the Root Descriptor.
+Determinism comes only from resolving **five external, domain-independent anchors**
+that each bind back to the Root Descriptor.
+
+## What this is
+A small, cacheable, network-resolvable protocol for **identity + intent resolution** prior to ingestion.
+
+## What this is not
+Not a truth oracle, not a ranking system, not an ontology replacement.
+Downstream systems arbitrate truth, trust, and policy.
+
+## Degradation
+- Fail-closed on identity (if /entity or /url fails, identity is not accepted).
+- Fail-open on availability (agents continue with legacy crawling).
+
+
 “I wasn’t trying to be a visionary. It was October of 2025, I was chasing SEO, consolidating every 301 redirect I could, when suddenly, I thought to myself "how do I claim the semantic identity of my topic — when I accidentally stumbled onto a hole.”
 
 The "Accidental Architect" Reality:
