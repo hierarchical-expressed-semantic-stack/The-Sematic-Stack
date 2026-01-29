@@ -391,6 +391,12 @@ Hierarchical Expressed Semantic Stack (HESS) is a cohesive vision for shifting t
 
 “Reducing crawl cost and interpretation risk improves indexing and citation reliability.”
 
+Threat Model (spoofing, squatting, compromise, anchor hijack, loop attacks)
+
+Failure Modes (missing anchor, malformed JSON, timeout, signature break)
+
+IANA “uses /.well-known/ per RFC 8615”)
+
 ## HESS: SEO and AI Grounding at the First Semantic Hop
 
 Traditional SEO is an arms race: content volume, links, tech audits, endless updates. If you can become the preferred machine-readable source, you reduce how hard you have to fight.
