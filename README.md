@@ -30,12 +30,68 @@ The strongest driver isn't "genius"—it's money. Google and OpenAI are currentl
 
 An installable, deterministic, network-resolvable semantic first-hop protocol, hosted at /.well-known/, designed for AI and search engine crawlers
 
-DNS → [hole] → HTTP
+## The Missing Layer
 
-ingest → guess → embed → reconcile → hallucinate
+### DNS → [hole] → HTTP  
+**ingest → guess → embed → reconcile → hallucinate**
 
+This is the web we have lived on since the late 1990s.
 
-DNS → HESS (declared meaning) → crawl → infer → arbitrate → answer
+DNS tells machines *where* something is.  
+HTTP delivers *content*.
+
+What is missing is a deterministic way for machines to know **what something is** before crawling, inference, or retrieval begins.  
+As a result, AI systems are forced to read the web like humans: scrape pages, infer intent statistically, reconcile ambiguity downstream, and hallucinate under uncertainty.
+
+This is not an AI failure.  
+It is an architectural omission.
+
+---
+
+### DNS → HESS / DFH → HTTP  
+**declare → resolve → crawl → infer → arbitrate → answer**
+
+HESS / DFH installs the missing semantic layer.
+
+It provides a deterministic, domain-owned semantic first hop that allows machines to resolve **identity and declared intent** before crawling any content. Truth, trust, and safety remain downstream concerns handled by arbitration.
+
+Once the first semantic hop is deterministic, everything downstream is forced out of guesswork and into arbitration.
+
+---
+
+## The Completed Internet Stack
+
+HESS / DFH completes the original web hierarchy.
+
+| Layer     | Protocol     | Function              | Analogy                     |
+|-----------|--------------|-----------------------|------------------------------|
+| Network   | DNS          | Location              | Street address               |
+| Semantic  | HESS / DFH   | Identity + intent     | Deed and zoning permit       |
+| Content   | HTTP / HTML  | Presentation          | Furniture inside the house   |
+
+DNS answers **where**.  
+HESS / DFH answers **what it is**.  
+HTTP answers **what it contains**.
+
+---
+
+## Why This Matters
+
+Without a semantic identity layer:
+
+- machines must infer meaning statistically
+- identity drifts over time
+- crawl entropy increases
+- hallucination pressure rises
+- provenance becomes ambiguous
+
+HESS / DFH fixes the problem at the only place it can be fixed:  
+**the first machine-resolvable hop.**
+
+This is not an AI patch.  
+It is the missing manual for the internet.
+
+Meaning finally has an address.
 
 DFH does not assert truth — it asserts intent and provenance at the earliest resolvable hop.
 
