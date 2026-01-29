@@ -1515,7 +1515,6 @@ Agents MUST resolve anchors in a strict order (type → entity → integrity/aut
 
 Net result: the protocol remains cache-friendly, squatting-resistant, enterprise-scalable, and economically aligned. HESS does not replace truth arbitration—it moves ambiguity out of the crawl and into explicit, inspectable signals, where machines can reason deterministically instead of guessing.
 
-
 From Conceptual Upgrade to Deterministic Protocol
 
 This specification for the Hierarchical Expressed Semantic Stack (HESS) and the Deterministic First-Hop (DFH) protocol represents a structural upgrade to the web. By shifting from probabilistic inference (machines guessing) to deterministic declaration (publishers stating intent), HESS installs the long-missing identity layer between DNS (where something is) and HTTP (what it contains).
@@ -1750,6 +1749,57 @@ Schema.org vs page content
 Wikipedia infobox vs article text
 
 HESS defines intentional identity, not empirical exhaustiveness.
+
+3.2 Resolution algorithm
+DFH Resolution (Depth = 1 + 5)
+
+Input: root_url = https://example.com/.well-known/stack
+
+1) Fetch root_url over HTTPS (no downgrade).
+2) Parse JSON. If invalid => DEGRADE (legacy crawl).
+3) Extract anchors: type, entity, url, canonical, sitemap.
+   If any missing => DEGRADE (missing dimension).
+4) For each anchor in fixed order:
+     fetch anchor_url once (max redirects = 0 or 1, define it)
+     parse JSON
+     verify it binds to root_url (exact match)
+     verify role matches expected (anchor declares its role)
+   If fetch/parse/bind fails:
+     mark that dimension UNDECLARED
+5) Identity Acceptance Gate:
+     If /entity AND /url are valid + bound => identity eligible
+     Else => identity NOT accepted (probabilistic mode)
+6) Continue with crawl + arbitration using the accepted dimensions.
+
+3.3 Error semantics
+
+Fail-closed on identity:
+
+if /entity or /url missing/unbound → do not accept identity binding
+
+Fail-open on availability:
+
+if anything fails → crawl normally, just don’t grant DFH advantages
+
+3.4 Payload limits 
+
+Root Descriptor SHOULD be ≤ 10KB
+
+Each anchor SHOULD be ≤ 5KB
+
+Total first-hop fetch budget SHOULD be ≤ 50KB
+
+Agents MUST enforce caps (bytes, redirects, timeouts)
+
+3.5 Security baseline 
+
+HTTPS required
+
+optional X-HESS-Stack header = hint only
+
+/integrity and /authority reserved as optional (enterprise) anchors
+
+if integrity exists but fails, treat as ineligible (strong rule)
 
 “I wasn’t trying to be a visionary. It was October of 2025, I was chasing SEO, consolidating every 301 redirect I could, when suddenly, I thought to myself "how do I claim the semantic identity of my topic — when I accidentally stumbled onto a hole.”
 
