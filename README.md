@@ -8,6 +8,14 @@ A "machine-readable deed" for digital property.
 A deterministic, domain-owned semantic first hop for AI crawlers.
 Deterministic = resolution is based on externally fetchable, domain-owned anchors, not model inference or internal platform state.
 
+If meaning is inside the model → it’s probabilistic by definition
+
+If meaning is inside a platform KG → it’s governance + heuristics
+
+If meaning is declared on public anchor domains → resolution is deterministic, even if acceptance is not
+
+Deterministic resolution ≠ deterministic authority
+
 Summary
 HESS/DFH defines a machine-readable Root Descriptor at:
 https://<root-domain>/.well-known/stack
