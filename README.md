@@ -39,21 +39,24 @@ Remove **any one**, and machines are forced back into probabilistic inference.
 
 👉 **Five or nothing.**
 
-Summary
-HESS/DFH defines a machine-readable Root Descriptor at:
-https://<root-domain>/.well-known/stack
-that points to five external anchor domains (/type, /entity, /url, /canonical, /sitemap).
+Summary:
+
+Each topic gets one HESS stack:
+
+HESS/DFH defines a machine-readable Root Descriptor at:https://<root-domain>/.well-known/stack 
+This is your main wabsie of the topic with a root deciptor named /.well-known/stack and one file named stack added to it on the end
+Purchase five external anchor domains of the topic: (/type, /entity, /url, /canonical, /sitemap).
 Agents fetch the descriptor before crawling to resolve declared intent + identity binding (not truth).
 
 “What an agent actually does” 5-bullet flow:
 
-Fetch root stack
+Fetch root stack:
 
-Fetch 5 anchors (once each)
+Fetch 5 anchors: (once each)
 
-Verify back-binding
+Verify back-binding:
 
-If all 5 anchors are valid → identity eligible
+If all 5 anchors are valid: → identity eligible
 
 Continue crawl + arbitration
 
