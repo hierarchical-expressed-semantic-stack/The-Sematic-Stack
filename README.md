@@ -2,7 +2,7 @@
 ## Hierarchical Expressed Semantic Stack (HESS)
 **Machine-Readable Protocol**  
 **Status:** Draft v3.0 — “De Facto Adoption” Target (Semantics Locked)
-A "machine-readable deed" for digital property.
+A "machine-readable "Semantic DNS." deed" for digital property.
  1/28/2026
 
 A deterministic, domain-owned semantic first hop for AI crawlers.
