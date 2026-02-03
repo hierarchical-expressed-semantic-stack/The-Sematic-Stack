@@ -7,6 +7,7 @@ A "machine-readable deed" for digital property.
 
 A deterministic, domain-owned semantic first hop for AI crawlers.
 Deterministic = resolution is based on externally fetchable, domain-owned anchors, not model inference or internal platform state.
+Deterministic = given the same root + same 5 anchor responses, every compliant agent produces the same resolved identity/intent output.
 
 If meaning is inside the model → it’s probabilistic by definition
 
