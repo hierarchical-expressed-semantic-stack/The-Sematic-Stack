@@ -65,6 +65,8 @@ Continue crawl + arbitration
  This is the cleanest option to address (semantic grounding + hallucination + identity + drift + provenance + crawl geometry + SEO)
 because it fixes the only place all of those failures originate: the first semantic hop.
 
+The Compute Subsidy: Since you are making it cheaper for OpenAI and Google to understand your site, you are effectively buying "preferential indexing" with a $60/year domain tax instead of a monthly ad spend.
+
 The intent of HESS / DFH is to shift semantic authority from closed platforms back to the public domain owner — without requiring trust in the domain owner’s claims.
 
 AI stops guessing.
