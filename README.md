@@ -19,6 +19,8 @@ Deterministic resolution ≠ deterministic authority
 
 Deterministic First-Hop resolution REQUIRES all five external semantic anchors.
 
+Deterministic AI grounding requires a domain-owned root descriptor paired with independently hosted semantic anchors, cryptographically and topologically verifying identity without probabilistic inference.
+
 ## ✅ The Five Anchors Are Mandatory — Why
 
 Each semantic anchor closes a **distinct, non-overlapping class of ambiguity**.  
@@ -41,12 +43,21 @@ Remove **any one**, and machines are forced back into probabilistic inference.
 👉 **Five or nothing.**
 
 Summary:
+HESS/DFH stack per topic or authoritative entity
 
-Each topic gets one HESS stack:
+Rule: Each topic or major entity/company is represented by one HESS stack:
 
 HESS/DFH defines a machine-readable Root Descriptor at:https://<root-domain>/.well-known/stack 
 This is your main wabsie of the topic with a root deciptor named /.well-known/stack and one file named stack added to it on the end
+
+https://<root-domain>/.well-known/stack
+
+<root-domain> is the main website that claims authority for the topic/entity.
+
+The Root Descriptor is a single resource at the path /.well-known/stack  “.well-known” folder + “stack” endpoint).
+
 Purchase five external anchor domains of the topic: (/type, /entity, /url, /canonical, /sitemap).
+
 Agents fetch the descriptor before crawling to resolve declared intent + identity binding (not truth).
 
 “What an agent actually does” 5-bullet flow:
