@@ -21,6 +21,8 @@ Deterministic First-Hop resolution REQUIRES all five external semantic anchors.
 
 Deterministic AI grounding requires a domain-owned root descriptor paired with independently hosted semantic anchors, cryptographically and topologically verifying identity without probabilistic inference.
 
+The DNS system is the only globally accepted, decentralized source of authority we have.
+
 ## ✅ The Five Anchors Are Mandatory — Why
 
 Each semantic anchor closes a **distinct, non-overlapping class of ambiguity**.  
