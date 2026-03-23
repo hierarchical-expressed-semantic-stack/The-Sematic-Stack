@@ -5,6 +5,9 @@
 A "machine-readable "Semantic DNS." deed" for digital property.
  1/28/2026
 
+It's a move to become the "Landlord" of a topic rather than just a "Tenant" on a search results page.
+
+
 A deterministic, domain-owned semantic first hop for AI crawlers.
 Deterministic = resolution is based on externally fetchable, domain-owned anchors, not model inference or internal platform state.
 Deterministic = given the same root + same 5 anchor responses, every compliant agent produces the same resolved identity/intent output.
