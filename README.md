@@ -2,8 +2,29 @@
 ## Hierarchical Expressed Semantic Stack (HESS)
 **Machine-Readable Protocol**  
 **Status:** Draft v3.0 — “De Facto Adoption” Target (Semantics Locked)
-A "machine-readable "Semantic DNS." deed" for digital property.
- 1/28/2026
+Semantic DNS: A Hierarchical Express Semantic Stack for Digital Property
+
+Semantic DNS is a 100% free, decentralized protocol that gives website owners absolute ownership over how AI reads, interprets, and attributes their site. It functions as a machine-readable "deed" for digital property.
+
+The Cost: Zero platform fees. The protocol is anchored by holding 5 domains from the registrar of your choice, and installing a root deciptor in your main website page. Example https://carlot.com/.well-known/stack. The 5 domains all include your main website establishing a self-sovereign trust network topic must match the topic of your website.
+
+Example: say your main site is carlot.com you then would purchase the cars topic for the semantic layer example below:
+
+Carstype.com What kind of thing is this website/entity? (Prevents category confusion). Include carlot.com in the info so it can point back to your main site
+
+carsentity.com Which specific thing or company is this? (Prevents identity collision).   Include carlot.com in the info so it can point back to your main site
+
+
+carsurl.com Where does this meaning officially live? (Prevents spoofing/fake sites).  Include carlot.com in the info so it can point back to your main site
+
+
+carscanonical.com What is its consistent, unchangeable name? (Prevents alias drift).  Include carlot.com in the info so it can point back to your main site
+
+
+carssitemap.com Where should crawling actually begin? (Prevents crawl chaos).  Include carlot.com in the info so it can point back to your main site
+
+
+1/28/2026
 
 It's a move to become the "Landlord" of a topic rather than just a "Tenant" on a search results page.
 
