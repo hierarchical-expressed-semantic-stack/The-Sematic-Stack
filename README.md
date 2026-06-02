@@ -3,10 +3,11 @@
 **Machine-Readable Protocol**  
 **Status:** Draft v3.0 — “De Facto Adoption” Target (Semantics Locked)
 Semantic DNS: A Hierarchical Express Semantic Stack for Digital Property
+The webs missing native semantic routing layer.
 
 Semantic DNS is a 100% free, decentralized protocol that gives website owners absolute ownership over how AI reads, interprets, and attributes their site. It functions as a machine-readable "deed" for digital property.
 
-The Cost: Zero platform fees. The protocol is anchored by holding 5 domains from the registrar of your choice, and installing a root deciptor in your main website page. Example https://carlot.com/.well-known/stack. The 5 domains all include your main website establishing a self-sovereign trust network topic must match the topic of your website.
+The Cost: Zero platform fees. The protocol is anchored by holding 5 domains from the registrar of your choice, and installing a root deciptor in your main website page. Example https://carlot.com/.well-known/stack. The 5 domains all include your main website establishing a self-sovereign trust network that must match the topic of your website.
 
 Example: say your main site is carlot.com you then would purchase the cars topic for the semantic layer example below:
 
